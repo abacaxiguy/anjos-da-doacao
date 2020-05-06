@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family: Century Gothic, "Century Gothic", Helvetica, "Helvetica", Arial,
+        sans-serif !important;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: rgb(0, 100, 146) !important;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+    height: 5rem;
+}
+
+.btn-search {
+    background-color: rgb(61, 226, 157);
+    border: 2px solid rgb(61, 226, 157);
+    border-left: none;
+    color: white;
+    transition: all 0.2s ease-out;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.5rem 0.7rem;
+}
+
+.btn-search:hover {
+    color: rgb(61, 226, 157);
+
+    background: transparent;
+}
+
+.search-input {
+    background-color: white;
+    color: rgb(17, 17, 17);
+    border: none;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.login .icon {
+    background: rgb(61, 226, 157);
+    padding: 0.9rem 1.15rem;
+    border-radius: 50%;
+}
+
+.login .icon i {
+    color: white;
+    font-size: 2rem;
+}
+
+.login span {
+    width: max-content;
+}
+
+.login span a {
+    font-size: 1.1rem;
+    color: white !important;
+    text-decoration: none;
+}
+
+.login span a:hover {
+    color: white;
+}
+
+/* NAVBAR */
+
+/* CAROUSEL */
+
+.carousel {
+    display: flex;
+}
+
+.carousel .card {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+        to bottom,
+        rgb(61, 226, 157),
+        rgb(0, 100, 146)
+    );
+    border-radius: 0 !important;
+    border-width: 3px;
+}
+
+.carousel .card:not(:first-child) {
+    border-left: none;
+}
+
+.carousel .card-img-top {
+    padding-top: 10px;
+    width: 220px;
+    height: 220px;
+    padding: 10px 10px;
+}
+
+.carousel .btn-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 100, 146),
+        rgb(61, 226, 157) 50%,
+        rgb(0, 100, 146)
+    );
+    background-size: 200%;
+    padding: 0.3rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    transition: background-position 0.4s ease;
+}
+
+.carousel .btn-carousel:hover {
+    background-position: 100% 0;
+}
+
+.carousel hr {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+        to top,
+        rgb(61, 226, 157),
+        rgb(0, 100, 146)
+    );
+    border-width: 3px;
+}
+
+.carousel .card-title {
+    font-weight: bold;
+}
