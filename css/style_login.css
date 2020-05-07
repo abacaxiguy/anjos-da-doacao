@@ -1,173 +1,172 @@
-body, html{
-	background-image: url('../img/logoImg2BG.png');
-  	background-size: 20vmin;
-	background-blend-mode: luminosity;	
-	height: 100%;
-	font-family: Century Gothic, 'Century Gothic', Helvetica, 'Helvetica',  Arial, sans-serif !important;
-
+body,
+html {
+    background-image: url("../img/logoImg2BG.png");
+    background-size: 20vmin;
+    background-blend-mode: luminosity;
+    height: 100%;
+    font-family: Century Gothic, "Century Gothic", Helvetica, "Helvetica", Arial,
+        sans-serif !important;
 }
 
-.esqueceu{	
-	margin-top: .4rem ;
+.esqueceu {
+    margin-top: 0.4rem;
 }
 
-.links{
-	margin-top: 1rem ;
-	font-size: 1.2em ;
+.links {
+    margin-top: 1rem;
+    font-size: 1.2em;
 }
 
-.card{
-	height: 550px;
-	margin-top: 40px;
-	margin-bottom: 120px;
-	width: 500px;
-	color: white;
-	border: none !important;
-	background: rgb(0,132,191) !important;
+.card {
+    height: 550px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    width: 500px;
+    color: white;
+    border: none !important;
+    background: rgb(0, 132, 191) !important;
 }
 
-.container{
-	height: 100%;
-	align-content: center;
+.container {
+    height: 100%;
+    align-content: center;
 }
 
-.col-lg{
-	background: rgb(0,132,191);
+.col-lg {
+    background: rgb(0, 132, 191);
 }
 
-input{
-	transition: box-shadow .4s !important;
-	color: white !important;
-	background: transparent !important;
-	font-size: 1.275em !important;
-	outline: none !important;
-	border-width: 2px !important;
-	border-radius: 0 !important;
-	margin-bottom: 1rem !important;
+input {
+    transition: box-shadow 0.4s !important;
+    color: white !important;
+    background: transparent !important;
+    font-size: 1.275em !important;
+    outline: none !important;
+    border-width: 2px !important;
+    border-radius: 0 !important;
+    margin-bottom: 1rem !important;
 }
 
-.form{
-	margin-top: 1.4em !important;
+.form {
+    margin-top: 1.4em !important;
 }
 
-input::placeholder{
-	color: rgba(255, 255, 255, 0.7) !important;
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
-input:focus, input:active{
-	box-shadow: 0 0 .6em 0.09rem rgba(61,226,157) !important;
+input:focus,
+input:active {
+    box-shadow: 0 0 0.6em 0.09rem rgba(61, 226, 157) !important;
 }
 
-.h1{
-	margin-top: .8rem !important;
+.h1 {
+    margin-top: 0.8rem !important;
 }
 
-label{
-	margin-bottom: .6rem !important;
-	font-size: 1.875em !important;
+label {
+    margin-bottom: 0.6rem !important;
+    font-size: 1.875em !important;
 }
 
-.imgTopo{
-	align-items: center !important;
-	height: auto;
-	max-height: 500px;
-	width: 100%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center !important;
+.imgTopo {
+    align-items: center !important;
+    height: auto;
+    max-height: 500px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
 }
 
+@media screen and (max-device-width: 700px) {
+    .card {
+        width: 100% !important;
+        border-radius: 0 !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .h1 {
+        margin-top: 5rem !important;
+        font-size: 6em;
+    }
+    input {
+        font-size: 3em !important;
+        height: 2em !important;
+        border-width: 4px !important;
+    }
 
-@media screen and (max-device-width: 700px){
-	.card{
-		width: 100% !important;
-		border-radius: 0 !important;
-		height: 100vh !important;
-		margin: 0 !important;
-		padding: 0 !important;
-	}
-	.h1{
-		margin-top: 5rem !important;
-		font-size: 6em;
-	}
-	input{
-		font-size: 3em !important;
-		height: 2em !important;
-    border-width: 4px !important;
-	}
+    .imgTopo {
+        height: auto;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 4rem;
+    }
+    .fraseInicio {
+        margin-top: 3rem !important;
+        font-size: 2.5em;
+    }
+    label {
+        margin-top: 3rem !important;
+        font-size: 4.975em !important;
+    }
 
-	
-	.imgTopo{
-		height: auto;
-    	width: 100%;
-		display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-		padding-top: 4rem;
-	}
-	.fraseInicio{
-		margin-top: 3rem!important;
-		font-size: 2.5em;
-	}
-	label{
-		margin-top: 3rem !important;
-		font-size: 4.975em !important;
-	}
+    button {
+        background: rgb(61, 226, 157) !important;
+        font-size: 4em !important;
+        border-radius: 1rem !important;
+    }
+    .links {
+        margin-bottom: none !important;
+        margin-top: 3rem !important;
+        font-size: 2.575em !important;
+    }
 
-	button{
-		background: rgb(61,226,157) !important;		
-		font-size: 4em !important;
-		border-radius: 1rem !important;
-	}
-	.links{
-	  	margin-bottom: none !important;
-		margin-top: 3rem !important;
-		font-size: 2.575em !important;
-	}
-
-	.esqueceu{
-		font-size: 2.4em !important;
-		margin-bottom: 3rem !important;
-	}
-	.container, body, html{
-
-		margin: 0 !important;
-		padding: 0!important;
-	}
-	.h-100{
-		width: 100vw !important;
-	}
+    .esqueceu {
+        font-size: 2.4em !important;
+        margin-bottom: 3rem !important;
+    }
+    .container,
+    body,
+    html {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .h-100 {
+        width: 100vw !important;
+    }
 }
 
-.margens{
-	margin-top: -20px;
-	padding: 20px 30px !important;
+.margens {
+    margin-top: -20px;
+    padding: 20px 30px !important;
 }
-button{
-    background: rgb(61,226,157) !important;
-    border: rgb(26,174,112) !important;
+button {
+    background: rgb(61, 226, 157) !important;
+    border: rgb(26, 174, 112) !important;
 }
-button:active, button:focus{
-    box-shadow: 0 0 0 0.2rem rgba(61,226,157,.5) !important;
+button:active,
+button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(61, 226, 157, 0.5) !important;
 }
-button:active{
-	border: rgb(26,174,112) !important;
+button:active {
+    border: rgb(26, 174, 112) !important;
 }
-button:hover{
-	background: rgb(29,195,127) !important;	
+button:hover {
+    background: rgb(29, 195, 127) !important;
 }
-.font-media{
-	font-size: 20px;
-}
-
-
-
-a{
-	color: rgb(61,226,157);
-}
-a:hover{
-	text-decoration: none !important;
-	color: rgb(61, 226, 157);
+.font-media {
+    font-size: 20px;
 }
 
+a {
+    color: rgb(61, 226, 157);
+}
+a:hover {
+    text-decoration: none !important;
+    color: rgb(61, 226, 157);
+}
