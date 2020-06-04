@@ -1,0 +1,48 @@
+.barra-acessibilidade {
+    position: fixed;
+    width: 100%;
+    background-color: white !important;
+    z-index: 10;
+    color: black;
+}
+
+.barra-acessibilidade ul {
+    padding-inline-start: 0 !important;
+    line-height: 60px !important;
+}
+
+.barra-acessibilidade li {
+    display: inline;
+}
+
+.ba-link {
+    list-style: none !important;
+    color: black;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 20px !important;
+}
+
+.ba-item-left {
+    left: 0;
+}
+
+.ba-item-right {
+    float: right !important;
+}
+
+@media (max-width: 1000px) {
+    .barra-acessibilidade {
+        display: none;
+    }
+    .navBar {
+        top: 0;
+    }
+}
+
+.ba-link.increase.max,
+.ba-link.decrease.max {
+    color: grey;
+    cursor: not-allowed;
+    text-decoration: none;
+}

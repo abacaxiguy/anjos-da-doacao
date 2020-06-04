@@ -2,6 +2,8 @@
 /* 41 38 140 roxo*/
 * {
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -63,11 +65,11 @@ body {
 }
 
 .largeFont {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
 }
 
 .smallFont {
-    font-size: 1.7rem !important;
+    font-size: 1.7rem;
 }
 
 .divSeletor {
@@ -105,13 +107,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 0 !important;
+}
+
+.container-fluid {
+    padding: 0 !important;
 }
 
 .bg-1 {
-    background-image: url(../img/idosa.png);
+    background-image: url(../img/idosa.png) !important;
 }
 .bg-2 {
-    background-image: url(../img/maybe.jpg);
+    background-image: url(../img/cadeirante.jpeg);
     background-position: right !important;
 }
 .bg-3 {
@@ -123,12 +130,13 @@ body {
 
 .navBar {
     position: fixed !important;
-    top: 0;
+    top: 53px;
     width: 100% !important;
     transition: background 1s ease 1s;
     background: rgba(0, 121, 191, 0);
     z-index: 5;
     transition: 0.4s;
+    padding-top: 15px !important;
 }
 
 i {
@@ -139,13 +147,10 @@ i {
     justify-content: flex-end;
 }
 
-.ul-editavel {
-    font-size: 1.4em;
-}
-
 .ul-editavel a {
     margin-left: 1rem;
     position: relative;
+    font-size: 1.2rem !important;
 }
 
 .ul-editavel a::before {
@@ -176,11 +181,9 @@ i {
 .navbar-toggler {
     border: none !important;
 }
-.navbar-toggler:focus {
-    border: none !important;
-}
+
 .navbar-toggler i {
-    font-size: 7vmin !important;
+    font-size: 7.5vmin !important;
 }
 
 .fab,
@@ -195,7 +198,7 @@ i {
     min-height: 32px;
     height: 64px;
     width: 64px;
-    font-size: 32px;
+    font-size: 32px !important;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -208,7 +211,11 @@ i {
     display: flex !important;
     align-items: center;
     justify-content: center;
-    font-size: 1.125em !important;
+    font-size: 1.125em;
+}
+
+#footer p {
+    line-height: 2em;
 }
 
 #footer a {
@@ -218,9 +225,15 @@ i {
 .imgAparece {
     transition: opacity 0.3s linear;
     opacity: 0;
-    height: 15vmin;
-    width: 47vmin;
+    height: 65px;
+    width: 220px;
 }
+
+.logoImg {
+    height: 65px;
+    width: 65px;
+}
+
 .Qscrolled {
     background: linear-gradient(
         90deg,
@@ -231,7 +244,7 @@ i {
 
 .btn-find {
     color: white !important;
-    font-size: 1.5625rem !important;
+    font-size: 1.5625rem;
     background: linear-gradient(
         90deg,
         rgb(0, 100, 146),
@@ -246,18 +259,12 @@ i {
     background-position: 100% 0;
 }
 
-.btn-find:active,
-.btn-find:focus {
-    outline: none !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
 .wrap-right,
 .wrap-left {
     display: flex;
     align-items: center;
     justify-items: center;
+    /* flex-wrap: wrap; */
 }
 
 .img-wrap-right {
@@ -292,11 +299,11 @@ i {
         width: 80vw;
     }
     .largeFont {
-        font-size: 1.875rem !important;
+        font-size: 1.875rem;
     }
 
     .smallFont {
-        font-size: 1.275rem !important;
+        font-size: 1.275rem;
     }
 
     .wrap-right {
@@ -310,5 +317,19 @@ i {
         height: 12em !important;
         padding: 0 !important;
         margin: 0 !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .imgAparece {
+        transition: opacity 0.3s linear;
+        opacity: 0;
+        height: 48px;
+        width: 150px;
+    }
+
+    .logoImg {
+        height: 48px;
+        width: 48px;
     }
 }

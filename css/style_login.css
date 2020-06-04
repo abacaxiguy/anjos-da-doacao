@@ -1,9 +1,17 @@
-body,
+* {
+    scroll-behavior: smooth;
+}
+
 html {
     background-image: url("../img/logoImg2BG.png");
     background-size: 20vmin;
     background-blend-mode: luminosity;
     height: 100%;
+}
+
+body {
+    background: none !important;
+    color: rgb(0, 132, 191) !important;
     font-family: Century Gothic, "Century Gothic", Helvetica, "Helvetica", Arial,
         sans-serif !important;
 }
@@ -14,7 +22,6 @@ html {
 
 .links {
     margin-top: 1rem;
-    font-size: 1.2em;
 }
 
 .card {
@@ -22,9 +29,9 @@ html {
     margin-top: 40px;
     margin-bottom: 120px;
     width: 500px;
-    color: white;
+    color: rgb(0, 132, 191);
     border: none !important;
-    background: rgb(0, 132, 191) !important;
+    background: white !important;
 }
 
 .container {
@@ -33,16 +40,16 @@ html {
 }
 
 .col-lg {
-    background: rgb(0, 132, 191);
+    background: white;
+    box-shadow: 0 0 20px 5px rgba(61, 226, 157, 0.5);
 }
 
 input {
     transition: box-shadow 0.4s !important;
-    color: white !important;
+    color: #495057 !important;
     background: transparent !important;
     font-size: 1.275em !important;
-    outline: none !important;
-    border-width: 2px !important;
+    border: 2px solid rgb(0, 132, 191) !important;
     border-radius: 0 !important;
     margin-bottom: 1rem !important;
 }
@@ -57,7 +64,8 @@ input::placeholder {
 
 input:focus,
 input:active {
-    box-shadow: 0 0 0.6em 0.09rem rgba(61, 226, 157) !important;
+    border-color: rgb(61, 226, 157) !important;
+    box-shadow: 0 0 0.6em 0.09rem rgb(61, 226, 157) !important;
 }
 
 .h1 {
@@ -66,7 +74,7 @@ input:active {
 
 label {
     margin-bottom: 0.6rem !important;
-    font-size: 1.875em !important;
+    font-size: 1.475rem !important;
 }
 
 .imgTopo {
@@ -80,6 +88,46 @@ label {
     text-align: center !important;
 }
 
+a {
+    color: rgb(61, 226, 157);
+}
+
+a:hover {
+    color: rgb(61, 226, 157);
+}
+
+.margens {
+    margin-top: -20px;
+    padding: 20px 30px !important;
+}
+
+button {
+    color: white;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 100, 146),
+        rgb(61, 226, 157) 50%,
+        rgb(0, 100, 146)
+    );
+    background-size: 200%;
+    border: 0 !important;
+    border-radius: 0 !important;
+    transition: background-position 0.4s ease !important;
+    font-size: 1.4rem !important;
+}
+
+.links {
+    font-size: 1.4rem;
+}
+
+.fraseInicio {
+    font-size: 1.2rem;
+}
+
+.h1 {
+    font-size: 2.2rem;
+}
+
 @media screen and (max-device-width: 700px) {
     .card {
         width: 100% !important;
@@ -88,10 +136,16 @@ label {
         margin: 0 !important;
         padding: 0 !important;
     }
+
+    .col-lg {
+        box-shadow: none;
+    }
+
     .h1 {
         margin-top: 5rem !important;
-        font-size: 6em;
+        font-size: 5rem;
     }
+
     input {
         font-size: 3em !important;
         height: 2em !important;
@@ -106,67 +160,56 @@ label {
         margin-right: auto;
         padding-top: 4rem;
     }
+
     .fraseInicio {
         margin-top: 3rem !important;
         font-size: 2.5em;
     }
+
     label {
         margin-top: 3rem !important;
-        font-size: 4.975em !important;
+        font-size: 3.875rem !important;
     }
 
     button {
-        background: rgb(61, 226, 157) !important;
-        font-size: 4em !important;
-        border-radius: 1rem !important;
+        font-size: 3.375em !important;
     }
+
     .links {
         margin-bottom: none !important;
         margin-top: 3rem !important;
-        font-size: 2.575em !important;
+        font-size: 2.8rem !important;
     }
 
     .esqueceu {
-        font-size: 2.4em !important;
+        font-size: 2.8rem !important;
         margin-bottom: 3rem !important;
     }
+
     .container,
     body,
     html {
         margin: 0 !important;
         padding: 0 !important;
     }
+
     .h-100 {
         width: 100vw !important;
     }
 }
 
-.margens {
-    margin-top: -20px;
-    padding: 20px 30px !important;
-}
-button {
-    background: rgb(61, 226, 157) !important;
-    border: rgb(26, 174, 112) !important;
-}
 button:active,
 button:focus {
-    box-shadow: 0 0 0 0.2rem rgba(61, 226, 157, 0.5) !important;
-}
-button:active {
-    border: rgb(26, 174, 112) !important;
-}
-button:hover {
-    background: rgb(29, 195, 127) !important;
-}
-.font-media {
-    font-size: 20px;
+    box-shadow: none !important;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 100, 146),
+        rgb(61, 226, 157) 50%,
+        rgb(0, 100, 146)
+    );
+    border: 0 !important;
 }
 
-a {
-    color: rgb(61, 226, 157);
-}
-a:hover {
-    text-decoration: none !important;
-    color: rgb(61, 226, 157);
+button:hover {
+    background-position: 100%;
 }

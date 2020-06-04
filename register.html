@@ -15,28 +15,29 @@
 
     <body cz-shortcut-listen="true">
         <div class="container mt-5 mb-5" id="container">
-            <a href="index.html" class="mb-5">
-                <img src="./img/logo2.png" class="imgTopo" width="350" />
+            <a tabindex="0" href="index.html" class="mb-5">
+                <img
+                    src="./img/logo2.png"
+                    class="imgTopo"
+                    width="350"
+                    alt="Logo"
+                    title="Logo"
+                />
             </a>
             <h2 id="h2">Cadastro</h2>
             <p class="fraseInicio">
                 Não possui uma conta? Faça seu cadastro agora!
             </p>
 
-            <form
-                class="form"
-                method="POST"
-                action="register.html"
-                onsubmit="return validar(e)"
-            >
+            <form class="form" onsubmit="return validar()">
                 <div class="form-row">
                     <!-- first name -->
                     <div id="div_id_first_name" class="form-group col-md-6">
-                        <label for="id_first_name" class="">
+                        <label for="id_first_name">
                             Primeiro nome
                         </label>
 
-                        <div class="">
+                        <div>
                             <input
                                 type="text"
                                 name="first_name"
@@ -44,6 +45,7 @@
                                 class="textinput textInput form-control"
                                 id="id_first_name"
                                 required
+                                tabindex="1"
                             />
 
                             <p
@@ -56,11 +58,11 @@
                     <!-- last name -->
 
                     <div id="div_id_last_name" class="form-group col-md-6">
-                        <label for="id_last_name" class="">
+                        <label for="id_last_name">
                             Último nome
                         </label>
 
-                        <div class="">
+                        <div>
                             <input
                                 type="text"
                                 name="last_name"
@@ -68,6 +70,7 @@
                                 class="textinput textInput form-control"
                                 id="id_last_name"
                                 required
+                                tabindex="2"
                             />
 
                             <p
@@ -82,10 +85,10 @@
                     <!-- password -->
 
                     <div id="div_id_password" class="form-group col-md-6">
-                        <label for="id_password" class="">
+                        <label for="id_password">
                             Senha
                         </label>
-                        <div class="">
+                        <div>
                             <input
                                 onfocus="limpa_input(this)"
                                 onblur="valida_senhas(this)"
@@ -94,6 +97,7 @@
                                 class="textinput textInput form-control"
                                 id="id_password"
                                 required
+                                tabindex="3"
                             />
 
                             <p
@@ -106,10 +110,10 @@
                     <!-- confirmar senha -->
 
                     <div id="div_id_password2" class="form-group col-md-6">
-                        <label for="id_password2" class="">
+                        <label for="id_password2">
                             Confirmar senha
                         </label>
-                        <div class="">
+                        <div>
                             <input
                                 onfocus="limpa_input(this)"
                                 onblur="valida_senhas(this)"
@@ -118,6 +122,7 @@
                                 class="textinput textInput form-control"
                                 id="id_password2"
                                 required
+                                tabindex="4"
                             />
 
                             <p
@@ -135,7 +140,7 @@
                             Usuário
                         </label>
 
-                        <div class="">
+                        <div>
                             <input
                                 onfocus="limpa_input(this)"
                                 onblur="valida_username(this)"
@@ -145,10 +150,10 @@
                                 class="textinput textInput form-control"
                                 required
                                 id="id_username"
+                                tabindex="5"
                             />
 
                             <small id="hint_id_username" class="form-text">
-                                Obrigatório ter no mínimo 6 caracteres ou mais.
                                 Letras, números e @/./+/-/_ apenas.
                             </small>
 
@@ -161,10 +166,10 @@
 
                     <!-- email -->
                     <div id="div_id_email" class="form-group col-md-6">
-                        <label for="id_email" class="">
+                        <label for="id_email">
                             Endereço de email
                         </label>
-                        <div class="">
+                        <div>
                             <input
                                 onfocus="limpa_input(this)"
                                 onblur="valida_email(this)"
@@ -174,6 +179,7 @@
                                 class="emailinput form-control"
                                 id="id_email"
                                 required
+                                tabindex="6"
                             />
 
                             <p id="error_id_email" class="invalid-feedback"></p>
@@ -187,7 +193,7 @@
                         <label for="id_birth_date" class="requiredField">
                             Data de Nascimento
                         </label>
-                        <div class="">
+                        <div>
                             <input
                                 onfocus="limpa_input(this)"
                                 onblur="valida_data(this.value)"
@@ -197,6 +203,7 @@
                                 class="form-control"
                                 required
                                 id="id_birth_date"
+                                tabindex="7"
                             />
 
                             <p
@@ -209,7 +216,7 @@
                     <!-- cpf -->
                     <div id="div_id_cpf" class="form-group col-md-6">
                         <label for="id_cpf" class="requiredField"> CPF </label>
-                        <div class="">
+                        <div>
                             <input
                                 onfocus="limpa_input(this)"
                                 onblur="valida_cpf(this.value)"
@@ -219,6 +226,7 @@
                                 class="textinput textInput form-control"
                                 required
                                 id="id_cpf"
+                                tabindex="8"
                             />
 
                             <p id="error_id_cpf" class="invalid-feedback"></p>
@@ -231,14 +239,15 @@
                         <button
                             type="submit"
                             class="btn btn-primary btn-block btn-lg mb-2 mt-4"
+                            tabindex="9"
                         >
                             Cadastre-se
                         </button>
                     </div>
                 </div>
 
-                <div class="pb-3 login d-flex justify-content-center">
-                    <a href="login.html">Já tem uma conta?</a>
+                <div class="pb-3 mt-2 login d-flex justify-content-center">
+                    <a tabindex="10" href="login.html">Já tem uma conta?</a>
                 </div>
             </form>
         </div>

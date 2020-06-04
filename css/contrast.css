@@ -1,0 +1,64 @@
+.contrast,
+.contrast nav,
+.contrast header,
+.contrast footer,
+.contrast section,
+.contrast main {
+    background: black !important;
+    color: white !important;
+}
+
+.contrast h1,
+.contrast h2,
+.contrast h3,
+.contrast h4,
+.contrast h5,
+.contrast h6,
+.contrast p,
+.contrast span {
+    color: white !important;
+}
+
+.contrast a:not(.ba-link):not(.btn-carousel) {
+    color: #65c192 !important;
+}
+
+.contrast button,
+.contrast button i,
+.contrast input[type="button"],
+.contrast input[type="submit"] {
+    background: #65c192 !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.contrast a:hover,
+.contrast button:hover,
+.contrast button:focus,
+.contrast input[type="button"]:hover,
+.contrast input[type="submit"]:hover,
+.contrast .fab:hover {
+    outline: 5px auto -webkit-focus-ring-color !important;
+}
+
+.contrast .fab,
+.contrast .fab i {
+    background: #65c192 !important;
+    color: black !important;
+}
+
+.contrast .scrolled {
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.75);
+}
+
+.contrast a::before {
+    background-color: #65c192;
+}
+
+/* Exceptions */
+
+.contrast
+    div:not(.bg-1):not(.bg-2):not(.bg-3):not(.bg-4):not(.container):not(.barra-acessibilidade) {
+    background: black !important;
+    color: white !important;
+}

@@ -139,7 +139,7 @@ function valida_data(data) {
     if (ano < ano_atual - 120) {
         throw_error(
             "id_birth_date",
-            'Are you <a target="_blank" href="https://pt.wikipedia.org/wiki/Jeanne_Calment">Jeanne Calment</a>?'
+            'Você é a <a target="_blank" href="https://pt.wikipedia.org/wiki/Jeanne_Calment">Jeanne Calment</a>?'
         );
         return false;
     }

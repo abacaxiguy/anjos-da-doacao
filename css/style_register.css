@@ -1,165 +1,200 @@
-*{
+* {
     scroll-behavior: smooth;
 }
 
-html{
-	background-image: url('../img/logoImg2BG.png');
-  	background-size: 20vmin;		
-	background-blend-mode: luminosity;
-	height: 100%;
+html {
+    background-image: url("../img/logoImg2BG.png");
+    background-size: 20vmin;
+    background-blend-mode: luminosity;
+    height: 100%;
 }
 
-body{
+body {
     background: none !important;
-    color: rgb(0,132,191) !important;
-    font-family: Century Gothic, 'Century Gothic', Helvetica, 'Helvetica',  Arial, sans-serif !important;
-
-}
-	
-.imgTopo{
-	height: auto;
-	width: 70%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 1em;
-
-}
-.container{
-  	background-color: white !important;
-  	align-content: center;
-  	max-width: 700px;
-  	padding-top: 20px;
-  	padding-right: 20px;
-  	padding-left: 20px;
-  	box-shadow: 0 0 20px 5px rgba(61,226,157, 0.5);
+    color: rgb(0, 132, 191) !important;
+    font-family: Century Gothic, "Century Gothic", Helvetica, "Helvetica", Arial,
+        sans-serif !important;
 }
 
-.col-lg{
-	background: rgb(0,132,191);
+.imgTopo {
+    height: auto;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+}
+.container {
+    background-color: white !important;
+    align-content: center;
+    max-width: 700px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: 0 0 20px 5px rgba(61, 226, 157, 0.5);
 }
 
-.form{
-	margin-top: 2em !important;
+.col-lg {
+    background: rgb(0, 132, 191);
 }
 
-
-@media screen and (max-device-width: 700px){
-
-	.invalid-feedback{
-		font-size: 1.8em;
-	}
-
-	.login{
-		margin-top: 1em !important;
-		font-size: 2.675em;
-		padding-bottom: 1em !important;
-	}
-  
-	.container{
-		width: 100vw !important;
-		border-radius: 0 !important;
-		height: 100% !important;
-		margin: 0 !important;
-    	max-width: none !important;
-    	margin-bottom: 0 !important;
-	}
-
-	.col-md-6{
-		flex: none !important;
-		max-width: none !important;
-	}
-	
-	h2{
-		font-size: 6em !important;
-		margin-top: 5rem !important;
-	}
-	
-	input{
-		font-size: 3em !important;
-		height: 1.875em !important;
-		border-width: 4px !important;
-		border-radius: .275em !important;
-	}
-	
-	.imgTopo{
-		height: auto;
-    	width: 100%;
-		display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-		padding-top: 4rem;
-	}
-	
-	.fraseInicio{
-		margin-top: 3rem!important;
-		font-size: 2.5em;
-	}
-	
-	label{
-		margin-top: 3rem!important;
-		font-size: 3em !important;
-	}
-	
-	button{
-		background: rgb(61,226,157) !important;		
-		font-size: 3.375em !important;
-		border-radius: 1rem !important;
-	}
-	.links{
-		margin-top: 3rem !important;
-		font-size: 2.575em;
-	}
-
-	.h-100{
-		width: 100vw !important;
-	}
-
-	.form-text{
-		font-size: 1.8em !important;
-	}
-
-	
+.form {
+    margin-top: 2em !important;
 }
 
-input:focus, input:active{
-	outline: 0 !important;
-	border-color: rgba(61,226,157, .2) !important;
-	box-shadow: 0 0 .6em 0.09rem rgba(61,226,157) !important;
+.login {
+    font-size: 1.4rem;
 }
 
-.margens{
-	margin-top: -20px;
-	padding: 20px 30px !important;
+.fraseInicio {
+    font-size: 1.2rem;
 }
 
-button{
-        background: rgb(61,226,157) !important;
-        border: rgb(26,174,112) !important;
+label {
+    font-size: 1.2rem;
 }
 
-button:active, button:focus{
-        box-shadow: 0 0 0 0.2rem rgba(61,226,157,.5) !important;
+.form-text {
+    font-size: 1rem;
 }
 
-button:active{
-	border: rgb(26,174,112) !important;
+.invalid-feedback {
+    font-size: 1rem;
 }
 
-button:hover{
-	background: rgb(29,195,127) !important;	
+input {
+    transition: box-shadow 0.4s !important;
+    color: #495057 !important;
+    background: transparent !important;
+    font-size: 1.275em !important;
+    outline: none !important;
+    border-width: 2px !important;
+    border-radius: 0 !important;
+    margin-bottom: 1rem !important;
 }
 
-.font-media{
-	font-size: 20px;
+.margens {
+    margin-top: -20px;
+    padding: 20px 30px !important;
 }
 
-a{
-    color: rgb(61,226,157);
+a {
+    color: rgb(61, 226, 157);
 }
 
-a:hover{
-	text-decoration: none !important;
-	color: rgb(61, 226, 157);
+a:hover {
+    color: rgb(61, 226, 157);
 }
 
+button {
+    color: white;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 100, 146),
+        rgb(61, 226, 157) 50%,
+        rgb(0, 100, 146)
+    );
+    background-size: 200%;
+    border: 0 !important;
+    transition: background-position 0.4s ease !important;
+    font-size: 1.4rem !important;
+}
+
+@media screen and (max-device-width: 700px) {
+    .invalid-feedback {
+        font-size: 1.8em;
+    }
+
+    .login {
+        margin-top: 1em !important;
+        font-size: 2.675em;
+        padding-bottom: 1em !important;
+    }
+
+    .container {
+        width: 100vw !important;
+        border-radius: 0 !important;
+        height: 100% !important;
+        margin: 0 !important;
+        max-width: none !important;
+        margin-bottom: 0 !important;
+    }
+
+    .col-md-6 {
+        flex: none !important;
+        max-width: none !important;
+    }
+
+    h2 {
+        font-size: 4rem !important;
+        margin-top: 5rem !important;
+    }
+
+    input {
+        font-size: 3em !important;
+        height: 1.875em !important;
+        border-width: 4px !important;
+        border-radius: 0 !important;
+    }
+
+    .imgTopo {
+        height: auto;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 4rem;
+    }
+
+    .fraseInicio {
+        margin-top: 3rem !important;
+        font-size: 2.5em;
+    }
+
+    label {
+        margin-top: 3rem !important;
+        font-size: 3em !important;
+    }
+
+    button {
+        font-size: 3.375em !important;
+        border-radius: 0 !important;
+    }
+    .links {
+        margin-top: 3rem !important;
+        font-size: 2.575em;
+    }
+
+    .h-100 {
+        width: 100vw !important;
+    }
+
+    .form-text {
+        font-size: 1.8em !important;
+    }
+}
+
+input:not(.is-invalid):not(.is-valid) {
+    border-color: rgb(0, 132, 191);
+}
+input:focus,
+input:active {
+    outline: 0 !important;
+    border-color: rgb(61, 226, 157) !important;
+    box-shadow: 0 0 0.6em 0.09rem rgb(61, 226, 157) !important;
+}
+
+button:active,
+button:focus {
+    box-shadow: 0 !important;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 100, 146),
+        rgb(61, 226, 157) 50%,
+        rgb(0, 100, 146)
+    );
+}
+
+button:hover {
+    background-position: 100%;
+}
