@@ -115,11 +115,10 @@ body {
 }
 
 .bg-1 {
-    background-image: url(../img/idosa.png) !important;
+    background-image: url(../img/idosa.png);
 }
 .bg-2 {
     background-image: url(../img/cadeirante.jpeg);
-    background-position: right !important;
 }
 .bg-3 {
     background-image: url(../img/mulher.png);
