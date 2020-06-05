@@ -58,7 +58,7 @@
 /* Exceptions */
 
 .contrast
-    div:not(.bg-1):not(.bg-2):not(.bg-3):not(.bg-4):not(.container):not(.barra-acessibilidade) {
+    div:not(.bg-1):not(.bg-2):not(.bg-3):not(.bg-4):not(.container):not(.barra-acessibilidade):not(.active):not(.enabled):not(.vw-plugin-top-wrapper) {
     background: black !important;
     color: white !important;
 }

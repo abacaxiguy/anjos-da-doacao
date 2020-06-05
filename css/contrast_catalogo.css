@@ -20,12 +20,13 @@
 }
 
 .contrast a:not(.ba-link):not(.btn-carousel) {
-    color: #65c192 !important;
+    color: rgb(61, 226, 157) !important;
 }
 
+.contrast .btn-carousel,
 .contrast input[type="button"],
 .contrast input[type="submit"] {
-    background: #65c192 !important;
+    background: rgb(61, 226, 157) !important;
     color: black !important;
     font-weight: bold;
 }
@@ -41,7 +42,7 @@
 
 .contrast .fab,
 .contrast .fab i {
-    background: #65c192 !important;
+    background: rgb(61, 226, 157) !important;
     color: black !important;
 }
 
@@ -50,7 +51,15 @@
 }
 
 .contrast a::before {
-    background-color: #65c192;
+    background-color: rgb(61, 226, 157);
 }
 
 /* Exceptions */
+
+.contrast .mapa {
+    background-image: linear-gradient(
+        -90deg,
+        rgb(61, 226, 157),
+        rgb(61, 226, 157)
+    ) !important;
+}
