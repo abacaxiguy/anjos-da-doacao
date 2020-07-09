@@ -6,7 +6,7 @@
     <title>Anjos da Doação - Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/style_login.css" />
+    <link rel="stylesheet" href="./css/style_recuperar.css" />
     <link rel="stylesheet" href="./css/acessibilidade.css" />
     <link rel="stylesheet" href="./css/contrast.css" />
     <link rel="shortcut icon" href="./img/logoImg2.png" />
@@ -41,36 +41,23 @@
                     <a href="index.html" class="mb-5">
                         <img src="./img/logo2.png" width="350" class="imgTopo" />
                     </a>
-                    <h1 class="h1 mt-2">Login</h1>
+                    <h1 class="h1 mt-2">Recuperar Senha</h1>
                     <p class="fraseInicio">
-                        Já possui uma conta? Preencha com seus dados para
-                        entrar.
+                        Esqueceu a sua senha? Só precisamos do seu e-mail utilizado para o cadastro.
                     </p>
                     <form class="form" method="GET" action="catalogo.html">
                         <div class="form-group">
-                            <label class="h4" for="username">Usuário</label>
+                            <label class="h4" for="username">E-mail</label>
                             <input name="username" type="text" class="form-control" id="username"
                                 aria-describedby="UsuarioHelp" placeholder="Digite seu usuário" />
                         </div>
-                        <div class="form-group">
-                            <label class="h4" for="password">Senha</label>
-                            <input name="password" type="password" class="form-control" id="password"
-                                placeholder="Digite sua senha" />
-                            <p class="links esqueceu">
-                                <a href="./recuperar.html">Esqueceu sua senha?</a>
-                            </p>
-                        </div>
-
                         <button type="submit" class="btn btn-primary btn-block btn-lg mt-4 mb-3">
-                            Entrar
+                            Enviar e-mail
                         </button>
                     </form>
 
                     <div class="d-flex justify-content-center links">
-                        <p>
-                            Não tem uma conta? Crie uma
-                            <a href="register.html">agora!</a>
-                        </p>
+                        <a tabindex="10" href="login.html">Já tem uma conta?</a>
                     </div>
                 </div>
             </div>

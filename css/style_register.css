@@ -7,11 +7,12 @@ html {
     background-size: 20vmin;
     background-blend-mode: luminosity;
     height: 100%;
+    
 }
 
 body {
-    background: none !important;
     color: rgb(0, 132, 191) !important;
+    background: none !important;
     font-family: Century Gothic, "Century Gothic", Helvetica, "Helvetica", Arial,
         sans-serif !important;
 }
@@ -24,7 +25,8 @@ body {
     margin-right: auto;
     padding-bottom: 1em;
 }
-.container {
+#container {
+    /* margin-top: 6rem !important; */
     background-color: white !important;
     align-content: center;
     max-width: 700px;
