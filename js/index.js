@@ -5,20 +5,20 @@ function scrollFunction() {
         document.body.scrollTop > 20 ||
         document.documentElement.scrollTop > 20
     ) {
-        document.getElementById("barraNavegacao").classList.remove("Qscrolled");
-        document.getElementById("barraNavegacao").classList.add("scrolled");
-        document.getElementById("aparece").style.opacity = 1;
+        document.querySelector('.navbar').classList.add("scrolled");
+        document.querySelector(".imgAparece").style.opacity = 1;
     } else {
-        document.getElementById("barraNavegacao").classList.remove("scrolled");
-        document.getElementById("barraNavegacao").classList.add("Qscrolled");
-        document.getElementById("aparece").style.opacity = 0;
+        document.querySelector('.navbar').classList.remove("scrolled");
+        document.querySelector(".imgAparece").style.opacity = 0;
     }
 }
+
 function botaBg() {
-    botao = document.getElementById("botao").getAttribute("aria-expanded");
-    nav = document.getElementById("barraNavegacao");
+    botao = document.querySelector('.navbar-toggler').getAttribute("aria-expanded");
+    nav = document.querySelector('.navbar');
     if (botao == "false") {
         nav.classList.add("scrolled");
+        document.querySelector(".imgAparece").style.opacity = 1;
     } else if (
         botao == "true" &&
         !(
@@ -27,6 +27,6 @@ function botaBg() {
         )
     ) {
         nav.classList.remove("scrolled");
-        nav.classList.add("Qscrolled");
+        document.querySelector(".imgAparece").style.opacity = 0;
     }
 }

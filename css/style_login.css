@@ -212,3 +212,7 @@ button:focus {
 button:hover {
     background-position: 100%;
 }
+
+.barra-acessibilidade {
+    position: relative !important;
+}

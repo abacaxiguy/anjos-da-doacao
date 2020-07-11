@@ -233,14 +233,6 @@ i {
     width: 65px;
 }
 
-.Qscrolled {
-    background: linear-gradient(
-        90deg,
-        rgba(0, 58, 107, 1) 0%,
-        rgba(0, 132, 191, 1) 100%
-    );
-}
-
 .btn-find:hover {
     background-position: 100% 0;
 }
