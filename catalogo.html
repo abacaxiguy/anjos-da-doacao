@@ -14,36 +14,360 @@
             crossorigin="anonymous"
         />
 
-        <link rel="stylesheet" href="./css/acessibilidade.css">
-        <link rel="stylesheet" href="./css/contrast.css">
+        <link rel="stylesheet" href="./css/acessibilidade.css" />
+        <link rel="stylesheet" href="./css/contrast.css" />
         <link rel="stylesheet" href="./css/style_catalogo.css" />
     </head>
+
     <body class="mb-5">
         <div class="barra-acessibilidade">
             <div class="container">
                 <ul>
                     <li class="ba-item-left">
-                        <a class="ba-link" accesskey="1" href="#search">Barra de pesquisa [1]</a>
+                        <a class="ba-link" accesskey="1" href="#search"
+                            >Barra de pesquisa [1]</a
+                        >
                     </li>
                     <li class="ba-item-right">
-                        <a class="ba-link" accesskey="9" href="#" onclick="window.toggleContrast(); return false;">Alto Contraste [9]</a>
+                        <a
+                            class="ba-link"
+                            accesskey="9"
+                            href="#"
+                            onclick="window.toggleContrast(); return false;"
+                            >Alto Contraste [9]</a
+                        >
                     </li>
                     <li class="ba-item-right">
-                        <a class="ba-link decrease active" accesskey="8" href="#" onclick="return false" >Diminuir Fonte [8]</a>
+                        <a
+                            class="ba-link decrease active"
+                            accesskey="8"
+                            href="#"
+                            onclick="return false"
+                            >Diminuir Fonte [8]</a
+                        >
                     </li>
                     <li class="ba-item-right">
-                        <a class="ba-link increase active" accesskey="7" href="#" onclick="return false" >Aumentar Fonte [7]</a>
+                        <a
+                            class="ba-link increase active"
+                            accesskey="7"
+                            href="#"
+                            onclick="return false"
+                            >Aumentar Fonte [7]</a
+                        >
                     </li>
                 </ul>
             </div>
         </div>
+
+        <div
+            class="modal fade"
+            id="modalState"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalStateLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalStateLabel">
+                            Selecione seu estado:
+                        </h5>
+                    </div>
+                    <div class="modal-body conteudo">
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="acre"
+                                value="AC"
+                            />
+                            <label for="acre">Acre</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="alagoas"
+                                value="AL"
+                            />
+                            <label for="alagoas">Alagoas</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="amapá"
+                                value="AP"
+                            />
+                            <label for="amapá">Amapá</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="amazonas"
+                                value="AM"
+                            />
+                            <label for="amazonas">Amazonas</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="bahia"
+                                value="BA"
+                            />
+                            <label for="bahia">Bahia</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="ceara"
+                                value="CE"
+                            />
+                            <label for="ceara">Ceará</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="distritoFederal"
+                                value="DF"
+                            />
+                            <label for="distritoFederal"
+                                >Distrito Federal</label
+                            >
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="espiritoSanto"
+                                value="ES"
+                            />
+                            <label for="espiritoSanto">Espírito Santo</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="goias"
+                                value="GO"
+                            />
+                            <label for="goias">Goiás</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="maranhao"
+                                value="MA"
+                            />
+                            <label for="maranhao">Maranhão</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="matoGrosso"
+                                value="MT"
+                            />
+                            <label for="matoGrosso">Mato Grosso</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="matoGrossoSul"
+                                value="MS"
+                            />
+                            <label for="matoGrossoSul"
+                                >Mato Grosso do Sul</label
+                            >
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="minasGerais"
+                                value="MG"
+                            />
+                            <label for="minasGerais">Minas Gerais</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="para"
+                                value="PA"
+                            />
+                            <label for="para">Pará</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="paraiba"
+                                value="PB"
+                            />
+                            <label for="paraiba">Paraíba</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="parana"
+                                value="PR"
+                            />
+                            <label for="parana">Paraná</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="pernambuco"
+                                value="PE"
+                            />
+                            <label for="pernambuco">Pernambuco</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="piaui"
+                                value="PI"
+                            />
+                            <label for="piaui">Piauí</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="rioJaneiro"
+                                value="RJ"
+                            />
+                            <label for="rioJaneiro">Rio de Janeiro</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="rioNorte"
+                                value="RN"
+                            />
+                            <label for="rioNorte">Rio Grande do Norte</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="rioSul"
+                                value="RS"
+                            />
+                            <label for="rioSul">Rio Grande do Sul</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="rondonia"
+                                value="RO"
+                            />
+                            <label for="rondonia">Rondônia</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="roraima"
+                                value="RR"
+                            />
+                            <label for="roraima">Roraima</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="santaCatarina"
+                                value="SC"
+                            />
+                            <label for="santaCatarina">Santa Catarina</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="saoPaulo"
+                                value="SP"
+                            />
+                            <label for="saoPaulo">São Paulo</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                name="state"
+                                type="radio"
+                                id="sergipe"
+                                value="SE"
+                            />
+                            <label for="sergipe">Sergipe</label>
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <input
+                                type="radio"
+                                name="state"
+                                id="tocantins"
+                                value="TO"
+                            />
+                            <label for="tocantins">Tocantins</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn-gradient btn btn-modal"
+                        >
+                            Confirmar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img class="logo" src="./img/logo2.png" />
                 </a>
-                
-                <form class="my-2 ml-2 my-lg-0"></form>
+
+                <form class="my-2 ml-2 my-lg-0">
                     <input
                         class="search-input"
                         type="search"
@@ -58,15 +382,18 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
-                
-            <a href="./login.html">
-                <div class="login ml-5">
-                    <div class="icon mr-2">
-                        <i class="fas fa-user"></i>
+
+                <a href="./login.html">
+                    <div class="login ml-5">
+                        <div class="icon mr-2">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span>
+                            Entre ou<br />
+                            cadastre-se</span
+                        >
                     </div>
-                    <span> Entre ou<br> cadastre-se</span>
-                </div>
-            </a>
+                </a>
             </div>
         </nav>
 
@@ -85,7 +412,7 @@
                             src="./img/cadeira.jpg"
                             alt="Card image cap"
                         />
-                        
+
                         <div class="card-body">
                             <h4 class="card-title">Cadeira de rodas</h4>
                             <p class="card-text">
@@ -102,7 +429,7 @@
                             src="./img/muleta.jpg"
                             alt="Card image cap"
                         />
-                        
+
                         <div class="card-body">
                             <h4 class="card-title">Muleta</h4>
                             <p class="card-text">
@@ -119,7 +446,7 @@
                             src="./img/bota.jpg"
                             alt="Card image cap"
                         />
-                        
+
                         <div class="card-body">
                             <h4 class="card-title">Bota Ortopedica</h4>
                             <p class="card-text">
@@ -136,7 +463,7 @@
                             src="./img/cadeira.jpg"
                             alt="Card image cap"
                         />
-                        
+
                         <div class="card-body">
                             <h4 class="card-title">Cadeira de rodas</h4>
                             <p class="card-text">
@@ -158,7 +485,7 @@
                             src="./img/cadeira.jpg"
                             alt="Card image cap"
                         />
-                        
+
                         <div class="card-body">
                             <h4 class="card-title">Cadeira de rodas</h4>
                             <p class="card-text">
@@ -168,14 +495,14 @@
                             <a href="#" class="btn-carousel">Solicitar</a>
                         </div>
                     </div>
-                    
+
                     <div class="card">
                         <img
                             class="card-img-top"
                             src="./img/bota.jpg"
                             alt="Card image cap"
                         />
-                        
+
                         <div class="card-body">
                             <h4 class="card-title">Bota Ortopedica</h4>
                             <p class="card-text">
@@ -186,15 +513,13 @@
                         </div>
                     </div>
 
-                    
-
                     <div class="card">
                         <img
                             class="card-img-top"
                             src="./img/muleta.jpg"
                             alt="Card image cap"
                         />
-                        
+
                         <div class="card-body">
                             <h4 class="card-title">Muleta</h4>
                             <p class="card-text">
@@ -205,15 +530,13 @@
                         </div>
                     </div>
 
-                   
-
                     <div class="card">
                         <img
                             class="card-img-top"
                             src="./img/cadeira.jpg"
                             alt="Card image cap"
                         />
-                        
+
                         <div class="card-body">
                             <h4 class="card-title">Cadeira de rodas</h4>
                             <p class="card-text">
@@ -229,18 +552,20 @@
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
         </div>
     </body>
-    
+
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUlsao08ZAPQj6msRU8SblQd0bMgqza_s&callback=initMap">
-    </script>
+    <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUlsao08ZAPQj6msRU8SblQd0bMgqza_s&callback=initMap"
+    ></script>
     <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
     <script src="./js/catalogo.js"></script>
     <script src="./js/barra.js"></script>

@@ -1,11 +1,10 @@
 button = document.querySelector(".btn-modal");
 modal = document.querySelector(".modal");
-radioInputs = document.querySelectorAll("input[type='radio']");
+radioInputs = document.querySelectorAll("input[name='state']");
 currentState = getState();
 
-if (!currentState) {
-    $("#modalState").modal("show");
-}
+if (!currentState) $("#modalState").modal("show");
+else modal.remove();
 
 button.addEventListener("click", () => {
     stateChecked = null;
