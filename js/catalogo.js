@@ -1,7 +1,10 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -9.66522, lng: -35.73571 },
-        zoom: 13,
+        center: { lat: -4.309345, lng: -64.387211 },
+        //              ^^^^^^^         ^^^^^^^^
+        //      muda esses numeros (só os numeros pra ficar mais facil)
+        //      por variaveis pegas do JS de acordo com o estado 👌
+        zoom: 7,
     });
 
     const markers = locations.forEach((location) => {
@@ -13,7 +16,7 @@ function initMap() {
         return new google.maps.Marker({
             position: coords,
             label: location.label,
-            map, 
+            map,
         });
     });
 }
