@@ -200,12 +200,6 @@ button {
 
 button:focus {
     box-shadow: none !important;
-    background: linear-gradient(
-        90deg,
-        rgb(0, 100, 146),
-        rgb(61, 226, 157) 50%,
-        rgb(0, 100, 146)
-    );
     border: 0 !important;
 }
 
@@ -215,4 +209,5 @@ button:hover {
 
 .barra-acessibilidade {
     position: relative !important;
+    box-shadow: 0 0 20px 5px rgba(61, 226, 157, 0.5);
 }

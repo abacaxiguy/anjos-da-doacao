@@ -23,6 +23,7 @@ button.addEventListener("click", () => {
 function getState() {
     return localStorage.getItem("estado");
 }
+
 function setState(state) {
     localStorage.setItem("estado", "" + state);
 }

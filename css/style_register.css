@@ -7,7 +7,6 @@ html {
     background-size: 20vmin;
     background-blend-mode: luminosity;
     height: 100%;
-    
 }
 
 body {
@@ -25,8 +24,8 @@ body {
     margin-right: auto;
     padding-bottom: 1em;
 }
+
 #container {
-    /* margin-top: 6rem !important; */
     background-color: white !important;
     align-content: center;
     max-width: 700px;
@@ -187,15 +186,9 @@ input:active {
     box-shadow: 0 0 0.6em 0.09rem rgb(61, 226, 157) !important;
 }
 
-button:active,
 button:focus {
-    box-shadow: 0 !important;
-    background: linear-gradient(
-        90deg,
-        rgb(0, 100, 146),
-        rgb(61, 226, 157) 50%,
-        rgb(0, 100, 146)
-    );
+    box-shadow: none !important;
+    border: 0 !important;
 }
 
 button:hover {
@@ -204,4 +197,5 @@ button:hover {
 
 .barra-acessibilidade {
     position: relative !important;
+    box-shadow: 0 0 20px 5px rgba(61, 226, 157, 0.5);
 }
