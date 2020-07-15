@@ -1,9 +1,7 @@
-/* 61 226 157 verde */
-/* 41 38 140 roxo*/
 * {
-    scroll-behavior: smooth;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,197 +9,162 @@ body {
         sans-serif !important;
 }
 
-.sombra {
-    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.75);
+h2 {
+    font-weight: bold;
 }
 
-.sombraTexto {
-    text-shadow: -10px 10px 30px rgba(2, 11, 22, 0.5);
+/* NAVBAR */
+
+.navbar {
+    background: rgb(0, 100, 146) !important;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+        0 2px 6px 2px rgba(60, 64, 67, 0.149);
 }
 
-.verde {
-    color: rgb(61, 226, 157);
+.logo {
+    height: 70px;
 }
 
-.azul {
-    color: rgba(0, 132, 191, 1);
-}
-
-.bg-verde {
-    background: linear-gradient(
-        90deg,
-        rgba(28, 134, 164, 1) 0%,
-        rgba(0, 219, 134, 1) 100%
-    );
-}
-.bg-azul {
-    background: linear-gradient(
-        90deg,
-        rgba(0, 58, 107, 1) 0%,
-        rgba(0, 132, 191, 1) 100%
-    );
-}
-
-.branco {
-    color: #fff;
-}
-
-/*   Index.html INICIO    */
-
-.scrollBar {
-    background: #000;
-}
-
-.logoTexto {
-    width: 70%;
-}
-
-.bg-outline-verde {
-    background: rgb(61, 226, 157);
-}
-
-.bg-outline-azul {
-    background: rgba(0, 132, 191, 1);
-}
-
-.largeFont {
-    font-size: 2.5rem;
-}
-
-.smallFont {
-    font-size: 1.7rem;
-}
-
-.divSeletor {
-    margin-left: 1em;
-}
-
-.divSeletor button {
-    height: 3em;
-    margin-top: -0.5em;
-}
-
-.quemSomosTitulo {
-    text-align: left;
-}
-
-.quemSomosTexto {
-    text-align: justify;
-}
-
-.comoFuncionaTitulo {
-    text-align: right;
-}
-
-.comoFuncionaTexto {
-    text-align: justify;
-}
-
-.img_paralax {
-    width: 100% !important;
-    height: 20rem;
-    position: relative;
-    left: 0;
-    right: 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 0 !important;
-}
-
-.container-fluid {
-    padding: 0 !important;
-}
-
-.bg-1 {
-    background-image: url(../img/idosa.png);
-}
-.bg-2 {
-    background-image: url(../img/cadeirante.jpeg);
-}
-.bg-3 {
-    background-image: url(../img/mulher.png);
-}
-.bg-4 {
-    background-image: url(../img/maos.jpg);
-}
-
-.navBar {
-    position: fixed !important;
-    top: 53px;
-    width: 100% !important;
-    transition: background 1s ease 1s;
-    z-index: 5;
-    transition: 0.4s;
-    padding-top: 15px !important;
-}
-
-i {
-    color: rgb(231, 231, 231);
-}
-
-.div-nav {
-    justify-content: flex-end;
-}
-
-.ul-editavel a {
-    margin-left: 1rem;
-    position: relative;
-    font-size: 1.2rem !important;
-}
-
-.ul-editavel a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0;
-    bottom: 0;
-    left: 0;
+.btn-search {
     background-color: rgb(61, 226, 157);
-    visibility: hidden;
-    transition: all 0.2s ease-in-out;
+    border: 2px solid rgb(61, 226, 157);
+    border-left: none;
+    color: white;
+    transition: all 0.2s ease-out;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.53rem 0.7rem;
+    font-size: 16px !important;
 }
 
-.ul-editavel a:hover:before {
-    visibility: visible;
-    height: 3px;
+.btn-search:hover {
+    color: rgb(61, 226, 157);
+    background: transparent;
 }
 
-.scrolled {
+.search-input {
+    background-color: white;
+    color: rgb(17, 17, 17);
+    border: none;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.2rem !important;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+.search-input:focus,
+.search-input:active {
+    box-shadow: 0 0 0.7em 0.1rem rgba(61, 226, 157) !important;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.login .icon {
+    background: rgb(61, 226, 157);
+    padding: 0.9rem 1.15rem;
+    border-radius: 50%;
+    font-size: 16.7px !important;
+}
+
+.login .icon i {
+    color: white;
+    font-size: 2rem !important;
+}
+
+.login span {
+    width: max-content;
+}
+
+nav a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* NAVBAR */
+
+/* CAROUSEL */
+
+.carousel {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 0 !important;
+}
+
+.carousel .card {
+    border: 2px solid lightgray !important;
+    border-radius: 0 !important;
+}
+
+.carousel .card-img-top {
+    padding-top: 10px;
+    width: 220px;
+    height: 220px;
+    padding: 10px 10px;
+}
+
+.carousel .btn-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     background: linear-gradient(
         90deg,
-        rgb(0, 58, 107) 0%,
-        rgb(0, 132, 191) 100%
+        rgb(0, 100, 146),
+        rgb(61, 226, 157) 50%,
+        rgb(0, 100, 146)
     );
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
-}
-.navbar-toggler {
-    border: none !important;
-}
-
-.navbar-toggler i {
-    font-size: 7.5vmin !important;
+    background-size: 200%;
+    padding: 0.3rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    transition: background-position 0.4s ease;
 }
 
-.fab,
-.fab i {
-    color: rgb(0, 132, 191);
-    background: white;
-    align-items: center;
-    border-radius: 50%;
-    bottom: 20px;
-    right: 20px;
-    min-width: 32px;
-    min-height: 32px;
-    height: 64px;
-    width: 64px;
-    font-size: 32px !important;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    cursor: pointer;
+.carousel .btn-carousel:hover {
+    background-position: 100% 0;
+}
+
+.carousel .card-title {
+    font-weight: bold;
+}
+
+#map {
     z-index: 10;
+    height: 500px;
+    width: 100%;
+}
+
+.mapa {
+    background: rgb(0, 100, 146);
+    background-image: linear-gradient(
+        -90deg,
+        rgb(61, 226, 157),
+        rgb(0, 100, 146)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    width: fit-content;
+    margin: auto;
+}
+
+.barra-acessibilidade {
+    position: relative !important;
 }
 
 #footer {
@@ -210,6 +173,7 @@ i {
     align-items: center;
     justify-content: center;
     font-size: 1.125em;
+    background: rgb(0, 100, 146);
 }
 
 #footer p {
@@ -220,118 +184,6 @@ i {
     color: white;
 }
 
-.imgAparece {
-    transition: opacity 0.3s linear;
-    opacity: 0;
-    height: 65px;
-    width: 220px;
-}
-
-.logoImg {
-    height: 65px;
-    width: 65px;
-}
-
-.wrap-right,
-.wrap-left {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
-
-.img-wrap-right {
-    height: 50vmin;
-    padding-left: 5em;
-}
-
-.img-wrap-left {
-    height: 50vmin;
-    padding-right: 5em;
-}
-
-@media (max-width: 1000px) {
-    .wrap-right {
-        flex-direction: column !important;
-    }
-
-    .wrap-left {
-        flex-direction: column-reverse !important;
-    }
-
-    .img-wrap-right,
-    .img-wrap-left {
-        height: 20em !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-}
-
-.btn-find {
-    font-size: 1.8rem !important;
-}
-
-.btn-gradient {
-    color: white !important;
-    background: linear-gradient(
-        90deg,
-        rgb(0, 132, 191),
-        rgb(61, 226, 157) 50%,
-        rgb(0, 132, 191)
-    );
-    background-size: 200%;
-    transition: background-position 0.4s ease !important;
-}
-
-.btn-gradient:hover {
-    background-position: 100% 0;
-}
-
-.btn-gradient:focus {
-    box-shadow: none !important;
-}
-
-/* MEDIAS */
-
-@media (max-width: 700px) {
-    .logoTexto {
-        width: 80vw;
-    }
-    .largeFont {
-        font-size: 1.875rem;
-    }
-
-    .smallFont {
-        font-size: 1.275rem;
-    }
-
-    .wrap-right {
-        flex-direction: column !important;
-    }
-    .wrap-left {
-        flex-direction: column-reverse !important;
-    }
-    .img-wrap-right,
-    .img-wrap-left {
-        height: 12em !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    .btn-find {
-        font-size: 1.2rem !important;
-    }
-}
-
-@media (max-width: 500px) {
-    .imgAparece {
-        transition: opacity 0.3s linear;
-        opacity: 0;
-        height: 48px;
-        width: 150px;
-    }
-
-    .logoImg {
-        height: 48px;
-        width: 48px;
-    }
+.contrast .card {
+    color: black !important;
 }
