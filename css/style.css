@@ -120,23 +120,9 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    background: linear-gradient(
-        90deg,
-        rgb(0, 100, 146),
-        rgb(61, 226, 157) 50%,
-        rgb(0, 100, 146)
-    );
-    background-size: 200%;
     padding: 0.3rem;
     font-size: 1.4rem;
     text-decoration: none;
-    border-radius: 0.4rem;
-    transition: background-position 0.4s ease;
-}
-
-.carousel .btn-carousel:hover {
-    background-position: 100% 0;
 }
 
 .carousel .card-title {
@@ -186,4 +172,24 @@ nav a:hover {
 
 .contrast .card {
     color: black !important;
+}
+
+.btn-gradient {
+    color: white !important;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 132, 191),
+        rgb(61, 226, 157) 50%,
+        rgb(0, 132, 191)
+    );
+    background-size: 200%;
+    transition: background-position 0.4s ease !important;
+}
+
+.btn-gradient:hover {
+    background-position: 100% 0;
+}
+
+.btn-gradient:focus {
+    box-shadow: none !important;
 }

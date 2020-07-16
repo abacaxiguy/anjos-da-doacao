@@ -16,7 +16,7 @@
 
         <link rel="stylesheet" href="./css/acessibilidade.css" />
         <link rel="stylesheet" href="./css/contrast.css" />
-        <link rel="stylesheet" href="./css/style_catalogo.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/modal.css" />
     </head>
 
@@ -96,7 +96,30 @@
             </div>
         </nav>
 
-        <main style="min-height: 70vh;"></main>
+        <main class="mt-5 mb-5">
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-6">
+                        <img
+                            class="img-thumbnail"
+                            style="border: none;"
+                            src="./img/cadeira.jpg"
+                        />
+                    </div>
+                    <div class="col-6">
+                        <h1>Cadeira de rodas dobrável</h1>
+                        <p style="font-size: 1.4rem;">por <b>ADEFAL</b></p>
+                        <p style="font-size: 1.3rem;">
+                            Fabricada em aço carbono, com assento/encosto em
+                            nylon e dobrável.
+                        </p>
+                        <button class="btn btn-gradient btn-lg btn-block">
+                            Entrar na fila
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
@@ -104,14 +127,15 @@
                 <div class="vw-plugin-top-wrapper"></div>
             </div>
         </div>
+
+        <footer class="pt-5 pb-3 bg-azul" id="footer">
+            <p class="text-center justify-content-center container">
+                <a href="">Termos de Serviço</a> |
+                <a href="">Política de Privacidade</a> <br />&copy; 2020 Anjos
+                da Doação
+            </p>
+        </footer>
     </body>
-    <footer class="pt-5 pb-3 bg-azul" id="footer">
-        <p class="text-center justify-content-center container">
-            <a href="">Termos de Serviço</a> |
-            <a href="">Política de Privacidade</a> <br />&copy; 2020 Anjos da
-            Doação
-        </p>
-    </footer>
 
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
