@@ -60,6 +60,7 @@ h2 {
 .search-input:focus,
 .search-input:active {
     box-shadow: 0 0 0.7em 0.1rem rgba(61, 226, 157) !important;
+    outline: none;
 }
 
 .login {
@@ -192,4 +193,12 @@ nav a:hover {
 
 .btn-gradient:focus {
     box-shadow: none !important;
+}
+
+.produto-wrapper {
+    flex-wrap: wrap;
+}
+
+.img-thubmail {
+    margin: 0 auto !important;
 }
