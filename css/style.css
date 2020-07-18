@@ -106,14 +106,16 @@ nav a:hover {
 }
 
 .carousel .card {
-    border: 2px solid lightgray !important;
-    border-radius: 0 !important;
+    border: none;
+}
+
+.carousel .card-body {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
 }
 
 .carousel .card-img-top {
     padding-top: 10px;
-    width: 220px;
-    height: 220px;
     padding: 10px 10px;
 }
 
