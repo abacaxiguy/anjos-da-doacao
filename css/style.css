@@ -204,3 +204,9 @@ nav a:hover {
 .img-thubmail {
     margin: 0 auto !important;
 }
+
+.selected-wrapper {
+    color: rgb(1, 112, 164);
+    font-size: 2rem;
+    font-weight: bold;
+}
