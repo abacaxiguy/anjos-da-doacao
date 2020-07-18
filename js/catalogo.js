@@ -114,3 +114,7 @@ function mapAlert(message) {
     warnAlert.appendChild(button);
     mapAlerts.appendChild(warnAlert);
 }
+
+initMap()
+
+export { initMap }

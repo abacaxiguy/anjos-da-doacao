@@ -1,13 +1,16 @@
-button = document.querySelector(".btn-modal");
-modal = document.querySelector(".modal");
-radioInputs = document.querySelectorAll("input[name='state']");
-currentState = getState();
+import { initMap } from './catalogo.js'
+
+
+let button = document.querySelector(".btn-modal");
+let modal = document.querySelector(".modal");
+let radioInputs = document.querySelectorAll("input[name='state']");
+let currentState = getState();
 
 if (!currentState) $("#modalState").modal("show");
 else modal.remove();
 
 button.addEventListener("click", () => {
-    stateChecked = null;
+    let stateChecked = null;
 
     radioInputs.forEach((input) => {
         if (input.checked) stateChecked = input.value;
@@ -17,6 +20,7 @@ button.addEventListener("click", () => {
         setState(stateChecked);
         $("#modalState").modal("hide");
         modal.remove();
+        if (initMap) initMap()
     }
 });
 
