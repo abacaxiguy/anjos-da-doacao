@@ -34,7 +34,7 @@
                 "O mapa não carregou? <strong>Recarregue a página para carregar o mapa!</strong>"
             );
             console.log("[ERRO] Mapa não carregou!");
-        }
+        } else console.log('checked')
     }, 5000);
 })();
 

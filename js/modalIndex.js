@@ -1,5 +1,3 @@
-import { initMap } from "./catalogo.js";
-
 let button = document.querySelector(".btn-modal");
 let modal = document.querySelector(".modal");
 let radioInputs = document.querySelectorAll("input[name='state']");
@@ -19,7 +17,6 @@ button.addEventListener("click", () => {
         setState(stateChecked);
         $("#modalState").modal("hide");
         modal.remove();
-        initMap()
     }
 });
 
