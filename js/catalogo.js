@@ -34,7 +34,7 @@
                 "O mapa não carregou? <strong>Recarregue a página para carregar o mapa!</strong>"
             );
             console.log("[ERRO] Mapa não carregou!");
-        } else console.log('checked')
+        } else console.log("checked");
     }, 5000);
 })();
 
@@ -45,10 +45,7 @@ const locations = [
     { label: "P", coords: { lat: -9.66211, lgn: -35.72848 } },
 ];
 
-
-
 function initMap() {
-
     let stateStorage = getState();
     let latitude, longitude, region;
 
@@ -60,7 +57,7 @@ function initMap() {
         }
     });
 
-    document.querySelector('.map-selected').innerHTML = region;
+    document.querySelector(".map-selected").innerHTML = region;
 
     const map = new google.maps.Map(document.getElementById("map"), {
         center: {
@@ -82,8 +79,7 @@ function initMap() {
             map,
         });
     });
-};
-
+}
 
 function getState() {
     return localStorage.getItem("estado");
@@ -115,6 +111,4 @@ function mapAlert(message) {
     mapAlerts.appendChild(warnAlert);
 }
 
-initMap()
-
-export { initMap }
+initMap();
