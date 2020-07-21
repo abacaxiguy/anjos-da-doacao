@@ -206,7 +206,14 @@ nav a:hover {
 }
 
 .selected-wrapper {
-    color: rgb(1, 112, 164);
     font-size: 2rem;
     font-weight: bold;
+}
+
+.blue-font {
+    color: rgb(1, 112, 164);
+}
+
+.more-wrapper {
+    margin-top: 4rem !important;
 }
