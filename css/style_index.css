@@ -290,6 +290,14 @@ i {
     box-shadow: none !important;
 }
 
+.fluxograma {
+    background-image: url("../img/anjos-horizontal.png");
+    height: 220px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* MEDIAS */
 
 @media (max-width: 700px) {
@@ -319,6 +327,12 @@ i {
 
     .btn-find {
         font-size: 1.2rem !important;
+    }
+    .fluxograma {
+        background-image: url("../img/vertical.svg");
+        height: 1000px;
+        width: 300px;
+        background-position: center;
     }
 }
 
