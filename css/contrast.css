@@ -19,17 +19,17 @@
     color: white !important;
 }
 
-.contrast .btn-carousel,
+.contrast .btn-gradient,
 .contrast button,
 .contrast button i,
 .contrast input[type="button"],
 .contrast input[type="submit"] {
-    background: #65c192 !important;
+    background: yellow !important;
     color: black !important;
     font-weight: bold;
 }
 
-.contrast a:hover,
+.contrast a:not(.nav-link):hover,
 .contrast button:hover,
 .contrast button:focus,
 .contrast input[type="button"]:hover,
@@ -39,14 +39,22 @@
 }
 
 .contrast a::before {
-    background-color: #65c192;
+    background-color: yellow;
+}
+
+.contrast footer p a {
+    color: yellow !important;
+}
+
+.contrast footer{
+    box-shadow: 0 -2px 3px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
 }
 
 /* Exceptions */
 
 .contrast .fab,
 .contrast .fab i {
-    background: #65c192 !important;
+    background: yellow !important;
     color: black !important;
 }
 
@@ -62,13 +70,13 @@
 .contrast .mapa {
     background-image: linear-gradient(
         -90deg,
-        rgb(61, 226, 157),
-        rgb(61, 226, 157)
+        yellow,
+        yellow
     ) !important;
 }
 
-.contrast a:not(.ba-link):not(.btn-carousel) {
-    color: #65c192 !important;
+.contrast a:not(.ba-link):not(.btn-gradient) {
+    color: white !important;
 }
 
 .contrast .scrolled {
