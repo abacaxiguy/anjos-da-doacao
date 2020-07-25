@@ -67,10 +67,30 @@
             </a>
             <h2 id="h2">Cadastro</h2>
             <p class="fraseInicio">
-                Não possui uma conta? Faça seu cadastro agora!
+                Não possui uma conta? Escolha uma opção abaixo para cadastrar!
+            </p>
+            <p class="radio-container form-row">
+                <div class="radio-wrapper col-6">
+                    <input
+                        name="register-option"
+                        type="radio"
+                        id="user-radio"
+                        value="user"
+                    />
+                    <label for="user-radio">Usuário</label>
+                </div>
+                <div class="radio-wrapper col-6">
+                    <input
+                        name="register-option"
+                        type="radio"
+                        id="ponto-radio"
+                        value="ponto"
+                    />
+                    <label for="ponto-radio">Ponto de coleta</label>
+                </div>
             </p>
 
-            <form class="form form-user" onsubmit="return validar()">
+            <form class="form form-user hide" onsubmit="return validar()">
                 <div class="form-row">
                     <!-- first name -->
                     <div id="div_id_first_name" class="form-group col-md-6">
@@ -194,10 +214,6 @@
                                 tabindex="5"
                             />
 
-                            <small id="hint_id_username" class="form-text">
-                                Letras, números e @/./+/-/_ apenas.
-                            </small>
-
                             <p
                                 id="error_id_username"
                                 class="invalid-feedback"
@@ -271,6 +287,177 @@
                             />
 
                             <p id="error_id_cpf" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-block btn-lg mb-2 mt-4"
+                            tabindex="9"
+                        >
+                            Cadastre-se
+                        </button>
+                    </div>
+                </div>
+
+                <div class="pb-3 mt-2 login d-flex justify-content-center">
+                    <a tabindex="10" href="login.html">Já tem uma conta?</a>
+                </div>
+            </form>
+
+            <form class="form form-ponto hide" onsubmit="return validar()">
+                <div class="form-row">
+                    <!-- first name -->
+                    <div class="form-group col-md-6">
+                        <label for="">
+                            Nome da instituição
+                        </label>
+
+                        <div>
+                            <input
+                                type="text"
+                                name=""
+                                maxlength=""
+                                class="textinput textInput form-control"
+                                
+                                required
+                                tabindex="1"
+                            />
+
+                            <p
+                                
+                                class="invalid-feedback"
+                            ></p>
+                        </div>
+                    </div>
+
+                    <!-- last name -->
+
+                    <div class="form-group col-md-6">
+                        <label for="">
+                            Nome do representante
+                        </label>
+
+                        <div>
+                            <input
+                                type="text"
+                                name=""
+                                maxlength=""
+                                class="textinput textInput form-control"
+                                
+                                required
+                                tabindex="1"
+                            />
+
+                            <p
+                                
+                                class="invalid-feedback"
+                            ></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!-- first name -->
+                    <div class="form-group col-md-6">
+                        <label for="">
+                            Estado/Cidade
+                        </label>
+
+                        <div>
+                            <input
+                                type="text"
+                                name=""
+                                maxlength=""
+                                class="textinput textInput form-control"
+                                
+                                required
+                                tabindex="1"
+                            />
+
+                            <p
+                                
+                                class="invalid-feedback"
+                            ></p>
+                        </div>
+                    </div>
+
+                    <!-- last name -->
+
+                    <div class="form-group col-md-6">
+                        <label for="">
+                            Endereço de email
+                        </label>
+
+                        <div>
+                            <input
+                                type="text"
+                                name=""
+                                maxlength=""
+                                class="textinput textInput form-control"
+                                
+                                required
+                                tabindex="1"
+                            />
+
+                            <p
+                                
+                                class="invalid-feedback"
+                            ></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!-- first name -->
+                    <div class="form-group col-md-6">
+                        <label for="">
+                            Senha
+                        </label>
+
+                        <div>
+                            <input
+                                type="text"
+                                name=""
+                                maxlength=""
+                                class="textinput textInput form-control"
+                                
+                                required
+                                tabindex="1"
+                            />
+
+                            <p
+                                
+                                class="invalid-feedback"
+                            ></p>
+                        </div>
+                    </div>
+
+                    <!-- last name -->
+
+                    <div class="form-group col-md-6">
+                        <label for="">
+                            Confirmar Senha
+                        </label>
+
+                        <div>
+                            <input
+                                type="text"
+                                name=""
+                                maxlength=""
+                                class="textinput textInput form-control"
+                                
+                                required
+                                tabindex="1"
+                            />
+
+                            <p
+                                
+                                class="invalid-feedback"
+                            ></p>
                         </div>
                     </div>
                 </div>

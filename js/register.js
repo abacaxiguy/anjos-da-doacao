@@ -162,62 +162,21 @@ function limpa_input(input) {
     input.classList.remove("is-valid");
 }
 
-function validar(e) {
-    e.preventDefault();
-    erro = 0;
+(function () {
+    const radios = document.querySelectorAll("input[name='register-option']"),
+        formUser = document.querySelector(".form-user"),
+        formPonto = document.querySelector(".form-ponto");
 
-    username = document.getElementById("id_username");
-    senha = document.getElementById("id_password");
-    confimar_senha = document.getElementById("id_password2");
-    cpf = document.getElementById("id_cpf");
-    email = document.getElementById("id_email");
-    data = document.getElementById("id_birth_date");
-
-    limpa_input(senha);
-    limpa_input(confimar_senha);
-    limpa_input(cpf);
-    limpa_input(email);
-    limpa_input(username);
-    limpa_input(data);
-
-    senha = senha.value;
-    confimar_senha = confimar_senha.value;
-    cpf = cpf.value;
-    data = data.value;
-
-    if (!valida_username(username)) {
-        erro = 1;
-    }
-
-    if (!valida_email(email)) {
-        erro = 1;
-    }
-
-    if (senha != confimar_senha) {
-        throw_error("id_password", "Senhas não conferem");
-        throw_error("id_password2", "Senhas não conferem");
-        erro = 1;
-    }
-
-    if (senha.length < 6 || confimar_senha.length < 6) {
-        throw_error("id_password", "Senha tem que ter no mínimo 6 letras");
-        throw_error("id_password2", "Senha tem que ter no mínimo 6 letras");
-        erro = 1;
-    }
-
-    success("id_password");
-    success("id_password2");
-
-    if (!valida_cpf(cpf)) {
-        erro = 1;
-    }
-
-    if (!valida_data(data)) {
-        erro = 1;
-    }
-
-    if (erro == 0) {
-        return;
-    }
-    return false;
-}
+    radios.forEach((radio) => {
+        radio.addEventListener("change", (e) => {
+            // user ||| ponto
+            if (radio.value == "user") {
+                formPonto.classList.add("hide");
+                formUser.classList.remove("hide");
+            } else {
+                formUser.classList.add("hide");
+                formPonto.classList.remove("hide");
+            }
+        });
+    });
+})();
