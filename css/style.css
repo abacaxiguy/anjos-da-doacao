@@ -221,27 +221,3 @@ nav a:hover {
 }
 
 /*  */
-
-.pfp {
-    background-color: rgb(0, 100, 146);
-    color: white;
-    font-size: 5rem;
-    width: 13rem;
-    height: 13rem;
-    border-radius: 50%;
-    text-align: center;
-    display: table-cell !important;
-    overflow: hidden;
-    vertical-align: middle;
-}
-
-.pfp-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-left: 2rem;
-    padding-top: 1rem;
-}
-
-.static-half {
-    border-right: 3px solid rgb(0, 100, 146);
-}
