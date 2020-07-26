@@ -64,7 +64,7 @@ label {
     font-size: 1rem;
 }
 
-input {
+input:not([type="radio"]) {
     transition: box-shadow 0.4s !important;
     color: #495057 !important;
     background: transparent !important;
@@ -133,7 +133,7 @@ button {
         margin-top: 5rem !important;
     }
 
-    input {
+    input:not([type="radio"]) {
         font-size: 3em !important;
         height: 1.875em !important;
         border-width: 4px !important;
@@ -154,9 +154,13 @@ button {
         font-size: 2.5em;
     }
 
-    label {
+    .form-group label {
         margin-top: 3rem !important;
         font-size: 3em !important;
+    }
+
+    .radio-wrapper label {
+        font-size: 2.4em;
     }
 
     button {
@@ -213,22 +217,27 @@ form {
 
 input[type="radio"] {
     -webkit-appearance: none;
-    background-color: rgb(0, 100, 146);
     border: 3px solid rgb(0, 100, 146);
     border-radius: 50px !important;
+    border-width: 2px;
     display: inline-block;
     position: relative;
     width: 20px;
     height: 20px;
-    transition: background 0.3s ease-in;
+    transition: box-shadow, border-color 0.4s !important;
     margin-top: 10px;
 }
 
 input[type="radio"]:checked {
-    background: transparent;
-    border: 3px solid rgb(0, 100, 146);
+    background-color: transparent;
+    border: 2px solid rgb(61, 226, 157);
 }
 
 input[type="radio"]:focus {
     outline: none;
+}
+
+.radio-wrapper label {
+    padding-top: 6px;
+    padding-left: 7px;
 }
