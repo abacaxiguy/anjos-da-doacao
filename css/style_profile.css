@@ -49,6 +49,19 @@
     box-shadow: 0 4px 0 rgb(145, 145, 145);
 }
 
+.pfp-coins {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 1.5rem;
+    padding-top: 1.3rem;
+}
+
+.pfp-coins i {
+    padding-right: 0.3rem;
+    color: goldenrod;
+    font-size: 1.6rem;
+}
+
 .grid-profile {
     border: 2px solid rgb(0, 132, 191);
     padding: 1rem 0 0.5rem 0;
