@@ -79,3 +79,27 @@
     border-radius: 0 !important;
     margin-bottom: 1rem !important;
 }
+
+.grid-button {
+    font-size: 1.2rem;
+}
+
+.btn-gradient-caution {
+    color: white !important;
+    background: linear-gradient(
+        90deg,
+        rgb(212, 52, 52),
+        rgb(246, 126, 126) 50%,
+        rgb(212, 52, 52)
+    );
+    background-size: 200%;
+    transition: background-position 0.4s ease !important;
+}
+
+.btn-gradient-caution:hover {
+    background-position: 100% 0;
+}
+
+.btn-gradient-caution:focus {
+    box-shadow: none !important;
+}
