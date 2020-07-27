@@ -109,7 +109,9 @@
                 <div class="col-sm-12 col-lg-8">
                     <nav class="nav-options">
                         <div class="nav-wrapper">
-                            <a>Editar Perfil</a>
+                            <a href="./perfil/editar_perfil.html"
+                                >Editar Perfil</a
+                            >
                             <a>Seus Pedidos</a>
                             <a>Cadastar Doação</a>
                             <a>Suas Doações</a>
@@ -134,21 +136,6 @@
             </p>
         </footer>
     </body>
-
-    <!-- temporary -->
-    <script>
-        const a = document.querySelectorAll(".nav-wrapper a");
-        a.forEach((littleA) => {
-            littleA.addEventListener("click", (e) => {
-                e.target.classList.add("active");
-                a.forEach((i) => {
-                    if (i.classList.contains("active") && i != e.target)
-                        i.classList.remove("active");
-                });
-            });
-        });
-    </script>
-    <!-- temporary -->
 
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
