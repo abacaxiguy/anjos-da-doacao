@@ -63,7 +63,6 @@
 }
 
 .grid-profile {
-    border: 2px solid rgb(0, 132, 191);
     padding: 1rem 0 0.5rem 0;
 }
 
@@ -115,4 +114,8 @@
 
 .btn-gradient-caution:focus {
     box-shadow: none !important;
+}
+
+.static-header {
+    display: flex;
 }
