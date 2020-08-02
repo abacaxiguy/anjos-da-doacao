@@ -27,7 +27,7 @@
 }
 
 .nav-wrapper {
-    border-bottom: 2px solid rgb(145, 145, 145);
+    border-bottom: 2px solid rgb(0, 100, 146);
     width: 100%;
 }
 
@@ -43,10 +43,11 @@
 .nav-wrapper a.active {
     box-shadow: 0 4px 0 rgb(0, 100, 146);
     font-weight: bold;
+    color: #495057 !important;
 }
 
 .nav-wrapper a:hover:not(.active) {
-    box-shadow: 0 4px 0 rgb(145, 145, 145);
+    box-shadow: 0 4px 0 rgb(0, 100, 146);
 }
 
 .pfp-coins {
@@ -118,4 +119,49 @@
 
 .static-header {
     display: flex;
+    justify-content: space-between;
+}
+
+.order-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #495057 !important;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(1, 112, 164);
+    color: white;
+}
+
+.order {
+    border: 3px solid rgb(1, 112, 164);
+}
+
+.order-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.verification-code {
+    font-size: 1.15rem;
+}
+
+.verification-span {
+    font-weight: bold;
+}
+
+.body-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.queue-place {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.place-number {
+    font-weight: bold;
 }
