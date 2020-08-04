@@ -37,7 +37,8 @@
     padding: 0 14px;
     text-decoration: none;
     cursor: pointer;
-    transition: box-shadow 0.36s ease-out;
+    box-shadow: 0 4px 0 rgb(0, 100, 146, 0.01);
+    transition: box-shadow 0.4s cubic-bezier(0.91, 0.92, 0.24, 1.15);
 }
 
 .nav-wrapper a.active {
@@ -164,4 +165,33 @@
 
 .place-number {
     font-weight: bold;
+}
+
+.product {
+    display: flex;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.waiting-warning {
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+.cancel-order .btn {
+    font-size: 1.2rem;
+    border: 3px solid rgb(212, 52, 52);
+    color: rgb(212, 52, 52);
+    transition: all 0.36s ease;
+}
+
+.cancel-order .btn:hover {
+    background-color: rgb(212, 52, 52);
+    color: white;
+}
+.cancel-order .btn:focus {
+    box-shadow: none !important;
 }
