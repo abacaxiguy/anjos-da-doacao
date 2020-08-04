@@ -69,7 +69,7 @@ body {
 }
 
 .smallFont {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .divSeletor {
@@ -129,7 +129,7 @@ body {
 
 .navBar {
     position: fixed !important;
-    top: 53px;
+    top: 40px;
     width: 100% !important;
     transition: background 1s ease 1s;
     z-index: 5;
