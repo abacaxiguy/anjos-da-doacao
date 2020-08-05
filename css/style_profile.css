@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 .pfp {
     background-color: rgb(0, 100, 146);
     color: white;
@@ -123,6 +127,21 @@
     justify-content: space-between;
 }
 
+.custom-select {
+    border-width: 2px;
+    border-color: rgb(1, 112, 164);
+}
+
+.custom-select:focus {
+    box-shadow: 0 0 0 0.2rem rgba(61, 226, 157, 0.45);
+    border-color: rgb(61, 226, 157);
+}
+
+.custom-select:active {
+    border-color: rgb(61, 226, 157);
+    box-shadow: none !important;
+}
+
 .order-number {
     font-size: 1.2rem;
     font-weight: bold;
@@ -181,6 +200,34 @@
     font-size: 1.15rem;
 }
 
+.received-warning {
+    font-size: 1.2rem;
+}
+
+.received-date {
+    font-weight: bold;
+}
+
+.received-place {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(61, 226, 157);
+}
+
+.cancelled-warning {
+    font-size: 1.2rem;
+}
+
+.cancelled-date {
+    font-weight: bold;
+}
+
+.cancelled-place {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(212, 52, 52);
+}
+
 .cancel-order .btn {
     font-size: 1.2rem;
     border: 3px solid rgb(212, 52, 52);
@@ -194,4 +241,20 @@
 }
 .cancel-order .btn:focus {
     box-shadow: none !important;
+}
+
+.order.cancelled {
+    border-color: rgb(212, 52, 52);
+}
+
+.order.cancelled .header-wrapper {
+    background-color: rgb(212, 52, 52);
+}
+
+.order.received {
+    border-color: rgb(61, 226, 157);
+}
+
+.order.received .header-wrapper {
+    background-color: rgb(61, 226, 157);
 }

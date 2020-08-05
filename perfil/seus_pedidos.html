@@ -124,18 +124,19 @@
                     <div class="order-wrapper container">
                         <div class="static-header mt-4">
                             <div class="order-number">
-                                2 pedidos em:
+                                <span class="number-orders">0</span> pedido(s)
+                                em:
                             </div>
                             <div class="order-filter">
-                                <select name="" id="">
-                                    <option value="">Pendentes</option>
-                                    <option value="">Retirados</option>
-                                    <option value="">Cancelados</option>
+                                <select class="custom-select">
+                                    <option value="p">Pendentes</option>
+                                    <option value="r">Retirados</option>
+                                    <option value="c">Cancelados</option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="order mt-5">
+                        <div class="order pending mt-5">
                             <div class="header-wrapper px-3 py-2">
                                 <div class="order-header">
                                     Pedido realizado no dia:
@@ -193,7 +194,7 @@
                             </div>
                         </div>
 
-                        <div class="order mt-5">
+                        <div class="order pending mt-5">
                             <div class="header-wrapper px-3 py-2">
                                 <div class="order-header">
                                     Pedido realizado no dia:
@@ -253,10 +254,317 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="order received mt-5">
+                            <div class="header-wrapper px-3 py-2">
+                                <div class="order-header">
+                                    Pedido realizado no dia:
+                                    <span class="order-date">12/05/2020</span>
+                                </div>
+                                <div class="order-header">
+                                    Pedido Nº
+                                    <span class="order-id">8410</span>
+                                </div>
+                            </div>
+                            <div class="order-body mt-2 p-3">
+                                <div class="body-wrapper">
+                                    <div class="received-warning">
+                                        Retirado em:
+                                        <span class="received-date"
+                                            >29/05/2020</span
+                                        >
+                                    </div>
+
+                                    <div class="received-place">
+                                        Pedido já retirado!
+                                    </div>
+                                </div>
+                                <div class="products-wrapper mt-4 mb-4">
+                                    <div class="product mt-5">
+                                        <div class="product-image">
+                                            <img
+                                                src="../img/cadeira.jpg"
+                                                class="img-fluid"
+                                                width="150px"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-title">
+                                                Bota Ortopédica
+                                            </div>
+                                            <div class="product-donor mt-3">
+                                                Doado por:
+                                                <span class="donor-span"
+                                                    >Adefal</span
+                                                >
+                                            </div>
+                                            <div class="product-quantity">
+                                                Quantidade:
+                                                <span class="quantity-span"
+                                                    >1 unidade</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product mt-5">
+                                        <div class="product-image">
+                                            <img
+                                                src="../img/muleta.jpg"
+                                                class="img-fluid"
+                                                width="150px"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-title">
+                                                Bota Ortopédica
+                                            </div>
+                                            <div class="product-donor mt-3">
+                                                Doado por:
+                                                <span class="donor-span"
+                                                    >Adefal</span
+                                                >
+                                            </div>
+                                            <div class="product-quantity">
+                                                Quantidade:
+                                                <span class="quantity-span"
+                                                    >1 unidade</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order received mt-5">
+                            <div class="header-wrapper px-3 py-2">
+                                <div class="order-header">
+                                    Pedido realizado no dia:
+                                    <span class="order-date">16/03/2020</span>
+                                </div>
+                                <div class="order-header">
+                                    Pedido Nº
+                                    <span class="order-id">4618</span>
+                                </div>
+                            </div>
+                            <div class="order-body mt-2 p-3">
+                                <div class="body-wrapper">
+                                    <div class="received-warning">
+                                        Retirado em:
+                                        <span class="received-date"
+                                            >01/04/2020</span
+                                        >
+                                    </div>
+
+                                    <div class="received-place">
+                                        Pedido já retirado!
+                                    </div>
+                                </div>
+                                <div class="products-wrapper mt-4 mb-4">
+                                    <div class="product mt-5">
+                                        <div class="product-image">
+                                            <img
+                                                src="../img/bota.jpg"
+                                                class="img-fluid"
+                                                width="150px"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-title">
+                                                Bota Ortopédica
+                                            </div>
+                                            <div class="product-donor mt-3">
+                                                Doado por:
+                                                <span class="donor-span"
+                                                    >Adefal</span
+                                                >
+                                            </div>
+                                            <div class="product-quantity">
+                                                Quantidade:
+                                                <span class="quantity-span"
+                                                    >1 unidade</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order received mt-5">
+                            <div class="header-wrapper px-3 py-2">
+                                <div class="order-header">
+                                    Pedido realizado no dia:
+                                    <span class="order-date">16/03/2020</span>
+                                </div>
+                                <div class="order-header">
+                                    Pedido Nº
+                                    <span class="order-id">3164</span>
+                                </div>
+                            </div>
+                            <div class="order-body mt-2 p-3">
+                                <div class="body-wrapper">
+                                    <div class="received-warning">
+                                        Retirado em:
+                                        <span class="received-date"
+                                            >01/04/2020</span
+                                        >
+                                    </div>
+
+                                    <div class="received-place">
+                                        Pedido já retirado!
+                                    </div>
+                                </div>
+                                <div class="products-wrapper mt-4 mb-4">
+                                    <div class="product mt-5">
+                                        <div class="product-image">
+                                            <img
+                                                src="../img/muleta.jpg"
+                                                class="img-fluid"
+                                                width="150px"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-title">
+                                                Bota Ortopédica
+                                            </div>
+                                            <div class="product-donor mt-3">
+                                                Doado por:
+                                                <span class="donor-span"
+                                                    >Adefal</span
+                                                >
+                                            </div>
+                                            <div class="product-quantity">
+                                                Quantidade:
+                                                <span class="quantity-span"
+                                                    >1 unidade</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order cancelled mt-5">
+                            <div class="header-wrapper px-3 py-2">
+                                <div class="order-header">
+                                    Pedido realizado no dia:
+                                    <span class="order-date">16/03/2020</span>
+                                </div>
+                                <div class="order-header">
+                                    Pedido Nº
+                                    <span class="order-id">0165</span>
+                                </div>
+                            </div>
+                            <div class="order-body mt-2 p-3">
+                                <div class="body-wrapper">
+                                    <div class="cancelled-warning">
+                                        Cancelado em:
+                                        <span class="cancelled-date"
+                                            >10/02/2020</span
+                                        >
+                                    </div>
+
+                                    <div class="cancelled-place">
+                                        Este pedido foi cancelado!
+                                    </div>
+                                </div>
+                                <div class="products-wrapper mt-4 mb-4">
+                                    <div class="product mt-5">
+                                        <div class="product-image">
+                                            <img
+                                                src="../img/bota.jpg"
+                                                class="img-fluid"
+                                                width="150px"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="product-title">
+                                                Bota Ortopédica
+                                            </div>
+                                            <div class="product-donor mt-3">
+                                                Doado por:
+                                                <span class="donor-span"
+                                                    >Adefal</span
+                                                >
+                                            </div>
+                                            <div class="product-quantity">
+                                                Quantidade:
+                                                <span class="quantity-span"
+                                                    >1 unidade</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
+
+        <!-- temporary -->
+        <script>
+            const select = document.querySelector(".custom-select"),
+                orders = document.querySelectorAll(".order"),
+                spanNumber = document.querySelector(".number-orders");
+
+            let currentValue,
+                numberOrders = 0;
+
+            orders.forEach((order) => {
+                if (order.classList.contains("pending")) {
+                    order.classList.remove("hidden");
+                    numberOrders++;
+                } else order.classList.add("hidden");
+            });
+
+            spanNumber.innerText = numberOrders;
+
+            select.addEventListener("change", (e) => {
+                numberOrders = 0;
+                for (i of e.target.options) {
+                    if (i.selected) {
+                        currentValue = i.value;
+                        if (currentValue == "p") {
+                            orders.forEach((order) => {
+                                if (order.classList.contains("pending")) {
+                                    order.classList.remove("hidden");
+                                    numberOrders++;
+                                } else order.classList.add("hidden");
+                            });
+                        } else if (currentValue == "r") {
+                            orders.forEach((order) => {
+                                if (order.classList.contains("received")) {
+                                    order.classList.remove("hidden");
+                                    numberOrders++;
+                                } else order.classList.add("hidden");
+                            });
+                        } else if (currentValue == "c") {
+                            orders.forEach((order) => {
+                                if (order.classList.contains("cancelled")) {
+                                    order.classList.remove("hidden");
+                                    numberOrders++;
+                                } else {
+                                    order.classList.add("hidden");
+                                }
+                            });
+                        }
+                    }
+                }
+                spanNumber.innerText = numberOrders;
+                e.target.blur();
+            });
+        </script>
+        <!-- temporary -->
 
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
