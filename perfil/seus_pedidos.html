@@ -124,7 +124,7 @@
                     <div class="order-wrapper container">
                         <div class="static-header mt-4">
                             <div class="order-number">
-                                <span class="number-orders">0</span> pedido(s)
+                                <span class="number-orders">0 pedidos</span>
                                 em:
                             </div>
                             <div class="order-filter">
@@ -527,7 +527,10 @@
                 } else order.classList.add("hidden");
             });
 
-            spanNumber.innerText = numberOrders;
+            spanNumber.innerText =
+                numberOrders == 1
+                    ? `${numberOrders} pedido`
+                    : `${numberOrders} pedidos`;
 
             select.addEventListener("change", (e) => {
                 numberOrders = 0;
@@ -560,7 +563,10 @@
                         }
                     }
                 }
-                spanNumber.innerText = numberOrders;
+                spanNumber.innerText =
+                    numberOrders == 1
+                        ? `${numberOrders} pedido`
+                        : `${numberOrders} pedidos`;
                 e.target.blur();
             });
         </script>
