@@ -292,7 +292,7 @@ i {
 
 .fluxograma {
     background-image: url("../img/anjos-horizontal.png");
-    height: 220px;
+    height: 210px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -331,7 +331,6 @@ i {
     .fluxograma {
         background-image: url("../img/vertical.svg");
         height: 1000px;
-        width: 300px;
         background-position: center;
     }
 }

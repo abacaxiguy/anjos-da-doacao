@@ -190,6 +190,10 @@
     display: flex;
 }
 
+.product-info {
+    margin-left: 1rem;
+}
+
 .product-title {
     font-size: 1.2rem;
     font-weight: bold;
