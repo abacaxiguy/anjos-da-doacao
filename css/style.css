@@ -9,7 +9,7 @@ body {
         sans-serif !important;
 }
 
-h2 {
+.bold {
     font-weight: bold;
 }
 
@@ -70,10 +70,7 @@ h2 {
 }
 
 .login .icon {
-    background: rgb(61, 226, 157);
-    padding: 0.9rem 1.15rem;
-    border-radius: 50%;
-    font-size: 16.7px !important;
+    padding: 0 0.5rem 0 0;
 }
 
 .login .icon i {
@@ -85,13 +82,13 @@ h2 {
     width: max-content;
 }
 
-nav a {
+.navbar-light a {
     font-size: 1.1rem;
     color: white;
     text-decoration: none;
 }
 
-nav a:hover {
+.navbar-light a:hover {
     color: white;
 }
 

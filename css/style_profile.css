@@ -2,82 +2,6 @@
     display: none;
 }
 
-.pfp {
-    background-color: rgb(0, 100, 146);
-    color: white;
-    font-size: 5rem;
-    width: 13rem;
-    height: 13rem;
-    border-radius: 50%;
-    text-align: center;
-    display: table-cell !important;
-    overflow: hidden;
-    vertical-align: middle;
-}
-
-.pfp-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-left: 2rem;
-    padding-top: 1rem;
-}
-
-.static-half {
-    border-right: 3px solid rgb(0, 100, 146);
-}
-
-.nav-options {
-    display: flex;
-}
-
-.nav-wrapper {
-    border-bottom: 2px solid rgb(0, 100, 146);
-    width: 100%;
-}
-
-.nav-wrapper a {
-    font-size: 1.2rem;
-    color: black !important;
-    padding: 0 14px;
-    text-decoration: none;
-    cursor: pointer;
-    box-shadow: 0 4px 0 rgb(0, 100, 146, 0.01);
-    transition: box-shadow 0.4s cubic-bezier(0.91, 0.92, 0.24, 1.15);
-}
-
-.nav-wrapper a.active {
-    box-shadow: 0 4px 0 rgb(0, 100, 146);
-    font-weight: bold;
-    color: #495057 !important;
-}
-
-.nav-wrapper a:hover:not(.active) {
-    box-shadow: 0 4px 0 rgb(0, 100, 146);
-}
-
-.pfp-coins {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-left: 1.5rem;
-    padding-top: 1.3rem;
-}
-
-.pfp-coins i {
-    padding-right: 0.3rem;
-    color: goldenrod;
-    font-size: 1.6rem;
-}
-
-.grid-profile {
-    padding: 1rem 0 0.5rem 0;
-}
-
-.grid-label {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #495057;
-}
-
 .form-control:not(.is-invalid):not(.is-valid) {
     border-color: rgb(0, 132, 191);
 }
@@ -96,10 +20,6 @@
     border-width: 2px !important;
     border-radius: 0 !important;
     margin-bottom: 1rem !important;
-}
-
-.grid-button {
-    font-size: 1.2rem;
 }
 
 .btn-gradient-caution {
@@ -122,143 +42,63 @@
     box-shadow: none !important;
 }
 
-.static-header {
+.name-wrapper {
+    color: rgb(136, 136, 136);
+    font-size: 1.4rem;
+}
+
+.name-span {
+    font-size: 1.6rem;
+}
+
+.profile-wrapper {
+    border: 2px solid lightgray;
+    border-radius: 0.3rem;
+}
+
+.profile-nav {
+    border-bottom: 2px solid lightgray;
+}
+
+.nav-wrapper {
     display: flex;
-    justify-content: space-between;
+    align-content: center;
 }
 
-.custom-select {
-    border-width: 2px;
-    border-color: rgb(1, 112, 164);
-}
-
-.custom-select:focus {
-    box-shadow: 0 0 0 0.2rem rgba(61, 226, 157, 0.45);
-    border-color: rgb(61, 226, 157);
-}
-
-.custom-select:active {
-    border-color: rgb(61, 226, 157);
-    box-shadow: none !important;
-}
-
-.order-number {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #495057 !important;
-}
-
-.header-wrapper {
-    display: flex;
-    justify-content: space-between;
-    background: rgb(1, 112, 164);
-    color: white;
-}
-
-.order {
-    border: 3px solid rgb(1, 112, 164);
-}
-
-.order-header {
-    display: flex;
-    flex-direction: column;
-}
-
-.verification-code {
-    font-size: 1.15rem;
-}
-
-.verification-span {
+.nav-wrapper a {
+    text-align: center;
+    flex-grow: 1;
+    color: rgb(78, 78, 78);
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 2rem 1.2rem;
     font-weight: bold;
 }
 
-.body-wrapper {
-    display: flex;
-    justify-content: space-between;
+.nav-wrapper a:hover {
+    background: rgb(226, 226, 226);
 }
 
-.queue-place {
-    font-size: 1.15rem;
-    font-weight: bold;
+.nav-wrapper a.active {
+    background: rgb(226, 226, 226);
+    box-shadow: 0px 3px 0px 0px rgb(0, 132, 191);
+    color: black;
 }
 
-.place-number {
-    font-weight: bold;
+.nav-wrapper i {
+    padding-right: 0.3rem;
 }
 
-.product {
-    display: flex;
+.nav-wrapper a.active i {
+    color: rgb(0, 132, 191);
 }
 
-.product-info {
-    margin-left: 1rem;
+.profile-body {
+    padding: 2rem;
 }
 
-.product-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.waiting-warning {
-    font-weight: bold;
-    font-size: 1.15rem;
-}
-
-.received-warning {
-    font-size: 1.2rem;
-}
-
-.received-date {
-    font-weight: bold;
-}
-
-.received-place {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: rgb(61, 226, 157);
-}
-
-.cancelled-warning {
-    font-size: 1.2rem;
-}
-
-.cancelled-date {
-    font-weight: bold;
-}
-
-.cancelled-place {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: rgb(212, 52, 52);
-}
-
-.cancel-order .btn {
-    font-size: 1.2rem;
-    border: 3px solid rgb(212, 52, 52);
-    color: rgb(212, 52, 52);
-    transition: all 0.36s ease;
-}
-
-.cancel-order .btn:hover {
-    background-color: rgb(212, 52, 52);
-    color: white;
-}
-.cancel-order .btn:focus {
-    box-shadow: none !important;
-}
-
-.order.cancelled {
-    border-color: rgb(212, 52, 52);
-}
-
-.order.cancelled .header-wrapper {
-    background-color: rgb(212, 52, 52);
-}
-
-.order.received {
-    border-color: rgb(61, 226, 157);
-}
-
-.order.received .header-wrapper {
-    background-color: rgb(61, 226, 157);
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
 }
