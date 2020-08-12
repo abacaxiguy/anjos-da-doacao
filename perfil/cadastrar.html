@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-6" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="HandheldFriendly" content="true" />
@@ -88,152 +88,155 @@
                             <i class="fas fa-user"></i>
                         </div>
                         <span>
-                            Olá, João Lucas
+                            João Lucas
                         </span>
                     </div>
                 </a>
             </div>
         </nav>
-
         <main class="mt-5 mb-5 container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-4 static-half">
-                    <h2 class="blue-font mb-4">Minha Conta</h2>
-                    <div class="pfp-wrapper mt-5 container">
-                        <div class="pfp">
-                            JL
-                        </div>
-                        <div class="pfp-name">João Lucas</div>
+            <div class="profile-name">
+                <div class="name-wrapper">Olá,</div>
+                <span class="name-span bold">João Lucas</span>
+
+                <!-- <button class="btn btn-gradient-caution">Sair</button> -->
+            </div>
+            <div class="profile-wrapper mt-5 mb-5">
+                <nav class="profile-nav">
+                    <div class="nav-wrapper">
+                        <a href="./editar_perfil.html"
+                            ><i class="fas fa-id-card"></i> Editar Perfil</a
+                        >
+                        <a class="active" href="./cadastrar.html"
+                            ><i class="fas fa-archive"></i> Cadastrar
+                            Equipamento</a
+                        >
+                        <a href="./seus_pedidos.html"
+                            ><i class="fas fa-box-open"></i> Seus Pedidos</a
+                        >
+                        <a href="./suas_doacoes.html"
+                            ><i class="fas fa-receipt"></i> Suas Doações</a
+                        >
                     </div>
-                    <div class="pfp-coins">
-                        <i class="fas fa-coins"></i> 200 Moedas
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-8 pl-5">
-                    <nav class="nav-options">
-                        <div class="nav-wrapper">
-                            <a href="./editar_perfil.html">Editar Perfil</a>
-                            <a href="./seus_pedidos.html">Seus Pedidos</a>
-                            <a class="active" href="./cadastrar.html"
-                                >Cadastar Doação</a
-                            >
-                            <a href="./suas_doacoes.html">Suas Doações</a>
+                </nav>
+                <div style="min-height: 300px;" class="profile-body container">
+                    <div class="col-12">
+                        <div class="form-wrapper mt-2 container">
+                            <form action="">
+                                <div
+                                    id="div_id_first_name"
+                                    class="form-group col-12"
+                                >
+                                    <label for="id_first_name">
+                                        Nome
+                                    </label>
+
+                                    <div>
+                                        <input
+                                            type="text"
+                                            name="first_name"
+                                            maxlength="30"
+                                            class="textinput textInput form-control"
+                                            id="id_first_name"
+                                            required
+                                            tabindex="1"
+                                        />
+
+                                        <p
+                                            id="error_id_first_name"
+                                            class="invalid-feedback"
+                                        ></p>
+                                    </div>
+                                </div>
+                                <div
+                                    id="div_id_first_name"
+                                    class="form-group col-12"
+                                >
+                                    <label for="id_first_name">
+                                        Descrição
+                                    </label>
+
+                                    <div>
+                                        <textarea
+                                            type="text"
+                                            name="first_name"
+                                            class="textinput textInput form-control"
+                                            id="id_first_name"
+                                            required
+                                            tabindex="1"
+                                        >
+                                        </textarea>
+
+                                        <p
+                                            id="error_id_first_name"
+                                            class="invalid-feedback"
+                                        ></p>
+                                    </div>
+                                </div>
+                                <div
+                                    id="div_id_first_name"
+                                    class="form-group col-12"
+                                >
+                                    <label for="id_first_name">
+                                        Quantidade
+                                    </label>
+
+                                    <div>
+                                        <input
+                                            type="number"
+                                            name="first_name"
+                                            class="textinput textInput form-control"
+                                            id="id_first_name"
+                                            required
+                                            tabindex="1"
+                                        />
+
+                                        <p
+                                            id="error_id_first_name"
+                                            class="invalid-feedback"
+                                        ></p>
+                                    </div>
+                                </div>
+                                <div
+                                    id="div_id_first_name"
+                                    class="form-group col-12"
+                                >
+                                    <label for="id_first_name">
+                                        Imagem
+                                    </label>
+
+                                    <div>
+                                        <input
+                                            type="file"
+                                            name="first_name"
+                                            class="fileInput"
+                                            id="id_first_name"
+                                            required
+                                            tabindex="1"
+                                        />
+
+                                        <p
+                                            id="error_id_first_name"
+                                            class="invalid-feedback"
+                                        ></p>
+                                    </div>
+                                    <div
+                                        class="row col-12 pt-4 mt-3 btn-profile"
+                                    >
+                                        <button
+                                            class="grid-button col-6 btn btn-gradient"
+                                        >
+                                            Cadastrar
+                                        </button>
+                                        <button
+                                            class="grid-button col-6 btn btn-block btn-gradient-caution"
+                                        >
+                                            Cancelar
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </nav>
-
-                    <div class="form-wrapper mt-4">
-                        <form action="">
-                            <div
-                                id="div_id_first_name"
-                                class="form-group col-md-8"
-                            >
-                                <label for="id_first_name">
-                                    Nome
-                                </label>
-
-                                <div>
-                                    <input
-                                        type="text"
-                                        name="first_name"
-                                        maxlength="30"
-                                        class="textinput textInput form-control"
-                                        id="id_first_name"
-                                        required
-                                        tabindex="1"
-                                    />
-
-                                    <p
-                                        id="error_id_first_name"
-                                        class="invalid-feedback"
-                                    ></p>
-                                </div>
-                            </div>
-                            <div
-                                id="div_id_first_name"
-                                class="form-group col-md-8"
-                            >
-                                <label for="id_first_name">
-                                    Descrição
-                                </label>
-
-                                <div>
-                                    <textarea
-                                        type="text"
-                                        name="first_name"
-                                        class="textinput textInput form-control"
-                                        id="id_first_name"
-                                        required
-                                        tabindex="1"
-                                    >
-                                    </textarea>
-
-                                    <p
-                                        id="error_id_first_name"
-                                        class="invalid-feedback"
-                                    ></p>
-                                </div>
-                            </div>
-                            <div
-                                id="div_id_first_name"
-                                class="form-group col-md-8"
-                            >
-                                <label for="id_first_name">
-                                    Quantidade
-                                </label>
-
-                                <div>
-                                    <input
-                                        type="number"
-                                        name="first_name"
-                                        class="textinput textInput form-control"
-                                        id="id_first_name"
-                                        required
-                                        tabindex="1"
-                                    />
-
-                                    <p
-                                        id="error_id_first_name"
-                                        class="invalid-feedback"
-                                    ></p>
-                                </div>
-                            </div>
-                            <div
-                                id="div_id_first_name"
-                                class="form-group col-md-8"
-                            >
-                                <label for="id_first_name">
-                                    Imagem
-                                </label>
-
-                                <div>
-                                    <input
-                                        type="file"
-                                        name="first_name"
-                                        class="fileInput"
-                                        id="id_first_name"
-                                        required
-                                        tabindex="1"
-                                    />
-
-                                    <p
-                                        id="error_id_first_name"
-                                        class="invalid-feedback"
-                                    ></p>
-                                </div>
-                                <div class="row col-md-12 pt-3 mt-3">
-                                    <button
-                                        class="grid-button col-5 btn btn-gradient mb-5"
-                                    >
-                                        Cadastrar
-                                    </button>
-                                    <button
-                                        class="grid-button col-5 btn btn-block ml-3 btn-gradient-caution mb-5"
-                                    >
-                                        Cancelar
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>

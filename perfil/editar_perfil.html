@@ -88,7 +88,7 @@
                             <i class="fas fa-user"></i>
                         </div>
                         <span>
-                            Olá, João Lucas
+                            João Lucas
                         </span>
                     </div>
                 </a>
@@ -96,157 +96,273 @@
         </nav>
 
         <main class="mt-5 mb-5 container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-4 static-half">
-                    <h2 class="blue-font mb-4">Minha Conta</h2>
-                    <div class="pfp-wrapper mt-5 container">
-                        <div class="pfp">
-                            JL
-                        </div>
-                        <div class="pfp-name">João Lucas</div>
-                    </div>
-                    <div class="pfp-coins">
-                        <i class="fas fa-coins"></i> 200 Moedas
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-8 pl-5">
-                    <nav class="nav-options">
-                        <div class="nav-wrapper">
-                            <a class="active" href="./editar_perfil.html"
-                                >Editar Perfil</a
-                            >
-                            <a href="./seus_pedidos.html">Seus Pedidos</a>
-                            <a href="./cadastrar.html">Cadastar Doação</a>
-                            <a href="./suas_doacoes.html">Suas Doações</a>
-                        </div>
-                    </nav>
-                    <div class="grid-profile mt-4">
-                        <div class="row mb-2 container">
-                            <div class="col-5 pt-2 grid-label">
-                                Primeiro Nome
-                            </div>
-                            <div class="col-7">
-                                <input
-                                    type="text"
-                                    name="first_name"
-                                    maxlength="30"
-                                    class="textinput textInput form-control"
-                                    id="id_first_name"
-                                    value="João"
-                                    tabindex="1"
-                                />
+            <div class="profile-name">
+                <div class="name-wrapper">Olá,</div>
+                <span class="name-span bold">João Lucas</span>
 
-                                <p
-                                    id="error_id_first_name"
-                                    class="invalid-feedback"
-                                ></p>
-                            </div>
-                        </div>
-                        <div class="row mb-2 container">
-                            <div class="col-5 pt-2 grid-label">Último Nome</div>
-                            <div class="col-7">
-                                <input
-                                    type="text"
-                                    name="last_name"
-                                    maxlength="150"
-                                    class="textinput textInput form-control"
-                                    id="id_last_name"
-                                    value="Costa"
-                                    tabindex="2"
-                                />
-
-                                <p
-                                    id="error_id_last_name"
-                                    class="invalid-feedback"
-                                ></p>
-                            </div>
-                        </div>
-                        <div class="row mb-2 container">
-                            <div class="col-5 pt-2 grid-label">Senha</div>
-                            <div class="col-7">
-                                <input
-                                    type="password"
-                                    name="password"
-                                    class="textinput textInput form-control"
-                                    id="id_password"
-                                    value=""
-                                    tabindex="3"
-                                />
-
-                                <p
-                                    id="error_id_password"
-                                    class="invalid-feedback"
-                                ></p>
-                            </div>
-                        </div>
-                        <div class="row mb-2 container">
-                            <div class="col-5 pt-2 grid-label">
-                                Confirmar senha
-                            </div>
-                            <div class="col-7">
-                                <input
-                                    type="password"
-                                    name="password2"
-                                    class="textinput textInput form-control"
-                                    id="id_password2"
-                                    value=""
-                                    tabindex="4"
-                                />
-
-                                <p
-                                    id="error_id_password2"
-                                    class="invalid-feedback"
-                                ></p>
-                            </div>
-                        </div>
-                        <div class="row mb-2 container">
-                            <div class="col-5 pt-2 grid-label">Telefone</div>
-                            <div class="col-7">
-                                <input
-                                    type="text"
-                                    name="first_name"
-                                    maxlength="30"
-                                    class="textinput textInput form-control"
-                                    id="id_first_name"
-                                    value="(82) 9-8804-8494"
-                                    tabindex="5"
-                                />
-
-                                <p
-                                    id="error_id_first_name"
-                                    class="invalid-feedback"
-                                ></p>
-                            </div>
-                        </div>
-                        <div class="row container">
-                            <div class="col-5 pt-2 grid-label">CPF</div>
-                            <div class="col-7">
-                                <input
-                                    type="text"
-                                    name="cpf"
-                                    minlength="11"
-                                    class="textinput textInput form-control"
-                                    value="122.144.974-55"
-                                    id="id_cpf"
-                                    tabindex="8"
-                                />
-
-                                <p
-                                    id="error_id_cpf"
-                                    class="invalid-feedback"
-                                ></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row container pt-3">
-                        <button class="grid-button col-4 btn btn-gradient mb-5">
-                            Salvar
-                        </button>
-                        <button
-                            class="grid-button col-4 btn btn-block ml-3 btn-gradient-caution mb-5"
+                <!-- <button class="btn btn-gradient-caution">Sair</button> -->
+            </div>
+            <div class="profile-wrapper mt-5 mb-5">
+                <nav class="profile-nav">
+                    <div class="nav-wrapper">
+                        <a class="active" href="./editar_perfil.html"
+                            ><i class="fas fa-id-card"></i> Editar Perfil</a
                         >
-                            Cancelar
-                        </button>
+                        <a href="./cadastrar.html"
+                            ><i class="fas fa-archive"></i> Cadastrar
+                            Equipamento</a
+                        >
+                        <a href="./seus_pedidos.html"
+                            ><i class="fas fa-box-open"></i> Seus Pedidos</a
+                        >
+                        <a href="./suas_doacoes.html"
+                            ><i class="fas fa-receipt"></i> Suas Doações</a
+                        >
+                    </div>
+                </nav>
+
+                <div style="min-height: 300px;" class="profile-body container">
+                    <div class="container">
+                        <div class="form-row">
+                            <!-- first name -->
+                            <div
+                                id="div_id_first_name"
+                                class="form-group col-md-6"
+                            >
+                                <label for="id_first_name">
+                                    Primeiro nome
+                                </label>
+
+                                <div>
+                                    <input
+                                        type="text"
+                                        name="first_name"
+                                        maxlength="30"
+                                        class="textinput textInput form-control"
+                                        id="id_first_name"
+                                        required
+                                        tabindex="1"
+                                    />
+
+                                    <p
+                                        id="error_id_first_name"
+                                        class="invalid-feedback"
+                                    ></p>
+                                </div>
+                            </div>
+
+                            <!-- last name -->
+
+                            <div
+                                id="div_id_last_name"
+                                class="form-group col-md-6"
+                            >
+                                <label for="id_last_name">
+                                    Último nome
+                                </label>
+
+                                <div>
+                                    <input
+                                        type="text"
+                                        name="last_name"
+                                        maxlength="150"
+                                        class="textinput textInput form-control"
+                                        id="id_last_name"
+                                        required
+                                        tabindex="2"
+                                    />
+
+                                    <p
+                                        id="error_id_last_name"
+                                        class="invalid-feedback"
+                                    ></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <!-- password -->
+
+                            <div
+                                id="div_id_password"
+                                class="form-group col-md-6"
+                            >
+                                <label for="id_password">
+                                    Senha
+                                </label>
+                                <div>
+                                    <input
+                                        onfocus="limpa_input(this)"
+                                        onblur="valida_senhas(this)"
+                                        type="password"
+                                        name="password"
+                                        class="textinput textInput form-control"
+                                        id="id_password"
+                                        required
+                                        tabindex="3"
+                                    />
+
+                                    <p
+                                        id="error_id_password"
+                                        class="invalid-feedback"
+                                    ></p>
+                                </div>
+                            </div>
+
+                            <!-- confirmar senha -->
+
+                            <div
+                                id="div_id_password2"
+                                class="form-group col-md-6"
+                            >
+                                <label for="id_password2">
+                                    Confirmar senha
+                                </label>
+                                <div>
+                                    <input
+                                        onfocus="limpa_input(this)"
+                                        onblur="valida_senhas(this)"
+                                        type="password"
+                                        name="password2"
+                                        class="textinput textInput form-control"
+                                        id="id_password2"
+                                        required
+                                        tabindex="4"
+                                    />
+
+                                    <p
+                                        id="error_id_password2"
+                                        class="invalid-feedback"
+                                    ></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <!-- username -->
+
+                            <div
+                                id="div_id_username"
+                                class="form-group col-md-6"
+                            >
+                                <label for="id_username" class="requiredField">
+                                    Telefone
+                                </label>
+
+                                <div>
+                                    <input
+                                        onfocus="limpa_input(this)"
+                                        onblur="valida_username(this)"
+                                        type="text"
+                                        name="username"
+                                        maxlength="20"
+                                        class="textinput textInput form-control"
+                                        required
+                                        id="id_username"
+                                        tabindex="5"
+                                    />
+
+                                    <p
+                                        id="error_id_username"
+                                        class="invalid-feedback"
+                                    ></p>
+                                </div>
+                            </div>
+
+                            <!-- email -->
+                            <div id="div_id_email" class="form-group col-md-6">
+                                <label for="id_email">
+                                    Endereço de email
+                                </label>
+                                <div>
+                                    <input
+                                        onfocus="limpa_input(this)"
+                                        onblur="valida_email(this)"
+                                        type="email"
+                                        name="email"
+                                        maxlength="254"
+                                        class="emailinput form-control"
+                                        id="id_email"
+                                        required
+                                        tabindex="6"
+                                    />
+
+                                    <p
+                                        id="error_id_email"
+                                        class="invalid-feedback"
+                                    ></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <!-- data de nascimento -->
+                            <div
+                                id="div_id_birth_date"
+                                class="form-group col-md-6"
+                            >
+                                <label
+                                    for="id_birth_date"
+                                    class="requiredField"
+                                >
+                                    Data de Nascimento
+                                </label>
+                                <div>
+                                    <input
+                                        onfocus="limpa_input(this)"
+                                        onblur="valida_data(this.value)"
+                                        type="date"
+                                        name="birth_date"
+                                        maxlength="10"
+                                        class="form-control"
+                                        required
+                                        id="id_birth_date"
+                                        tabindex="7"
+                                    />
+
+                                    <p
+                                        id="error_id_birth_date"
+                                        class="invalid-feedback"
+                                    ></p>
+                                </div>
+                            </div>
+
+                            <!-- cpf -->
+                            <div id="div_id_cpf" class="form-group col-md-6">
+                                <label for="id_cpf" class="requiredField">
+                                    CPF
+                                </label>
+                                <div>
+                                    <input
+                                        onfocus="limpa_input(this)"
+                                        onblur="valida_cpf(this.value)"
+                                        type="text"
+                                        name="cpf"
+                                        minlength="11"
+                                        class="textinput textInput form-control"
+                                        required
+                                        id="id_cpf"
+                                        tabindex="8"
+                                    />
+
+                                    <p
+                                        id="error_id_cpf"
+                                        class="invalid-feedback"
+                                    ></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col btn-edit-profile">
+                                <button
+                                    type="submit"
+                                    class="btn btn-gradient btn-lg btn-block mb-2 mt-4"
+                                    tabindex="9"
+                                >
+                                    Editar informações
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
