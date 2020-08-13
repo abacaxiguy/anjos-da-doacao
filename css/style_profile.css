@@ -110,6 +110,19 @@
     font-size: 1.4rem;
 }
 
+.logoff button {
+    border: none;
+    background: none;
+}
+.logoff i {
+    color: rgb(212, 52, 52);
+    font-size: 1.6rem;
+}
+
+.logoff button:focus {
+    outline: none;
+}
+
 @media only screen and (max-width: 768px) {
     html {
         font-size: 50%;
