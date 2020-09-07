@@ -9,6 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="HandheldFriendly" content="true" />
         <link rel="stylesheet" href="./css/style_index.css" />
+        <link rel="stylesheet" href="./css/style_faq.css" />
         <link rel="stylesheet" href="./css/contrast.css" />
         <link rel="stylesheet" href="./css/acessibilidade.css" />
         <link rel="stylesheet" href="./css/modal.css" />
@@ -97,21 +98,25 @@
                     <div class="navbar-collapse collapse div-nav" id="navbar">
                         <ul class="navbar-nav ul-editavel">
                             <li class="nav-item active">
-                                <a class="nav-link" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="./como_doar.html"
-                                    >Como Doar</a
-                                >
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="./login.html"
-                                    >Entrar</a
+                                <a class="nav-link" href="./index.html"
+                                    ><i class="fas fa-home mr-2"></i>Home</a
                                 >
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="./catalogo.html"
+                                    ><i class="fas fa-shopping-cart mr-2"></i
                                     >Catálogo</a
+                                >
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./faq.html"
+                                    ><i class="fas fa-question mr-2"></i>FAQ</a
+                                >
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./login.html"
+                                    ><i class="fas fa-sign-in-alt mr-1"></i>
+                                    Entrar</a
                                 >
                             </li>
                         </ul>
@@ -132,13 +137,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 mt-5">
-                        <div class="mt-5">
-                            <div
-                                class="question-box bg-verde mt-5"
-                                style="padding: 4rem"
-                            >
-                                <span>Q: Como adquirir um equipamento?</span>
-                                <span style="color: aqua">+</span>
+                        <div class="question-container mt-10">
+                            <div class="question-box" style="padding: 2rem">
+                                <span>Como adquirir um equipamento?</span>
+                                <span class="expand-button">+</span>
+                            </div>
+                        </div>
+                        <div class="question-container mt-4">
+                            <div class="question-box" style="padding: 2rem">
+                                <span>Como adquirir um equipamento?</span>
+                                <span class="expand-button">+</span>
                             </div>
                         </div>
                     </div>
@@ -163,6 +171,7 @@
     </body>
 
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="./js/faq.js"></script>
     <script>
         new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>

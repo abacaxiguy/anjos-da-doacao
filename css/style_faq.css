@@ -1,0 +1,13 @@
+.mt-10 {
+    margin-top: 10rem !important;
+}
+
+.question-box {
+    border: 2px solid rgba(255, 255, 255, 0.437);
+    border-radius: 0.7rem;
+    transition: 0.5s all ease;
+}
+
+.expand-button {
+    cursor: pointer;
+}
