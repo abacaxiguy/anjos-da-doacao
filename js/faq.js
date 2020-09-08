@@ -1,9 +1,13 @@
-let span = document.querySelector(".expand-button");
+let spans = document.querySelectorAll(".expand-button");
 
-span.addEventListener("click", () => {
-    if (span.parentElement.style.height == "10rem") {
-        span.parentElement.style.height = "5rem";
-    } else {
-        span.parentElement.style.height = "10rem";
-    }
+spans.forEach((span) => {
+    span.addEventListener("click", () => {
+        span.classList.toggle("active");
+        if (span.parentElement.style.maxHeight) {
+            span.parentElement.style.maxHeight = null;
+        } else {
+            span.parentElement.style.maxHeight =
+                span.parentElement.scrollHeight + "px";
+        }
+    });
 });
