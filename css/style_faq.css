@@ -7,7 +7,11 @@
 }
 
 .question-box {
-    border: 2px solid rgba(255, 255, 255, 0.437);
+    background: linear-gradient(
+        90deg,
+        rgba(28, 134, 164, 1) 0%,
+        rgba(0, 219, 134, 1) 100%
+    );
     border-radius: 0.7rem;
     transition: 0.5s all ease;
     max-height: 5rem;
@@ -50,4 +54,9 @@
 
 .bigger-text {
     flex-grow: 11;
+}
+
+.contrast .question-box {
+    background: black !important;
+    border: 2px solid yellow;
 }
