@@ -218,3 +218,16 @@ body {
 }
 
 /*  */
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler i {
+    font-size: 7.5vmin;
+    color: rgb(61, 226, 157);
+}
+
+.navbar-brand {
+    margin-right: 0 !important;
+}
