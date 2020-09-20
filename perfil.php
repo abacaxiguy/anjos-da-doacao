@@ -1,5 +1,9 @@
 <?php
-require('./autenticador.php');
+session_start();
+if (!isset($_SESSION['authentication']) || !$_SESSION['authentication']) {
+    header('location: ./login.php?login=erro');
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
