@@ -1,6 +1,13 @@
 <?php
 
 session_start();
+
+if (!isset($_SESSION['authentication']) || !$_SESSION['authentication'] || !$_SESSION['ponto']) {
+    header('location: ./login.php?login=erro');
+} else {
+    header('location: /index.php');
+}
+
 if ($_POST['quantity'] < 1 || !$_POST['name'] || !$_POST['description']) {
     header('location: admin_cadastrar.php?authentication=false');
 } else {       // ponto vv

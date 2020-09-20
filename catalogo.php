@@ -338,7 +338,7 @@ fclose($file);
             <div class="carousel row mb-5">
 
                 <?php
-                $just_four = 0;
+                $just_four = -1;
                 foreach ($products as $x) {
                     $just_four++;
 
@@ -362,7 +362,7 @@ fclose($file);
                         </div>
                     </div>
                 <?php
-                    if (($just_four % 5 == 0) && $just_four != 0) {
+                    if ($just_four % 4 == 0 && $just_four != 0) {
                         echo '</div>
                         <div class="carousel row mb-5">';
                     }

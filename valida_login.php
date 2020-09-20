@@ -27,5 +27,5 @@ if ($authenticated) {
     $_SESSION['id'] = $id_user;
     $_SESSION['ponto'] = $ponto;
 } else {
-    header('location: /login.php?authenticated=false');
+    header('location: ./login.php?authenticated=false');
 }
