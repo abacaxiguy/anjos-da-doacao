@@ -41,30 +41,38 @@ require('../autenticador.php');
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="../catalogo.php">
+
+            <a class="navbar-brand" href="../catalogo.php" style="flex-grow: 0.1">
                 <img class="logo" src="../img/logo2.png" />
             </a>
 
-            <form class="my-2 ml-2 my-lg-0 d-flex">
-                <input class="search-input" type="search" placeholder="O que procura?" aria-label="Pesquisar" results="5" name="s" id="search" />
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
 
-                <button class="btn-search" type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
+            <div class="navbar-collapse collapse div-nav" id="navbar">
+                <form class="my-2 ml-2 my-lg-0 d-flex" style="flex-grow: 3">
+                    <input class="search-input" type="search" placeholder="O que procura?" aria-label="Pesquisar" results="5" name="s" id="search" />
 
-            <a href="../perfil.php">
-                <div class="login ml-5">
-                    <div class="icon mr-2">
-                        <i class="fas fa-user"></i>
+                    <button class="btn-search" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+                <a href="../perfil.php">
+                    <div class="login ml-5">
+                        <div class="icon mr-2">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span>
+                            João Lucas
+                        </span>
                     </div>
-                    <span>
-                        João Lucas
-                    </span>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </nav>
+
     <main class="mt-5 mb-5 container">
         <div class="profile-name">
             <div class="name-wrapper">Olá,</div>
