@@ -41,7 +41,7 @@
     <div class="bg-azul">
         <nav class="navbar navBar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.php">
                     <img class="logoImg" src="./img/logoImg2.png" alt="Logo" title="Logo" />
                     <img src="./img/logoTexto2.png" class="imgAparece" alt="Logo" title="Logo" />
                 </a>

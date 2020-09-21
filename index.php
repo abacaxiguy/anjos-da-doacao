@@ -295,12 +295,13 @@ if (isset($_SESSION['authentication']) && $_SESSION['authentication']) {
         </section>
 
         <div>
-            <div class="">
-                <div class="pt-5 pb-5">
+            <div class="bg-verde branco">
+                <div class="pt-5 pb-5 container">
                     <h1 class="container comoFuncionaTitulo largeFont sombraTexto pr-5 pt-5">
                         Como Funciona
                     </h1>
-                    <div class="mt-5 mb-5 fluxograma"></div>
+                    <div class="mt-5 mb-5 fluxograma "></div>
+                    <h3>Ficou com dúvidas? Tire-as <a class="branco" href="./faq.php">aqui!</a></h3>
                 </div>
             </div>
         </div>
