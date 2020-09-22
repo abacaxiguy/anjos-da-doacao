@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>Anjos da Doação - Recupere sua senha</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/style_recuperar.css" />
+    <link rel="stylesheet" href="./css/style_login.css" />
     <link rel="stylesheet" href="./css/acessibilidade.css" />
     <link rel="stylesheet" href="./css/contrast.css" />
     <link rel="shortcut icon" href="./img/logoImg2.png" />
@@ -33,7 +33,7 @@
 
     <div class="container">
         <div class="d-flex justify-content-center h-100">
-            <div class="card">
+            <div class="card card-recuperar">
                 <div class="col-lg margens">
                     <a href="index.php" class="mb-5">
                         <img src="./img/logo2.png" width="350" class="imgTopo" />

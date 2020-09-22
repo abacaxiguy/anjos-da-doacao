@@ -171,7 +171,8 @@ body {
 }
 
 .contrast .card {
-    color: black !important;
+    border: 3px solid;
+    background: transparent !important;
 }
 
 .btn-gradient {
@@ -211,6 +212,10 @@ body {
 
 .blue-font {
     color: rgb(1, 112, 164);
+}
+
+.contrast .blue-font {
+    color: yellow;
 }
 
 .more-wrapper {

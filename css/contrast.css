@@ -1,4 +1,5 @@
 .contrast,
+.contrast body,
 .contrast nav,
 .contrast header,
 .contrast footer,
@@ -84,6 +85,10 @@
 
 .contrast a:not(.ba-link):not(.btn-gradient) {
     color: white !important;
+}
+
+.contrast a.ba-link:hover {
+    color: black !important;
 }
 
 .contrast .scrolled {

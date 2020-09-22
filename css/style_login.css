@@ -26,12 +26,17 @@ body {
 
 .card {
     height: 550px;
-    margin-top: 40px;
+    margin-top: 70px;
     margin-bottom: 120px;
     width: 500px;
     color: rgb(0, 132, 191);
     border: none !important;
     background: white !important;
+}
+
+.card-recuperar {
+    height: 400px !important;
+    margin-bottom: 110px !important;
 }
 
 .container {
@@ -210,4 +215,22 @@ button:hover {
 .barra-acessibilidade {
     position: relative !important;
     box-shadow: 0 0 20px 5px rgba(61, 226, 157, 0.5);
+}
+
+.contrast .col-lg {
+    background: black !important;
+    border: 3px solid white !important;
+}
+
+.contrast input {
+    border-color: yellow !important;
+    color: white !important;
+}
+
+.contrast label {
+    color: yellow !important;
+}
+
+.contrast a:not(.ba-link) {
+    color: yellow !important;
 }

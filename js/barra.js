@@ -19,12 +19,12 @@
     }
 
     function updateViewContrast() {
-        const body = document.body;
+        const html = document.querySelector("html");
 
         if (currentContrast === null) currentContrast = getContrastState();
 
-        if (currentContrast) body.classList.add("contrast");
-        else body.classList.remove("contrast");
+        if (currentContrast) html.classList.add("contrast");
+        else html.classList.remove("contrast");
     }
 
     function toogleContrast() {

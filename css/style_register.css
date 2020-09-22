@@ -241,3 +241,20 @@ input[type="radio"]:focus {
     padding-top: 6px;
     padding-left: 7px;
 }
+
+.contrast #container {
+    border: 3px solid;
+    background: black !important;
+}
+
+.contrast input {
+    border-color: yellow !important;
+}
+
+.contrast label {
+    color: yellow !important;
+}
+
+.contrast a:not(.ba-link) {
+    color: yellow !important;
+}
