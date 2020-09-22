@@ -208,7 +208,7 @@ if (isset($_SESSION['authentication']) && $_SESSION['authentication']) {
                 </button>
 
                 <div class="navbar-collapse collapse div-nav" id="navbar">
-                    <ul class="navbar-nav ul-editavel">
+                    <ul class="navbar-nav ul-editavel mt-3">
                         <li class="nav-item active">
                             <a class="nav-link" href="./index.php"><i class="fas fa-home mr-2"></i>Home</a>
                         </li>
@@ -301,7 +301,7 @@ if (isset($_SESSION['authentication']) && $_SESSION['authentication']) {
                         Como Funciona
                     </h1>
                     <div class="mt-5 mb-5 fluxograma "></div>
-                    <h3>Ficou com dúvidas? Tire-as <a class="branco" href="./faq.php">aqui!</a></h3>
+                    <h3>Ficou com dúvidas? Tire-as <a class="branco faq-link" href="./faq.php">aqui!</a></h3>
                 </div>
             </div>
         </div>

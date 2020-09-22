@@ -247,23 +247,6 @@ i {
     padding-right: 5em;
 }
 
-@media (max-width: 1000px) {
-    .wrap-right {
-        flex-direction: column !important;
-    }
-
-    .wrap-left {
-        flex-direction: column-reverse !important;
-    }
-
-    .img-wrap-right,
-    .img-wrap-left {
-        height: 20em !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-}
-
 .btn-find {
     font-size: 1.8rem !important;
 }
@@ -295,7 +278,28 @@ i {
     background-repeat: no-repeat;
 }
 
+.faq-link:hover {
+    color: white !important;
+}
+
 /* MEDIAS */
+
+@media (max-width: 1000px) {
+    .wrap-right {
+        flex-direction: column !important;
+    }
+
+    .wrap-left {
+        flex-direction: column-reverse !important;
+    }
+
+    .img-wrap-right,
+    .img-wrap-left {
+        height: 20em !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
 
 @media (max-width: 700px) {
     .logoTexto {
