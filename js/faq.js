@@ -1,8 +1,9 @@
-let spans = document.querySelectorAll(".expand-button");
+let boxes = document.querySelectorAll(".question-box");
 
-spans.forEach((span) => {
-    span.addEventListener("click", () => {
-        questionBox = span.parentElement;
+boxes.forEach((box) => {
+    box.addEventListener("click", () => {
+        questionBox = box;
+        span = box.querySelector(".expand-button");
         span.classList.toggle("active");
         if (questionBox.style.maxHeight) {
             questionBox.style.maxHeight = null;

@@ -21,6 +21,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    cursor: pointer;
 }
 
 .question {
@@ -59,4 +60,7 @@
 .contrast .question-box {
     background: black !important;
     border: 2px solid yellow;
+}
+
+@media (max-width: 1000px) {
 }
