@@ -27,7 +27,9 @@
 .question {
     flex-grow: 10;
     padding-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
+    user-select: none;
+    width: 70%;
 }
 
 .expand-button {
@@ -39,14 +41,14 @@
 
 .icon-question {
     height: 0.5rem;
-    width: 1rem;
-    flex-grow: 0.5;
+    width: 2rem;
     display: flex;
     align-items: center;
 }
 
 .icon-question img {
     width: 100%;
+    filter: invert(1);
 }
 
 .expand-button.active {
@@ -63,4 +65,53 @@
 }
 
 @media (max-width: 1000px) {
+    .question {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .question {
+        font-size: 0.8rem;
+    }
+    .expand-button {
+        font-size: 1.8rem;
+    }
+    .question-box {
+        max-height: 4.9rem;
+    }
+    .bigger-text {
+        font-size: 0.8rem;
+    }
+    .icon-question {
+        width: 1.8rem;
+    }
+}
+@media (max-width: 370px) {
+    .question {
+        font-size: 0.7rem;
+    }
+    .bigger-text {
+        font-size: 0.7rem;
+    }
+    .icon-question {
+        width: 1.6rem;
+    }
+}
+@media (max-width: 320px) {
+    .question {
+        font-size: 0.6rem;
+    }
+    .bigger-text {
+        font-size: 0.5rem;
+    }
+    .expand-button {
+        font-size: 1.4rem;
+    }
+    .question-box {
+        max-height: 4.2rem;
+    }
+    .icon-question {
+        width: 1.4rem;
+    }
 }

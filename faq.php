@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html class="bg-azul" lang="pt-BR">
 
 <head>
     <meta charset="utf-8" />
@@ -49,7 +49,7 @@
                     <i class="fas fa-bars"></i>
                 </button>
 
-                <div class="navbar-collapse collapse div-nav" id="navbar">
+                <div class="navbar-collapse collapse div-nav align-self-center" id="navbar">
                     <ul class="navbar-nav ul-editavel">
                         <li class="nav-item active">
                             <a class="nav-link" href="./index.php"><i class="fas fa-home mr-2"></i>Home</a>
@@ -85,7 +85,29 @@
                     <div class="question-container mt-10">
                         <div class="question-box">
                             <div class="icon-question">
-                                <img class="question-icon" src="./img/icons/anjo_b.png" alt="Anjo" />
+                                <img class="question-icon" src="./img/icons/empresa.png" alt="Anjo" />
+                            </div>
+                            <span class="question ">Sou uma empresa e não possuo um estabelecimento, como posso ajudar?</span>
+                            <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bigger-text mt-3 pb-4">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-container mt-4">
+                        <div class="question-box">
+                            <div class="icon-question">
+                                <img class="question-icon" src="./img/icons/donatario.png" alt="Anjo" />
                             </div>
                             <span class="question">Como adquirir um equipamento?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
@@ -107,7 +129,73 @@
                     <div class="question-container mt-4">
                         <div class="question-box">
                             <div class="icon-question">
-                                <img class="question-icon" src="./img/icons/anjo_b.png" alt="Anjo" />
+                                <img class="question-icon" src="./img/icons/donatario.png" alt="Anjo" />
+                            </div>
+                            <span class="question">Como adquirir um equipamento?</span>
+                            <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bigger-text mt-3 pb-4">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-container mt-4">
+                        <div class="question-box">
+                            <div class="icon-question">
+                                <img class="question-icon" src="./img/icons/donatario.png" alt="Anjo" />
+                            </div>
+                            <span class="question">Como adquirir um equipamento?</span>
+                            <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bigger-text mt-3 pb-4">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-container mt-4">
+                        <div class="question-box">
+                            <div class="icon-question">
+                                <img class="question-icon" src="./img/icons/donatario.png" alt="Anjo" />
+                            </div>
+                            <span class="question">Como adquirir um equipamento?</span>
+                            <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bigger-text mt-3 pb-4">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-container mt-4">
+                        <div class="question-box">
+                            <div class="icon-question">
+                                <img class="question-icon" src="./img/icons/donatario.png" alt="Anjo" />
                             </div>
                             <span class="question">Como adquirir um equipamento?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
