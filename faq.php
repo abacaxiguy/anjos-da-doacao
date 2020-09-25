@@ -87,7 +87,7 @@
                             <div class="icon-question">
                                 <img class="question-icon" src="./img/icons/empresa.png" alt="Anjo" />
                             </div>
-                            <span class="question ">Sou uma empresa e não possuo um estabelecimento, como posso ajudar?</span>
+                            <span class="question ">Sou uma empresa que não possui estabelecimento, como posso ajudar?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
                             <div class="bigger-text mt-3 pb-4">
                                 Lorem ipsum dolor sit amet consectetur
@@ -109,7 +109,7 @@
                             <div class="icon-question">
                                 <img class="question-icon" src="./img/icons/donatario.png" alt="Anjo" />
                             </div>
-                            <span class="question">Como adquirir um equipamento?</span>
+                            <span class="question">Preciso de um equipamento, como adquirir?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
                             <div class="bigger-text mt-3 pb-4">
                                 Lorem ipsum dolor sit amet consectetur
@@ -129,9 +129,9 @@
                     <div class="question-container mt-4">
                         <div class="question-box">
                             <div class="icon-question">
-                                <img class="question-icon" src="./img/icons/donatario.png" alt="Anjo" />
+                                <img class="question-icon" src="./img/icons/mulher.png" alt="Anjo" />
                             </div>
-                            <span class="question">Como adquirir um equipamento?</span>
+                            <span class="question">Tenho um equipamento em mãos, como realizar uma doação?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
                             <div class="bigger-text mt-3 pb-4">
                                 Lorem ipsum dolor sit amet consectetur
@@ -151,9 +151,9 @@
                     <div class="question-container mt-4">
                         <div class="question-box">
                             <div class="icon-question">
-                                <img class="question-icon" src="./img/icons/donatario.png" alt="Anjo" />
+                                <img class="question-icon" src="./img/icons/armazem-de-dados.png" alt="Anjo" />
                             </div>
-                            <span class="question">Como adquirir um equipamento?</span>
+                            <span class="question">Tenho um estabelecimento, como posso ajudar?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
                             <div class="bigger-text mt-3 pb-4">
                                 Lorem ipsum dolor sit amet consectetur
@@ -173,11 +173,32 @@
                     <div class="question-container mt-4">
                         <div class="question-box">
                             <div class="icon-question">
-                                <img class="question-icon" src="./img/icons/donatario.png" alt="Anjo" />
+                                <img class="question-icon" src="./img/icons/anjo.png" alt="Anjo" />
                             </div>
-                            <span class="question">Como adquirir um equipamento?</span>
+                            <span class="question">Não possuo nem uma empresa nem um equipamento, o que fazer?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
                             <div class="bigger-text mt-3 pb-4">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsam ipsum reprehenderit
+                                inventore doloremque facilis, accusamus a ut
+                                autem possimus beatae eveniet eligendi vitae
+                                nam soluta voluptates aliquid cum sit quam?
+
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Ipsam ipsum reprehenderit
                                 inventore doloremque facilis, accusamus a ut
@@ -192,27 +213,7 @@
                         </div>
                     </div>
 
-                    <div class="question-container mt-4">
-                        <div class="question-box">
-                            <div class="icon-question">
-                                <img class="question-icon" src="./img/icons/donatario.png" alt="Anjo" />
-                            </div>
-                            <span class="question">Como adquirir um equipamento?</span>
-                            <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
-                            <div class="bigger-text mt-3 pb-4">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>

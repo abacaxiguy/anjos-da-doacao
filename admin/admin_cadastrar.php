@@ -145,13 +145,12 @@ require('../autenticador.php');
 
                                     <p id="error_id_first_name" class="invalid-feedback"></p>
                                 </div> -->
-                                <div class="row col-12 pt-4 mt-3 btn-profile">
-                                    <button class="grid-button col-6 btn btn-gradient">
-                                        Cadastrar
-                                    </button>
-                                    <button class="grid-button col-6 btn btn-block btn-gradient-caution">
-                                        Cancelar
-                                    </button>
+                                <div class="row">
+                                    <div class="col btn-edit-profile">
+                                        <button type="submit" class="btn btn-gradient btn-lg btn-block mb-2 mt-4" tabindex="9">
+                                            Cadastrar
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
