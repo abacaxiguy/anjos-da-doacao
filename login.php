@@ -98,17 +98,18 @@ if (isset($_GET['authenticated']) && $_GET['authenticated'] == 'false') {
         </div>
     </div>
 
-    <div class="faq-fab ">
-        <a href="./faq.php">
-            <button class="btn btn-gradient"><i class="fas fa-question-circle mr-1"></i>Ficou com alguma dúvida? </button>
-        </a>
-    </div>
-
 </body>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
     new window.VLibras.Widget("https://vlibras.gov.br/app");
 </script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 <script src="./js/barra.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#cpf").mask("000.000.000-00");
+    });
+</script>
 
 </html>

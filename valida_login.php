@@ -14,10 +14,14 @@ $ponto = null;
 $authenticated = false;
 
 foreach ($usuarios_bd as $usuario) {
-    if ($usuario['cpf'] == $_POST['cpf'] && $usuario['password'] == $_POST['password']) {
+    preg_match_all('/\d+/', $_POST['cpf'], $cpf, PREG_UNMATCHED_AS_NULL);
+    $cpf = implode('', $cpf[0]);
+    echo $cpf;
+    if ($usuario['cpf'] == $cpf && $usuario['password'] == $_POST['password']) {
         $authenticated = true;
         $id_user = $usuario['id'];
         $ponto = $usuario['ponto'];
+        break;
     }
 }
 
