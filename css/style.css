@@ -27,7 +27,7 @@ body {
 
 .btn-search {
     background-color: rgb(61, 226, 157);
-    border: 2px solid rgb(61, 226, 157);
+    border: 3px solid rgb(61, 226, 157);
     border-left: none;
     color: white;
     transition: all 0.2s ease-out;
@@ -250,6 +250,27 @@ body {
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
     padding: 0.7rem;
+}
+
+.custom-select {
+    border-width: 3px;
+    border-color: rgb(61, 226, 157);
+    height: 3rem;
+    width: unset;
+}
+
+.custom-select:focus {
+    box-shadow: 0 0 0 0.2rem rgba(61, 226, 157, 0.45);
+    border-color: rgb(61, 226, 157);
+}
+
+.custom-select:active {
+    border-color: rgb(61, 226, 157);
+    box-shadow: none !important;
+}
+
+.search-wrapper {
+    justify-content: space-between;
 }
 
 @media (max-width: 500px) {

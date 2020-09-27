@@ -16,7 +16,6 @@ $authenticated = false;
 foreach ($usuarios_bd as $usuario) {
     preg_match_all('/\d+/', $_POST['cpf'], $cpf, PREG_UNMATCHED_AS_NULL);
     $cpf = implode('', $cpf[0]);
-    echo $cpf;
     if ($usuario['cpf'] == $cpf && $usuario['password'] == $_POST['password']) {
         $authenticated = true;
         $id_user = $usuario['id'];

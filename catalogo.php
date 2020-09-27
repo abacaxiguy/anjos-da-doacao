@@ -298,7 +298,8 @@ fclose($file);
 
     <div class="container mt-5">
         <div class="section mt-5">
-            <h2 class="bold blue-font mb-4">Maior Estoque</h2>
+            <h2 class="bold blue-font mb-4">Novos equipamentos</h2>
+
             <div class="carousel row mb-5">
                 <?php
                 $just_four = 0;
@@ -334,7 +335,27 @@ fclose($file);
         </div>
 
         <div class="section mt-5 mb-5">
-            <h2 class="bold blue-font mb-4">Novos produtos</h2>
+            <h2 class="bold blue-font mb-4">Todos os equipamentos</h2>
+
+            <div class="search-wrapper my-5 d-flex">
+                <form class="d-flex" style="width: 50%;">
+                    <input style="border: 3px solid rgb(61, 226, 157); " class="search-input" type="search" placeholder="O que procura?" aria-label="Pesquisar" results="5" name="s" />
+
+                    <button class="btn-search" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+
+                <select class="custom-select">
+                    <option value="mr">Mais Recentes</option>
+                    <option value="ma">Mais Antigos</option>
+                    <option value="ac">Ordem Alfabética Crescente</option>
+                    <option value="ad">Ordem Alfabética Decrescente</option>
+                </select>
+
+            </div>
+
             <div class="carousel row mb-5">
 
                 <?php
