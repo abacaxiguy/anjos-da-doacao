@@ -97,6 +97,13 @@ if (isset($_GET['authenticated']) && $_GET['authenticated'] == 'false') {
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
+
+    <div class="faq-fab ">
+        <a href="./faq.php">
+            <button class="btn btn-gradient"><i class="fas fa-question-circle mr-1"></i>Ficou com alguma dúvida? </button>
+        </a>
+    </div>
+
 </body>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>

@@ -108,6 +108,12 @@ require('../autenticador.php');
         </div>
     </div>
 
+    <div class="faq-fab ">
+        <a href="../faq.php">
+            <button class="btn btn-gradient"><i class="fas fa-question-circle mr-1"></i> Ficou com alguma dúvida? </button>
+        </a>
+    </div>
+
     <footer class="pt-5 pb-3 bg-azul" id="footer">
         <p class="text-center justify-content-center container">
             <a href="">Termos de Serviço</a> |

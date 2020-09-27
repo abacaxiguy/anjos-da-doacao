@@ -236,3 +236,29 @@ body {
 .navbar-brand {
     margin-right: 0 !important;
 }
+
+.faq-fab {
+    position: fixed;
+    right: 0;
+    top: 80%;
+    z-index: 99;
+}
+
+.faq-fab button {
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    padding: 0.7rem;
+}
+
+@media (max-width: 500px) {
+    .faq-fab button {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        height: 48px;
+    }
+}

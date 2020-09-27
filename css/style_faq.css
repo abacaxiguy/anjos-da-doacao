@@ -15,7 +15,7 @@
     border-radius: 0.7rem;
     transition: 0.5s all ease;
     max-height: 5rem;
-    padding: 2rem;
+    padding: 1.8rem;
     padding-top: 1rem;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
 }
 
 .question {
-    flex-grow: 10;
+    flex-grow: 8;
     padding-left: 1rem;
     font-size: 1.45rem;
     user-select: none;
@@ -65,12 +65,19 @@
 }
 
 @media (max-width: 1000px) {
+    .question-box {
+        padding: 1.6rem;
+        max-height: 6rem;
+    }
     .question {
         font-size: 1.2rem;
     }
 }
 
 @media (max-width: 500px) {
+    .question-box {
+        padding: 1rem;
+    }
     .question {
         font-size: 0.8rem;
     }

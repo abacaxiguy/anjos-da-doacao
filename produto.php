@@ -123,8 +123,11 @@
         </div>
     </nav>
 
+
     <main class="mt-5 mb-5">
         <div class="container">
+
+
             <div class="produto-wrapper">
                 <div class="row">
                     <div class="col-12 col-md-6 col-sm-12 d-flex justify-content-center">
@@ -210,6 +213,12 @@
         <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
         </div>
+    </div>
+
+    <div class="faq-fab ">
+        <a href="./faq.php">
+            <button class="btn btn-gradient"><i class="fas fa-question-circle mr-1"></i> Ficou com alguma dúvida?</button>
+        </a>
     </div>
 
     <footer class="pt-5 pb-3 bg-azul" id="footer">
