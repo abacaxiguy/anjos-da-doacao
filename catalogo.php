@@ -346,15 +346,15 @@ fclose($file);
                     </button>
                 </form>
 
-
                 <select class="custom-select">
                     <option value="mr">Mais Recentes</option>
                     <option value="ma">Mais Antigos</option>
                     <option value="ac">Ordem Alfabética Crescente</option>
                     <option value="ad">Ordem Alfabética Decrescente</option>
                 </select>
-
             </div>
+
+            <!-- <hr style="border-width:3px;border-color:rgb(61, 226, 157)"> -->
 
             <div class="carousel row mb-5">
 

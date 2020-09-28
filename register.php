@@ -152,7 +152,7 @@
                 <div id="div_id_cpf" class="form-group col-md-6">
                     <label for="id_cpf" class="requiredField"> CPF </label>
                     <div>
-                        <input onfocus="limpa_input(this)" onblur="valida_cpf(this.value)" type="text" name="cpf" minlength="11" class="textinput textInput form-control" required id="id_cpf" tabindex="8" />
+                        <input onfocus="limpa_input(this)" onblur="valida_cpf(this.value)" type="text" name="id_cpf" minlength="11" class="textinput textInput form-control" required id="id_cpf" tabindex="8" />
 
                         <p id="error_id_cpf" class="invalid-feedback"></p>
                     </div>

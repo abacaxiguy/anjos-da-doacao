@@ -90,16 +90,7 @@
                             <span class="question ">Sou uma empresa que não possui estabelecimento, como posso ajudar?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
                             <div class="bigger-text mt-3 pb-4">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
+                                Seu estabelecimento irá fazer parte da empresas parceiras, essas empresas apóiam a causa disponibilizando desconto para os doadores que realizam doação e ajudando com a divulgação do projeto.
                             </div>
                         </div>
                     </div>
@@ -112,16 +103,7 @@
                             <span class="question">Preciso de um equipamento, como adquirir?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
                             <div class="bigger-text mt-3 pb-4">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
+                                Você consegue adquirir um equipamento através do nosso site, precisa ser realizado um cadastro rápido e após o cadastro poderá procurar o equipamento desejado.
                             </div>
                         </div>
                     </div>
@@ -134,16 +116,7 @@
                             <span class="question">Tenho um equipamento em mãos, como realizar uma doação?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
                             <div class="bigger-text mt-3 pb-4">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
+                                A doação é realizada no nosso site, precisa de um cadastro do usuário e futuramente do equipamento, onde você terá que escolher um ponto de coleta próximo de sua casa para levar o equipamento e após ele ser verificado, o equipamento será disponibilizado na plataforma.
                             </div>
                         </div>
                     </div>
@@ -156,16 +129,7 @@
                             <span class="question">Tenho um estabelecimento, como posso ajudar?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
                             <div class="bigger-text mt-3 pb-4">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
+                                Locais como o seu, poderá ajudar como ponto de coleta que é responsável por armazenar os equipamentos que foram deixados pelos doadores.
                             </div>
                         </div>
                     </div>
@@ -178,37 +142,7 @@
                             <span class="question">Não possuo nem uma empresa nem um equipamento, o que fazer?</span>
                             <span class="expand-button"><i class="fas fa-chevron-down"></i></span>
                             <div class="bigger-text mt-3 pb-4">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ipsam ipsum reprehenderit
-                                inventore doloremque facilis, accusamus a ut
-                                autem possimus beatae eveniet eligendi vitae
-                                nam soluta voluptates aliquid cum sit quam?
+                                Nesse caso, você poderá ser um anjo ajudando nas divulgações do projeto.
                             </div>
                         </div>
                     </div>
