@@ -98,7 +98,207 @@ require('../autenticador.php');
                 </div>
             </nav>
 
-            <div style="min-height: 300px;" class="profile-body"></div>
+            <div style="min-height: 300px;" class="profile-body">
+
+                <div class="search-wrapper mt-3 d-flex">
+                    <form class="d-flex" style="width: 50%;">
+                        <input style="border: 3px solid rgb(61, 226, 157); " class="search-input" type="search" placeholder="O que procura?" aria-label="Pesquisar" results="5" name="s" />
+
+                        <button class="btn-search" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+
+                    <select class="custom-select" style="border-width: 3px;">
+                        <option value="mr">Mais Recentes</option>
+                        <option value="ma">Mais Antigos</option>
+                        <option value="ac">Ordem Alfabética Crescente</option>
+                        <option value="ad">Ordem Alfabética Decrescente</option>
+                    </select>
+
+                    <div class="checkbox-out">
+                        <label for="out">Sem estoque</label>
+                        <input type="checkbox" name="out" id="out">
+                    </div>
+                </div>
+                <div class="order pending mt-5">
+                    <div class="header-wrapper px-3 py-2">
+                        <div class="order-header">
+                            Equipamento cadastrado no dia:
+                            <span class="order-date">02/07/2020</span>
+                        </div>
+                        <div class="order-header">
+                            Doação Nº
+                            <span class="order-id">1586</span>
+                        </div>
+                    </div>
+                    <div class="order-body mt-2 p-3">
+                        <div class="body-wrapper">
+
+                            <div class="queue-place ">
+                                Disponível no catálogo
+                            </div>
+                        </div>
+                        <div class="products-wrapper mt-4 mb-4">
+                            <div class="product mt-5">
+                                <div class="product-image">
+                                    <img src="../img/muleta.jpg" class="img-fluid" width="150px" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        Muleta
+                                    </div>
+
+                                    <div class="product-quantity d-flex align-items-center">
+                                        <label for="quatity"> Quantidade:</label>
+                                        <input type="number" name="quantity" value="2" min="0" class="mt-2 ml-3 form-control" id="id_first_name" required tabindex="1" />
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="save-order pt-4">
+                            <button class="btn">
+                                Salvar
+                                <i class="pl-2 fas fa-save"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="order pending mt-5">
+                    <div class="header-wrapper px-3 py-2">
+                        <div class="order-header">
+                            Equipamento cadastrado no dia:
+                            <span class="order-date">02/07/2020</span>
+                        </div>
+                        <div class="order-header">
+                            Doação Nº
+                            <span class="order-id">1586</span>
+                        </div>
+                    </div>
+                    <div class="order-body mt-2 p-3">
+                        <div class="body-wrapper">
+
+                            <div class="queue-place ">
+                                Disponível no catálogo
+                            </div>
+                        </div>
+                        <div class="products-wrapper mt-4 mb-4">
+                            <div class="product mt-5">
+                                <div class="product-image">
+                                    <img src="../img/muleta.jpg" class="img-fluid" width="150px" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        Muleta
+                                    </div>
+
+                                    <div class="product-quantity d-flex align-items-center">
+                                        <label for="quatity"> Quantidade:</label>
+                                        <input type="number" name="quantity" value="5" min="0" class="mt-2 ml-3 form-control" id="id_first_name" required tabindex="1" />
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="save-order pt-4">
+                            <button class="btn">
+                                Salvar
+                                <i class="pl-2 fas fa-save"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="order cancelled mt-5">
+                    <div class="header-wrapper px-3 py-2">
+                        <div class="order-header">
+                            Equipamento cadastrado no dia:
+                            <span class="order-date">02/07/2020</span>
+                        </div>
+                        <div class="order-header">
+                            Doação Nº
+                            <span class="order-id">1586</span>
+                        </div>
+                    </div>
+                    <div class="order-body mt-2 p-3">
+                        <div class="body-wrapper">
+
+                            <div class="cancelled-place">
+                                Fora do catálogo
+                            </div>
+                        </div>
+                        <div class="products-wrapper mt-4 mb-4">
+                            <div class="product mt-5">
+                                <div class="product-image">
+                                    <img src="../img/muleta.jpg" class="img-fluid" width="150px" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        Muleta
+                                    </div>
+
+                                    <div class="product-quantity d-flex align-items-center">
+                                        <label for="quatity"> Quantidade: <span class="font-weight-bold">0 unidades</span></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cancel-order pt-4">
+                            <button class="btn">
+                                Desfazer <i class="ml-1 fas fa-undo-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order cancelled mt-5">
+                    <div class="header-wrapper px-3 py-2">
+                        <div class="order-header">
+                            Equipamento cadastrado no dia:
+                            <span class="order-date">02/07/2020</span>
+                        </div>
+                        <div class="order-header">
+                            Doação Nº
+                            <span class="order-id">1586</span>
+                        </div>
+                    </div>
+                    <div class="order-body mt-2 p-3">
+                        <div class="body-wrapper">
+
+                            <div class="cancelled-place">
+                                Fora do catálogo
+                            </div>
+                        </div>
+                        <div class="products-wrapper mt-4 mb-4">
+                            <div class="product mt-5">
+                                <div class="product-image">
+                                    <img src="../img/muleta.jpg" class="img-fluid" width="150px" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        Muleta
+                                    </div>
+
+                                    <div class="product-quantity d-flex align-items-center">
+                                        <label for="quatity"> Quantidade: <span class="font-weight-bold">0 unidades</span></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cancel-order pt-4">
+                            <button class="btn">
+                                Desfazer <i class="ml-1 fas fa-undo-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -123,6 +323,41 @@ require('../autenticador.php');
         </p>
     </footer>
 </body>
+
+<!-- temporary script -->
+<script>
+    const
+        orders = document.querySelectorAll(".order"),
+        checkbox = document.querySelector("#out");
+
+    orders.forEach(order => {
+        if (order.classList.contains('pending')) {
+            order.classList.remove('hidden');
+        } else {
+            order.classList.add('hidden');
+        }
+    });
+
+    checkbox.addEventListener('click', (e) => {
+        if (e.target.checked)
+            orders.forEach(order => {
+                if (order.classList.contains('pending')) {
+                    order.classList.add('hidden');
+                } else {
+                    order.classList.remove('hidden');
+                }
+            });
+        else orders.forEach(order => {
+            if (order.classList.contains('pending')) {
+                order.classList.remove('hidden');
+            } else {
+                order.classList.add('hidden');
+            }
+        });
+    })
+</script>
+
+<!-- temporary script -->
 
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
