@@ -97,7 +97,44 @@ require('../autenticador.php');
                 </div>
             </nav>
 
-            <div style="min-height: 300px;" class="profile-body"></div>
+            <div style="min-height: 300px;" class="profile-body">
+
+                <div class="order pending mt-5">
+                    <div class="order-body mt-2 p-3">
+                        <div class="body-wrapper">
+
+                            <div class="queue-place ">
+                                Disponível no catálogo
+                            </div>
+                        </div>
+                        <div class="products-wrapper mt-4 mb-4">
+                            <div class="product mt-5">
+                                <div class="product-image">
+                                    <img src="../img/muleta.jpg" class="img-fluid" width="150px" alt="" />
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        Muleta
+                                    </div>
+
+                                    <div class="product-quantity d-flex align-items-center">
+                                        <label for="quatity"> Quantidade:</label>
+                                        <input type="number" name="quantity" value="2" min="0" class="mt-2 ml-3 form-control" id="id_first_name" required tabindex="1" />
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="save-order pt-4">
+                            <button class="btn">
+                                Salvar
+                                <i class="pl-2 fas fa-save"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </main>
 

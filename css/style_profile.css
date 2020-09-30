@@ -345,3 +345,7 @@
 .order.received .header-wrapper {
     background-color: rgb(61, 226, 157);
 }
+
+.checkbox-out label {
+    font-size: 1.4rem;
+}
