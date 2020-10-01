@@ -99,37 +99,257 @@ require('../autenticador.php');
 
             <div style="min-height: 300px;" class="profile-body">
 
-                <div class="order pending mt-5">
-                    <div class="order-body mt-2 p-3">
-                        <div class="body-wrapper">
+                <div class="search-wrapper mt-3 d-flex">
+                    <form class="d-flex" style="width: 50%;">
+                        <input style="border: 3px solid rgb(61, 226, 157); " class="search-input" type="search" placeholder="O que procura?" aria-label="Pesquisar" results="5" name="s" />
 
-                            <div class="queue-place ">
-                                Disponível no catálogo
-                            </div>
+                        <button class="btn-search" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+
+                    <select class="custom-select" style="border-width: 3px;">
+                        <option value="mr">Mais Recentes</option>
+                        <option value="ma">Mais Antigos</option>
+                        <option value="ac">Ordem Alfabética Crescente</option>
+                        <option value="ad">Ordem Alfabética Decrescente</option>
+                    </select>
+
+                    <div class="checkbox-out">
+                        <label for="out">Rejeitados</label>
+                        <input type="checkbox" name="out" id="out">
+                    </div>
+                </div>
+
+                <div class="order pending mt-5">
+                    <div class="header-wrapper px-3 py-2">
+                        <div class="order-header">
+                            Solicitação cadastrada no dia:
+                            <span class="order-date">02/07/2020</span>
                         </div>
+                        <div class="order-header">
+                            Doação Nº
+                            <span class="order-id">1586</span>
+                        </div>
+                    </div>
+                    <div class="order-body mt-2 p-4">
                         <div class="products-wrapper mt-4 mb-4">
-                            <div class="product mt-5">
+                            <div class="product mt-2">
                                 <div class="product-image">
-                                    <img src="../img/muleta.jpg" class="img-fluid" width="150px" alt="" />
+                                    <img src="../img/muleta.jpg" width="150px" alt="" />
                                 </div>
-                                <div class="product-info">
+                                <div class="product-info my-2">
                                     <div class="product-title">
                                         Muleta
                                     </div>
 
-                                    <div class="product-quantity d-flex align-items-center">
-                                        <label for="quatity"> Quantidade:</label>
-                                        <input type="number" name="quantity" value="2" min="0" class="mt-2 ml-3 form-control" id="id_first_name" required tabindex="1" />
+                                    <div class="product-quantity my-2">
+                                        <span class="font-weight-bold">Quantidade: </span> <span class="quantity"> 2 unidade(s)</span>
+                                    </div>
 
+                                    <div class="product-user my-2">
+                                        <span class="font-weight-bold">Doador: </span> <span class="user">João Lucas</span>
+                                    </div>
+
+                                    <div class="description-wrapper my-2">
+                                        <span class=" font-weight-bold">Descrição:</span>
+                                        <div class="product-description">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic laboriosam sint vel, quasi velit quia at provident architecto
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum, explicabo rem quam tempore maiores repellat tenetur ratione a hic, delectus facere dolorem iusto exercitationem neque et consequuntur quas quia?
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons-wrapper d-flex flex-row">
+                            <div class="save-order pt-4 pr-4">
+                                <button class="btn">
+                                    Aceitar
+                                    <i class="far fa-check-circle"></i>
+                                </button>
+                            </div>
+                            <div class="cancel-order pt-4">
+                                <button class="btn">
+                                    Rejeitar
+                                    <i class="far fa-times-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order pending mt-5">
+                    <div class="header-wrapper px-3 py-2">
+                        <div class="order-header">
+                            Solicitação cadastrada no dia:
+                            <span class="order-date">02/07/2020</span>
+                        </div>
+                        <div class="order-header">
+                            Doação Nº
+                            <span class="order-id">1586</span>
+                        </div>
+                    </div>
+                    <div class="order-body mt-2 p-4">
+                        <div class="products-wrapper mt-4 mb-4">
+                            <div class="product mt-2">
+                                <div class="product-image">
+                                    <img src="../img/muleta.jpg" width="150px" alt="" />
+                                </div>
+                                <div class="product-info my-2">
+                                    <div class="product-title">
+                                        Muleta
+                                    </div>
+
+                                    <div class="product-quantity my-2">
+                                        <span class="font-weight-bold">Quantidade: </span> <span class="quantity"> 1 unidade(s)</span>
+                                    </div>
+
+                                    <div class="product-user my-2">
+                                        <span class="font-weight-bold">Doador: </span> <span class="user">João Lucas</span>
+                                    </div>
+
+                                    <div class="description-wrapper my-2">
+                                        <span class=" font-weight-bold">Descrição:</span>
+                                        <div class="product-description">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic laboriosam sint vel, quasi velit quia at provident architecto
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum, explicabo rem quam tempore maiores repellat tenetur ratione a hic, delectus facere dolorem iusto exercitationem neque et consequuntur quas quia?
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons-wrapper d-flex flex-row">
+                            <div class="save-order pt-4 pr-4">
+                                <button class="btn">
+                                    Aceitar
+                                    <i class="far fa-check-circle"></i>
+                                </button>
+                            </div>
+                            <div class="cancel-order pt-4">
+                                <button class="btn">
+                                    Rejeitar
+                                    <i class="far fa-times-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order pending mt-5">
+                    <div class="header-wrapper px-3 py-2">
+                        <div class="order-header">
+                            Solicitação cadastrada no dia:
+                            <span class="order-date">02/07/2020</span>
+                        </div>
+                        <div class="order-header">
+                            Doação Nº
+                            <span class="order-id">1586</span>
+                        </div>
+                    </div>
+                    <div class="order-body mt-2 p-4">
+                        <div class="products-wrapper mt-4 mb-4">
+                            <div class="product mt-2">
+                                <div class="product-image">
+                                    <img src="../img/muleta.jpg" width="150px" alt="" />
+                                </div>
+                                <div class="product-info my-2">
+                                    <div class="product-title">
+                                        Muleta
+                                    </div>
+
+                                    <div class="product-quantity my-2">
+                                        <span class="font-weight-bold">Quantidade: </span> <span class="quantity"> 1 unidade(s)</span>
+                                    </div>
+
+                                    <div class="product-user my-2">
+                                        <span class="font-weight-bold">Doador: </span> <span class="user">João Lucas</span>
+                                    </div>
+
+                                    <div class="description-wrapper my-2">
+                                        <span class=" font-weight-bold">Descrição:</span>
+                                        <div class="product-description">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic laboriosam sint vel, quasi velit quia at provident architecto
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum, explicabo rem quam tempore maiores repellat tenetur ratione a hic, delectus facere dolorem iusto exercitationem neque et consequuntur quas quia?
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons-wrapper d-flex flex-row">
+                            <div class="save-order pt-4 pr-4">
+                                <button class="btn">
+                                    Aceitar
+                                    <i class="far fa-check-circle"></i>
+                                </button>
+                            </div>
+                            <div class="cancel-order pt-4">
+                                <button class="btn">
+                                    Rejeitar
+                                    <i class="far fa-times-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order cancelled mt-5">
+                    <div class="header-wrapper px-3 py-2">
+                        <div class="order-header">
+                            Solicitação cadastrada no dia:
+                            <span class="order-date">02/07/2020</span>
+                        </div>
+                        <div class="order-header">
+                            Doação Nº
+                            <span class="order-id">1586</span>
+                        </div>
+                    </div>
+                    <div class="order-body mt-2 p-4">
+                        <div class="cancelled-place mt-3">
+                            Solicitação rejeitada!
+                        </div>
+                        <div class="products-wrapper mt-5 mb-4">
+                            <div class="product mt-2">
+                                <div class="product-image">
+                                    <img src="../img/muleta.jpg" width="150px" alt="" />
+                                </div>
+                                <div class="product-info my-2">
+                                    <div class="product-title">
+                                        Muleta
+                                    </div>
+
+                                    <div class="product-quantity my-2">
+                                        <span class="font-weight-bold">Quantidade: </span> <span class="quantity"> 1 unidade(s)</span>
+                                    </div>
+
+                                    <div class="product-user my-2">
+                                        <span class="font-weight-bold">Doador: </span> <span class="user">João Lucas</span>
+                                    </div>
+
+                                    <div class="description-wrapper my-2">
+                                        <span class=" font-weight-bold">Descrição:</span>
+                                        <div class="product-description">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic laboriosam sint vel, quasi velit quia at provident architecto
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum, explicabo rem quam tempore maiores repellat tenetur ratione a hic, delectus facere dolorem iusto exercitationem neque et consequuntur quas quia?
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="save-order pt-4">
-                            <button class="btn">
-                                Salvar
-                                <i class="pl-2 fas fa-save"></i>
-                            </button>
+                        <div class="buttons-wrapper d-flex flex-row">
+                            <div class="save-order pt-4 pr-4">
+                                <button class="btn">
+                                    Desfazer <i class="ml-1 fas fa-undo-alt"></i>
+                                </button>
+                            </div>
+                            <div class="cancel-order pt-4">
+                                <button class="btn">
+                                    Deletar
+                                    <i class="pl-2 fas fa-trash-alt" aria-hidden="true"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,6 +379,41 @@ require('../autenticador.php');
         </p>
     </footer>
 </body>
+
+<!-- temporary script -->
+<script>
+    const
+        orders = document.querySelectorAll(".order"),
+        checkbox = document.querySelector("#out");
+
+    orders.forEach(order => {
+        if (order.classList.contains('pending')) {
+            order.classList.remove('hidden');
+        } else {
+            order.classList.add('hidden');
+        }
+    });
+
+    checkbox.addEventListener('click', (e) => {
+        if (e.target.checked)
+            orders.forEach(order => {
+                if (order.classList.contains('pending')) {
+                    order.classList.add('hidden');
+                } else {
+                    order.classList.remove('hidden');
+                }
+            });
+        else orders.forEach(order => {
+            if (order.classList.contains('pending')) {
+                order.classList.remove('hidden');
+            } else {
+                order.classList.add('hidden');
+            }
+        });
+    })
+</script>
+
+<!-- temporary script -->
 
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>

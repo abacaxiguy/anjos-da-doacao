@@ -142,17 +142,28 @@ require('../autenticador.php');
                         <div class="products-wrapper mt-4 mb-4">
                             <div class="product mt-5">
                                 <div class="product-image">
-                                    <img src="../img/muleta.jpg" class="img-fluid" width="150px" alt="" />
+                                    <img src="../img/muleta.jpg" width="150px" alt="" />
                                 </div>
                                 <div class="product-info">
                                     <div class="product-title">
                                         Muleta
                                     </div>
+                                    <div class="product-user mt-4">
+                                        <span class="font-weight-bold">Doador: </span> <span class="user">João Lucas</span>
+                                    </div>
 
-                                    <div class="product-quantity d-flex align-items-center">
-                                        <label for="quatity"> Quantidade:</label>
-                                        <input type="number" name="quantity" value="2" min="0" class="mt-2 ml-3 form-control" id="id_first_name" required tabindex="1" />
+                                    <div class="product-quantity d-flex align-items-center my-2">
+                                        <label for="quatity" class="font-weight-bold"> Quantidade:</label>
+                                        <input type="number" name="quantity" value="5" min="0" class="mt-2 ml-3 form-control" id="id_first_name" required tabindex="1" />
+                                    </div>
 
+
+                                    <div class="description-wrapper">
+                                        <span class=" font-weight-bold">Descrição:</span>
+                                        <div class="product-description">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic laboriosam sint vel, quasi velit quia at provident architecto
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum, explicabo rem quam tempore maiores repellat tenetur ratione a hic, delectus facere dolorem iusto exercitationem neque et consequuntur quas quia?
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -188,17 +199,28 @@ require('../autenticador.php');
                         <div class="products-wrapper mt-4 mb-4">
                             <div class="product mt-5">
                                 <div class="product-image">
-                                    <img src="../img/muleta.jpg" class="img-fluid" width="150px" alt="" />
+                                    <img src="../img/muleta.jpg" width="150px" alt="" />
                                 </div>
                                 <div class="product-info">
                                     <div class="product-title">
                                         Muleta
                                     </div>
+                                    <div class="product-user mt-4">
+                                        <span class="font-weight-bold">Doador: </span> <span class="user">João Lucas</span>
+                                    </div>
 
-                                    <div class="product-quantity d-flex align-items-center">
-                                        <label for="quatity"> Quantidade:</label>
+                                    <div class="product-quantity d-flex align-items-center my-2">
+                                        <label for="quatity" class="font-weight-bold"> Quantidade:</label>
                                         <input type="number" name="quantity" value="5" min="0" class="mt-2 ml-3 form-control" id="id_first_name" required tabindex="1" />
+                                    </div>
 
+
+                                    <div class="description-wrapper">
+                                        <span class=" font-weight-bold">Descrição:</span>
+                                        <div class="product-description">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic laboriosam sint vel, quasi velit quia at provident architecto
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum, explicabo rem quam tempore maiores repellat tenetur ratione a hic, delectus facere dolorem iusto exercitationem neque et consequuntur quas quia?
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -234,18 +256,30 @@ require('../autenticador.php');
                         <div class="products-wrapper mt-4 mb-4">
                             <div class="product mt-5">
                                 <div class="product-image">
-                                    <img src="../img/muleta.jpg" class="img-fluid" width="150px" alt="" />
+                                    <img src="../img/muleta.jpg" width="150px" alt="" />
                                 </div>
                                 <div class="product-info">
                                     <div class="product-title">
                                         Muleta
                                     </div>
+                                    <div class="product-user mt-4 mb-2">
+                                        <span class="font-weight-bold">Doador: </span> <span class="user">João Lucas</span>
+                                    </div>
 
-                                    <div class="product-quantity d-flex align-items-center">
-                                        <label for="quatity"> Quantidade: <span class="font-weight-bold">0 unidades</span></label>
+                                    <div class="product-quantity my-3">
+                                        <span for="quatity" class="font-weight-bold"> Quantidade:</span> <span>0 unidades</span>
+                                    </div>
 
+
+                                    <div class="description-wrapper">
+                                        <span class=" font-weight-bold">Descrição:</span>
+                                        <div class="product-description">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic laboriosam sint vel, quasi velit quia at provident architecto
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum, explicabo rem quam tempore maiores repellat tenetur ratione a hic, delectus facere dolorem iusto exercitationem neque et consequuntur quas quia?
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                         <div class="cancel-order pt-4">
@@ -277,18 +311,30 @@ require('../autenticador.php');
                         <div class="products-wrapper mt-4 mb-4">
                             <div class="product mt-5">
                                 <div class="product-image">
-                                    <img src="../img/muleta.jpg" class="img-fluid" width="150px" alt="" />
+                                    <img src="../img/muleta.jpg" width="150px" alt="" />
                                 </div>
                                 <div class="product-info">
                                     <div class="product-title">
                                         Muleta
                                     </div>
+                                    <div class="product-user mt-4 mb-2">
+                                        <span class="font-weight-bold">Doador: </span> <span class="user">João Lucas</span>
+                                    </div>
 
-                                    <div class="product-quantity d-flex align-items-center">
-                                        <label for="quatity"> Quantidade: <span class="font-weight-bold">0 unidades</span></label>
+                                    <div class="product-quantity my-3">
+                                        <span for="quatity" class="font-weight-bold"> Quantidade:</span> <span>0 unidades</span>
+                                    </div>
 
+
+                                    <div class="description-wrapper">
+                                        <span class=" font-weight-bold">Descrição:</span>
+                                        <div class="product-description">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic laboriosam sint vel, quasi velit quia at provident architecto
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum, explicabo rem quam tempore maiores repellat tenetur ratione a hic, delectus facere dolorem iusto exercitationem neque et consequuntur quas quia?
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                         <div class="cancel-order pt-4">

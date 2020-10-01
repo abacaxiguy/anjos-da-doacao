@@ -308,22 +308,21 @@
 }
 
 .save-order .btn {
-    font-weight: bold;
     font-size: 1.2rem;
-    border: 3px solid rgb(61, 226, 157);
-    color: rgb(61, 226, 157);
+    border: 3px solid rgb(1, 112, 164);
+    color: rgb(1, 112, 164);
     transition: all 0.36s ease;
 }
 
 .contrast .save-order .btn,
 .contrast .save-order i {
-    border-color: rgb(61, 226, 157) !important;
-    background: rgb(61, 226, 157) !important;
+    border-color: rgb(1, 112, 164) !important;
+    background: rgb(1, 112, 164) !important;
     color: white !important;
 }
 
 .save-order .btn:hover {
-    background-color: rgb(61, 226, 157);
+    background-color: rgb(1, 112, 164);
     color: white;
 }
 .save-order .btn:focus {
