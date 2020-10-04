@@ -11,6 +11,8 @@ if (isset($_GET['authenticated']) && $_GET['authenticated'] == 'false') {
     $erro = '<div class="alert alert-danger text-center mt-3" role="alert">Seus dados estão incorretos!</div>';
 } else if (isset($_GET['login']) && $_GET['login'] == 'erro') {
     $erro = '<div class="alert alert-danger text-center mt-3" role="alert">Faça login para entrar nessa página!</div>';
+} else if (isset($_GET['register']) && $_GET['register'] == 'true') {
+    $erro = '<div class="alert alert-success text-center mt-3" role="alert">Cadastro realizado com sucesso!</div>';
 } else {
     $erro = '';
 }

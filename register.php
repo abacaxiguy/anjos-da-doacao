@@ -16,7 +16,7 @@
         <div class="container">
             <ul>
                 <li class="ba-item-left">
-                    <a class="ba-link" accesskey="1" href="#username">Ir para conteúdo [1]</a>
+                    <a class="ba-link" accesskey="1" href="#">Ir para conteúdo [1]</a>
                 </li>
                 <li class="ba-item-right">
                     <a class="ba-link" accesskey="9" href="#" onclick="window.toggleContrast(); return false;">Alto Contraste [9]</a>
@@ -32,7 +32,7 @@
     </div>
 
     <div class="container mt-5 mb-5" id="container">
-        <a tabindex="0" href="index.php" class="mb-5">
+        <a href="index.php" class="mb-5">
             <img src="./img/logo2.png" class="imgTopo" width="350" alt="Logo" title="Logo" />
         </a>
         <h2 id="h2">Cadastro</h2>
@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <form class="form form-user hide" onsubmit="return validar()">
+        <form class="form form-user hide" action="./controle.php?action=register" method="POST">
             <div class="form-row">
                 <!-- first name -->
                 <div id="div_id_first_name" class="form-group col-md-6">
@@ -101,24 +101,24 @@
                         Confirmar senha
                     </label>
                     <div>
-                        <input onfocus="limpa_input(this)" onblur="valida_senhas(this)" type="password" name="password2" class="textinput textInput form-control" id="id_password2" required tabindex="4" />
+                        <input onfocus="limpa_input(this)" onblur="valida_senhas(this)" type="password" name="cpassword" class="textinput textInput form-control" id="id_password2" required tabindex="4" />
 
                         <p id="error_id_password2" class="invalid-feedback"></p>
                     </div>
                 </div>
             </div>
             <div class="form-row">
-                <!-- username -->
+                <!-- phone -->
 
-                <div id="div_id_username" class="form-group col-md-6">
-                    <label for="id_username" class="requiredField">
+                <div id="div_id_phone" class="form-group col-md-6">
+                    <label for="id_phone" class="requiredField">
                         Telefone
                     </label>
 
                     <div>
-                        <input onfocus="limpa_input(this)" onblur="valida_username(this)" type="text" name="username" maxlength="20" class="textinput textInput form-control" required id="id_username" tabindex="5" />
+                        <input type="text" name="phone" maxlength="14" class="textinput textInput form-control" required id="id_phone" tabindex="5" />
 
-                        <p id="error_id_username" class="invalid-feedback"></p>
+                        <p id="error_id_phone" class="invalid-feedback"></p>
                     </div>
                 </div>
 
@@ -181,7 +181,7 @@
                     </label>
 
                     <div>
-                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
+                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
 
                         <p class="invalid-feedback"></p>
                     </div>
@@ -195,7 +195,7 @@
                     </label>
 
                     <div>
-                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
+                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
 
                         <p class="invalid-feedback"></p>
                     </div>
@@ -210,7 +210,7 @@
                     </label>
 
                     <div>
-                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
+                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
 
                         <p class="invalid-feedback"></p>
                     </div>
@@ -224,7 +224,7 @@
                     </label>
 
                     <div>
-                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
+                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
 
                         <p class="invalid-feedback"></p>
                     </div>
@@ -239,7 +239,7 @@
                     </label>
 
                     <div>
-                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
+                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
 
                         <p class="invalid-feedback"></p>
                     </div>
@@ -253,7 +253,7 @@
                     </label>
 
                     <div>
-                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
+                        <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
 
                         <p class="invalid-feedback"></p>
                     </div>
@@ -291,6 +291,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $("#id_cpf").mask("000.000.000-00");
+            $('#id_phone').mask('(00) 00000-0000');
         });
     </script>
 
