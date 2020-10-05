@@ -1,5 +1,7 @@
 <?php
 require('../autenticador.php');
+$last_name = implode(' ', array_slice(explode(' ',  $array['nome_usuario']), 1));
+$first_name = explode(' ', $array['nome_usuario'])[0];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -65,7 +67,7 @@ require('../autenticador.php');
                             <i class="fas fa-user"></i>
                         </div>
                         <span>
-                            João Lucas
+                            <?= $array['nome_usuario'] ?>
                         </span>
                     </div>
                 </a>
@@ -76,7 +78,7 @@ require('../autenticador.php');
     <main class="mt-5 mb-5 container">
         <div class="profile-name">
             <div class="name-wrapper">Olá,</div>
-            <span class="name-span bold pr-2">João Lucas</span>
+            <span class="name-span bold pr-2"><?= $array['nome_usuario'] ?></span>
             <span class="logoff bold">
                 <form style="display:inline" action="../sair.php" method="get">
                     <button type="submit">
@@ -107,7 +109,7 @@ require('../autenticador.php');
                             </label>
 
                             <div>
-                                <input type="text" name="first_name" maxlength="30" class="textinput textInput form-control" id="id_first_name" required tabindex="1" />
+                                <input type="text" name="first_name" maxlength="30" class="textinput textInput form-control" id="id_first_name" required tabindex="1" value="<?= $first_name ?>" />
 
                                 <p id="error_id_first_name" class="invalid-feedback"></p>
                             </div>
@@ -121,7 +123,7 @@ require('../autenticador.php');
                             </label>
 
                             <div>
-                                <input type="text" name="last_name" maxlength="150" class="textinput textInput form-control" id="id_last_name" required tabindex="2" />
+                                <input type="text" name="last_name" maxlength="150" class="textinput textInput form-control" id="id_last_name" required tabindex="2" value="<?= $last_name ?>" />
 
                                 <p id="error_id_last_name" class="invalid-feedback"></p>
                             </div>
@@ -156,17 +158,17 @@ require('../autenticador.php');
                         </div>
                     </div>
                     <div class="form-row">
-                        <!-- username -->
+                        <!-- phone -->
 
-                        <div id="div_id_username" class="form-group col-md-6">
-                            <label for="id_username" class="requiredField">
+                        <div id="div_id_phone" class="form-group col-md-6">
+                            <label for="id_phone" class="requiredField">
                                 Telefone
                             </label>
 
                             <div>
-                                <input onfocus="limpa_input(this)" onblur="valida_username(this)" type="text" name="username" maxlength="20" class="textinput textInput form-control" required id="id_username" tabindex="5" />
+                                <input type="text" name="phone" maxlength="14" class="textinput textInput form-control" required id="id_phone" tabindex="5" value="<?= $array['telefone_usuario'] ?>" />
 
-                                <p id="error_id_username" class="invalid-feedback"></p>
+                                <p id="error_id_phone" class="invalid-feedback"></p>
                             </div>
                         </div>
 
@@ -176,7 +178,7 @@ require('../autenticador.php');
                                 Endereço de email
                             </label>
                             <div>
-                                <input onfocus="limpa_input(this)" onblur="valida_email(this)" type="email" name="email" maxlength="254" class="emailinput form-control" id="id_email" required tabindex="6" />
+                                <input onfocus="limpa_input(this)" onblur="valida_email(this)" type="email" name="email" maxlength="254" class="emailinput form-control" id="id_email" required tabindex="6" value="<?= $array['email_usuario'] ?>" />
 
                                 <p id="error_id_email" class="invalid-feedback"></p>
                             </div>
@@ -190,7 +192,7 @@ require('../autenticador.php');
                                 Data de Nascimento
                             </label>
                             <div>
-                                <input onfocus="limpa_input(this)" onblur="valida_data(this.value)" type="date" name="birth_date" maxlength="10" class="form-control" required id="id_birth_date" tabindex="7" />
+                                <input onfocus="limpa_input(this)" onblur="valida_data(this.value)" type="date" name="birth_date" maxlength="10" class="form-control" required id="id_birth_date" tabindex="7" value="<?= $array['nascimento_usuario'] ?>" />
 
                                 <p id="error_id_birth_date" class="invalid-feedback"></p>
                             </div>
@@ -202,7 +204,7 @@ require('../autenticador.php');
                                 CPF
                             </label>
                             <div>
-                                <input onfocus="limpa_input(this)" onblur="valida_cpf(this.value)" type="text" name="cpf" minlength="11" class="textinput textInput form-control" required id="id_cpf" tabindex="8" />
+                                <input onfocus="limpa_input(this)" onblur="valida_cpf(this.value)" type="text" name="cpf" minlength="11" class="textinput textInput form-control" required id="id_cpf" tabindex="8" value="<?= $array['cpf_usuario'] ?>" />
 
                                 <p id="error_id_cpf" class="invalid-feedback"></p>
                             </div>
@@ -253,5 +255,13 @@ require('../autenticador.php');
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="../js/barra.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#id_cpf").mask("000.000.000-00");
+        $('#id_phone').mask('(00) 00000-0000');
+    });
+</script>
 
 </html>

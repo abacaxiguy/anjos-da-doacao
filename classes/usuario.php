@@ -53,6 +53,14 @@ class Usuario
             header('location: ./register.php?error=field');
             return false;
         }
+        $this->pnome = trim($this->pnome);
+        $this->unome = trim($this->unome);
+        $this->telefone = trim($this->telefone);
+        $this->nascimento = trim($this->nascimento);
+        $this->cpf = trim($this->cpf);
+        $this->senha = trim($this->senha);
+        $this->csenha = trim($this->csenha);
+        $this->email = trim($this->email);
         if ($this->senha !== $this->csenha) {
             header('location: ./register.php?error=password');
             return false;

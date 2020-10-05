@@ -1,6 +1,18 @@
 <?php
 session_start();
-if (!isset($_SESSION['authentication']) || !$_SESSION['authentication'] || $_SESSION['ponto']) {
+if (!isset($_SESSION['id_usuario'])) {
+    header('location: ./login.php?login=erro');
+}
+require 'classes/conexao.php';
+
+
+$conexao = new Conexao();
+$conexao = $conexao->conectar();
+$sql = "SELECT nome_usuario FROM usuario WHERE id_usuario=" . $_SESSION['id_usuario'];
+$stmt = $conexao->query($sql);
+$array = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (empty($array)) {
     header('location: ./login.php?login=erro');
 }
 
@@ -69,7 +81,7 @@ if (!isset($_SESSION['authentication']) || !$_SESSION['authentication'] || $_SES
                             <i class="fas fa-user"></i>
                         </div>
                         <span>
-                            <?= "João Lucas" ?>
+                            <?= $array['nome_usuario'] ?>
                         </span>
                     </div>
                 </a>
@@ -81,7 +93,7 @@ if (!isset($_SESSION['authentication']) || !$_SESSION['authentication'] || $_SES
     <main class="mt-5 mb-5 container">
         <div class="profile-name">
             <div class="name-wrapper">Olá,</div>
-            <span class="name-span bold pr-2">João Lucas</span>
+            <span class="name-span bold pr-2"><?= $array['nome_usuario'] ?></span>
             <span class="logoff bold">
                 <form style="display:inline" action="./sair.php" method="get">
                     <button type="submit">
