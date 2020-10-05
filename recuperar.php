@@ -43,16 +43,28 @@
                         Esqueceu a sua senha? Só precisamos do seu e-mail
                         utilizado para o cadastro.
                     </p>
-                    <form class="form" method="POST" action="">
+                    <form class="form" method="POST" action="./controle.php?action=pwdrecovery">
                         <div class="form-group">
-                            <label class="h4" for="username">E-mail</label>
-                            <input name="username" type="text" class="form-control" id="username" aria-describedby="UsuarioHelp" placeholder="Digite seu usuário" />
+                            <label class="h4" for="email">E-mail</label>
+                            <input name="email" type="email" class="form-control" id="email" aria-describedby="UsuarioHelp" placeholder="Digite seu email" />
                         </div>
                         <button type="submit" class="btn btn-primary btn-block btn-lg mt-4 mb-3">
                             Enviar e-mail
                         </button>
                     </form>
-
+                    <?php
+                    if (isset($_GET['sent'])) {
+                        if ($_GET['sent'] == 'true') {
+                            echo '<div class="alert alert-success text-center mt-3" role="alert">E-mail enviado!</div>';
+                        } else if ($_GET['sent'] == 'false') {
+                            echo '<div class="alert alert-danger text-center mt-3" role="alert">Ocorreu um erro ao enviar o email!</div>';
+                        }
+                    } else {
+                        if (isset($_GET['email']) && $_GET['email'] == 'notfound') {
+                            echo '<div class="alert alert-danger text-center mt-3" role="alert">Este e-mail não foi encontrado!</div>';
+                        }
+                    }
+                    ?>
                     <div class="d-flex justify-content-center links">
                         <a tabindex="10" href="login.php">Já tem uma conta?</a>
                     </div>

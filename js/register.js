@@ -161,22 +161,3 @@ function limpa_input(input) {
     input.classList.remove("is-invalid");
     input.classList.remove("is-valid");
 }
-
-(function () {
-    const radios = document.querySelectorAll("input[name='register-option']"),
-        formUser = document.querySelector(".form-user"),
-        formPonto = document.querySelector(".form-ponto");
-
-    radios.forEach((radio) => {
-        radio.addEventListener("change", (e) => {
-            // user ||| ponto
-            if (radio.value == "user") {
-                formPonto.classList.add("hide");
-                formUser.classList.remove("hide");
-            } else {
-                formUser.classList.add("hide");
-                formPonto.classList.remove("hide");
-            }
-        });
-    });
-})();

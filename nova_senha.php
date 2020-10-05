@@ -1,3 +1,33 @@
+<?php
+if (isset($_GET['selector']) && isset($_GET['validator'])) {
+    $selector = $_GET['selector'];
+    $validator = $_GET['validator'];
+}
+
+if (empty($selector) || empty($validator)) {
+    header('location: ./recuperar.php');
+} else {
+    if (ctype_xdigit($selector) !== true && ctype_xdigit($validator) !== true) {
+        header('location: ./recuperar.php');
+    }
+}
+if (isset($_GET['error'])) {
+    if ($_GET['error'] == 'field') {
+        $error = '<div class="alert alert-danger text-center mt-3" role="alert">Insira uma senha válida!</div>';
+    } else if ($_GET['error'] == 'password') {
+        $error = '<div class="alert alert-danger text-center mt-3" role="alert">As senhas estão diferentes!</div>';
+    } else if ($_GET['error'] == 'unknown') {
+        $error = '<div class="alert alert-danger text-center mt-3" role="alert">Houve um erro!</div>';
+    } else if ($_GET['error'] == 'authenticated') {
+        $error = '<div class="alert alert-danger text-center mt-3" role="alert">Erro de autenticação. Verifique se o link está correto ou o link está expirado!</div>';
+    }
+} else {
+    $error = '';
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 
@@ -42,7 +72,9 @@
                     <p class="fraseInicio">
                         Agora só precisamos de sua nova senha e a confirmação da mesma.
                     </p>
-                    <form class="form" method="POST" action="">
+                    <form class="form" method="POST" action="./controle.php">
+                        <input type="hidden" name="selector" value="<?= $selector ?>">
+                        <input type="hidden" name="validator" value="<?= $validator ?>">
                         <div class="form-group">
                             <label class="h4" for="newpassword">Nova senha</label>
                             <input name="newpassword" type="password" class="form-control" id="newpassword" aria-describedby="UsuarioHelp" />
@@ -52,10 +84,12 @@
                             <label class="h4" for="newcpassword">Confirmar nova senha</label>
                             <input name="newcpassword" type="password" class="form-control" id="newcpassword" aria-describedby="UsuarioHelp" />
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-lg mt-4 mb-3">
+                        <button type="submit" class="btn btn-primary btn-block btn-lg mt-4 mb-3" name="reset-password">
                             Redefinir senha
                         </button>
                     </form>
+
+                    <?= $error ?>
 
                     <div class="d-flex justify-content-center links">
                         <a tabindex="10" href="login.php">Já tem uma conta?</a>
