@@ -16,8 +16,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'register') {
     $usuario->__set('cpf', $_POST['id_cpf']);
     if ($usuario->cadastrar($conexao)) {
         header('location: ./login.php?register=true');
-    } else {
-        header('location: ./register.php?error=unknown');
     }
 
     //

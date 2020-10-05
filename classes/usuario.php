@@ -102,7 +102,7 @@ class Usuario
 
         $this->__set('telefone', $new_tele);
 
-        if (preg_match('/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/', $this->email)) {
+        if (!preg_match('/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/', $this->email)) {
             header('location: ./register.php?error=email');
             return false;
         }

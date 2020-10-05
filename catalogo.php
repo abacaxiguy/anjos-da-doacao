@@ -9,6 +9,10 @@ while (!feof($file)) {
 
 fclose($file);
 
+require 'classes/conexao.php';
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -232,25 +236,27 @@ fclose($file);
                 </form>
 
                 <?php
-                if (!isset($_SESSION['authentication']) || !$_SESSION['authentication']) {
-                ?>
+                if (isset($_SESSION['id_usuario'])) {
 
-                    <a href="./login.php" style="flex-grow: 0.5">
-                        <div class="login ml-5">
-                            <div class="icon mr-2">
-                                <i class="fas fa-user"></i>
+                    $conexao = new Conexao();
+                    $conexao = $conexao->conectar();
+                    $sql = "SELECT nome_usuario FROM usuario WHERE id_usuario=" . $_SESSION['id_usuario'];
+                    $stmt = $conexao->query($sql);
+                    $array = $stmt->fetch(PDO::FETCH_ASSOC);
+                    if (empty($array)) {
+                ?>
+                        <a href="./login.php" style="flex-grow: 0.5">
+                            <div class="login ml-5">
+                                <div class="icon mr-2">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <span>
+                                    Entre ou<br />
+                                    cadastre-se</span>
                             </div>
-                            <span>
-                                Entre ou<br />
-                                cadastre-se</span>
-                        </div>
-                    </a>
-
-                <?php
-                } else if ($_SESSION['authentication']) {
-                ?>
+                        </a>
                     <?php
-                    if (!$_SESSION['ponto']) {
+                    } else {
                     ?>
                         <a href="./perfil.php">
                             <div class="login ml-5">
@@ -258,29 +264,12 @@ fclose($file);
                                     <i class="fas fa-user"></i>
                                 </div>
                                 <span>
-                                    <?= "João Lucas" ?>
+                                    <?= $array['nome_usuario']  ?>
                                 </span>
                             </div>
                         </a>
-                    <?php
-                    } else {
-                    ?>
-                        <a href="./admin/admin.php">
-                            <div class="login ml-5">
-                                <div class="icon mr-2">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <span>
-                                    <?= "ADEFAL" ?>
-                                </span>
-                            </div>
-                        </a>
-                    <?php
-                    }
-                    ?>
-
-
                 <?php
+                    }
                 }
                 ?>
             </div>
