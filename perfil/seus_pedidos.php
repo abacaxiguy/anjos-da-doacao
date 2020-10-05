@@ -1,5 +1,7 @@
 <?php
 require('../autenticador.php');
+
+$first_name = explode(' ', $array['nome_usuario'])[0];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -65,7 +67,7 @@ require('../autenticador.php');
                             <i class="fas fa-user"></i>
                         </div>
                         <span>
-                            João Lucas
+                            <?= $first_name ?>
                         </span>
                     </div>
                 </a>
@@ -76,7 +78,7 @@ require('../autenticador.php');
     <main class="mt-5 mb-5 container">
         <div class="profile-name">
             <div class="name-wrapper">Olá,</div>
-            <span class="name-span bold pr-2">João Lucas</span>
+            <span class="name-span bold pr-2"><?= $first_name ?></span>
             <span class="logoff bold">
                 <form style="display:inline" action="../sair.php" method="get">
                     <button type="submit">

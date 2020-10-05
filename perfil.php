@@ -15,6 +15,7 @@ $array = $stmt->fetch(PDO::FETCH_ASSOC);
 if (empty($array)) {
     header('location: ./login.php?login=erro');
 }
+$first_name = explode(' ', $array['nome_usuario'])[0];
 
 ?>
 <!DOCTYPE html>
@@ -81,7 +82,7 @@ if (empty($array)) {
                             <i class="fas fa-user"></i>
                         </div>
                         <span>
-                            <?= $array['nome_usuario'] ?>
+                            <?= $first_name ?>
                         </span>
                     </div>
                 </a>
@@ -93,7 +94,7 @@ if (empty($array)) {
     <main class="mt-5 mb-5 container">
         <div class="profile-name">
             <div class="name-wrapper">Olá,</div>
-            <span class="name-span bold pr-2"><?= $array['nome_usuario'] ?></span>
+            <span class="name-span bold pr-2"><?= $first_name ?></span>
             <span class="logoff bold">
                 <form style="display:inline" action="./sair.php" method="get">
                     <button type="submit">

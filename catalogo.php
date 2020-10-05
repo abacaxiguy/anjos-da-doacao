@@ -244,6 +244,7 @@ require 'classes/conexao.php';
                     $stmt = $conexao->query($sql);
                     $array = $stmt->fetch(PDO::FETCH_ASSOC);
                     if (!empty($array)) {
+                        $first_name = explode(' ', $array['nome_usuario'])[0];
                 ?>
                         <a href="./perfil.php">
                             <div class="login ml-5">
@@ -251,7 +252,7 @@ require 'classes/conexao.php';
                                     <i class="fas fa-user"></i>
                                 </div>
                                 <span>
-                                    <?= $array['nome_usuario']  ?>
+                                    <?= $first_name  ?>
                                 </span>
                             </div>
                         </a>
