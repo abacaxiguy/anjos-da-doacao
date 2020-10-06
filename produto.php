@@ -1,3 +1,7 @@
+<?php
+require 'classes/conexao.php';
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -39,7 +43,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <?php
-            if (!isset($_SESSION['authentication']) || !$_SESSION['authentication']) {
+            session_start();
+            if (!isset($_SESSION['id_usuario'])) {
             ?>
                 <a class="navbar-brand" href="./index.php" style="flex-grow: 0.1">
                     <img class="logo" src="./img/logo2.png" />
@@ -67,9 +72,33 @@
                 </form>
 
                 <?php
-                session_start();
-                if (!isset($_SESSION['authentication']) || !$_SESSION['authentication']) {
+                if (isset($_SESSION['id_usuario'])) {
+
+                    $conexao = new Conexao();
+                    $conexao = $conexao->conectar();
+                    $sql = "SELECT nome_usuario FROM usuario WHERE id_usuario=" . $_SESSION['id_usuario'];
+                    $stmt = $conexao->query($sql);
+                    $array = $stmt->fetch(PDO::FETCH_ASSOC);
+                    if (!empty($array)) {
+                        $first_name = explode(' ', $array['nome_usuario'])[0];
                 ?>
+                        <a href="./perfil.php">
+                            <div class="login ml-5">
+                                <div class="icon mr-2">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <span>
+                                    <?= $first_name  ?>
+                                </span>
+                            </div>
+                        </a>
+                    <?php
+                    }
+                    ?>
+
+                <?php
+
+                } else { ?>
 
                     <a href="./login.php" style="flex-grow: 0.5">
                         <div class="login ml-5">
@@ -82,43 +111,7 @@
                         </div>
                     </a>
 
-                <?php
-                } else if ($_SESSION['authentication']) {
-                ?>
-                    <?php
-                    if (!$_SESSION['ponto']) {
-                    ?>
-                        <a href="./perfil.php">
-                            <div class="login ml-5">
-                                <div class="icon mr-2">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <span>
-                                    <?= "João Lucas" ?>
-                                </span>
-                            </div>
-                        </a>
-                    <?php
-                    } else {
-                    ?>
-                        <a href="./admin/admin.php">
-                            <div class="login ml-5">
-                                <div class="icon mr-2">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <span>
-                                    <?= "ADEFAL" ?>
-                                </span>
-                            </div>
-                        </a>
-                    <?php
-                    }
-                    ?>
-
-
-                <?php
-                }
-                ?>
+                <?php } ?>
             </div>
         </div>
     </nav>

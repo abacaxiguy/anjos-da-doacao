@@ -49,6 +49,7 @@
 .icon-question img {
     width: 100%;
     filter: invert(1);
+    user-select: none;
 }
 
 .expand-button.active {

@@ -49,7 +49,7 @@ if (isset($_SESSION['id_usuario'])) {
             <p class="fraseInicio">
                 Não possui uma conta? Escolha uma opção abaixo para cadastrar!
             </p>
-            <div class="container select-container form-group row mt-4">
+            <div class="select-container form-group mt-4">
                 <select class="perfil-select form-control">
                     <option selected value="u">Usuário</option>
                     <option value="p">Ponto de Coleta</option>
