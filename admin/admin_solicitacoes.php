@@ -1,5 +1,5 @@
 <?php
-require('../autenticador.php');
+#require('../autenticador.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

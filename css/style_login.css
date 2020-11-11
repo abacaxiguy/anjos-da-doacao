@@ -219,7 +219,7 @@ button:hover {
 
 .contrast .col-lg {
     background: black !important;
-    border: 3px solid white !important;
+    border: 3px solid rgba(61, 226, 157, 0.8);
 }
 
 .contrast input {

@@ -68,8 +68,8 @@ if (isset($_GET['authenticated']) && $_GET['authenticated'] == 'false') {
                     </p>
                     <form class="form" method="POST" action="./valida_login.php">
                         <div class="form-group">
-                            <label class="h4" for="cpf">CPF</label>
-                            <input name="cpf" type="text" class="form-control" id="cpf" />
+                            <label class="h4" for="email">E-mail</label>
+                            <input name="email" type="email" class="form-control" id="email" />
                         </div>
                         <div class="form-group">
                             <label class="h4" for="password">Senha</label>
@@ -110,10 +110,5 @@ if (isset($_GET['authenticated']) && $_GET['authenticated'] == 'false') {
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 <script src="./js/barra.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#cpf").mask("000.000.000-00");
-    });
-</script>
 
 </html>

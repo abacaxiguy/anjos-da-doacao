@@ -1,7 +1,7 @@
 <?php
 
 
-class EmpresaParceira extends Conta
+class EmpresaParceira
 {
     public function __set($atr, $val)
     {

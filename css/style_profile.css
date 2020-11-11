@@ -2,6 +2,10 @@
     display: none;
 }
 
+.contrast .form-control {
+	color: white !important;
+}
+
 .form-control:not(.is-invalid):not(.is-valid) {
     border-color: rgb(0, 132, 191);
 }

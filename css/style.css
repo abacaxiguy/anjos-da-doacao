@@ -273,6 +273,14 @@ body {
     justify-content: space-between;
 }
 
+.login {
+    font-size: 1.4rem;
+    background: rgb(61 226 158);
+    padding: 1rem 1.4rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
 @media (max-width: 500px) {
     .faq-fab button {
         font-size: 0.8rem;
