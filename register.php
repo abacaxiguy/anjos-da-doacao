@@ -179,90 +179,84 @@ if (isset($_SESSION['id_usuario'])) {
                 </div>
             </form>
 
-            <form class="form-ponto hide" onsubmit="return validar()">
+            <form class="form-ponto hide" action="./controle.php?action=a" method="POST">
                 <div class="form-row">
-                    <!-- first name -->
-                    <div class="form-group col-md-6">
-                        <label for="">
+                    <!-- name pd -->
+                    <div id="div_id_nome_pd" class="form-group col-md-6">
+                        <label for="id_nome_pd">
                             Nome da instituição
                         </label>
 
                         <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
+                            <input type="text" name="nome_pd" maxlength="30" class="textinput textInput form-control" id="id_nome_pd" required tabindex="1" />
 
-                            <p class="invalid-feedback"></p>
+                            <p id="error_id_nome_pd" class="invalid-feedback"></p>
                         </div>
                     </div>
 
-                    <!-- last name -->
+                    <!-- email -->
 
-                    <div class="form-group col-md-6">
-                        <label for="">
-                            Nome do representante
-                        </label>
-
-                        <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
-
-                            <p class="invalid-feedback"></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <!-- first name -->
-                    <div class="form-group col-md-6">
-                        <label for="">
-                            Estado/Cidade
-                        </label>
-
-                        <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
-
-                            <p class="invalid-feedback"></p>
-                        </div>
-                    </div>
-
-                    <!-- last name -->
-
-                    <div class="form-group col-md-6">
-                        <label for="">
+                    <div id="div_id_email_pd" class="form-group col-md-6">
+                        <label for="id_email_pd">
                             Endereço de email
                         </label>
-
                         <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
+                            <input onfocus="limpa_input(this)" onblur="valida_email(this)" type="email" name="email_pd" maxlength="254" class="emailinput form-control" id="id_email_pd" required tabindex="6" />
 
-                            <p class="invalid-feedback"></p>
+                            <p id="error_id_email_pd" class="invalid-feedback"></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-row">
-                    <!-- first name -->
-                    <div class="form-group col-md-6">
-                        <label for="">
-                            Senha
+                    <!-- telefone -->
+                    <div id="div_id_phone" class="form-group col-md-6">
+                        <label for="id_phone" class="requiredField">
+                            Telefone
                         </label>
 
                         <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
+                            <input type="text" name="phone" maxlength="14" class="textinput textInput form-control" required id="id_phone" tabindex="5" />
 
-                            <p class="invalid-feedback"></p>
+                            <p id="error_id_phone" class="invalid-feedback"></p>
                         </div>
                     </div>
 
-                    <!-- last name -->
-
-                    <div class="form-group col-md-6">
-                        <label for="">
-                            Confirmar Senha
-                        </label>
-
+                    <!-- cep -->
+                    <div id="div_id_cep" class="form-group col-md-6">
+                        <label for="id_cep" class="requiredField"> CEP </label>
                         <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required />
+                            <input onfocus="limpa_input(this)" onblur="valida_cpf(this.value)" type="text" name="id_cep" minlength="11" class="textinput textInput form-control" required id="id_cep" tabindex="8" />
 
-                            <p class="invalid-feedback"></p>
+                            <p id="error_id_cep" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!-- password -->
+
+                    <div id="div_id_password" class="form-group col-md-6">
+                        <label for="id_password">
+                            Senha
+                        </label>
+                        <div>
+                            <input onfocus="limpa_input(this)" onblur="valida_senhas(this)" type="password" name="password" class="textinput textInput form-control" id="id_password" required tabindex="3" />
+
+                            <p id="error_id_password" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+
+                    <!-- confirm password -->
+
+                    <div id="div_id_password2" class="form-group col-md-6">
+                        <label for="id_password2">
+                            Confirmar senha
+                        </label>
+                        <div>
+                            <input onfocus="limpa_input(this)" onblur="valida_senhas(this)" type="password" name="cpassword" class="textinput textInput form-control" id="id_password2" required tabindex="4" />
+
+                            <p id="error_id_password2" class="invalid-feedback"></p>
                         </div>
                     </div>
                 </div>
@@ -319,6 +313,7 @@ if (isset($_SESSION['id_usuario'])) {
         $(document).ready(function() {
             $("#id_cpf").mask("000.000.000-00");
             $('#id_phone').mask('(00) 00000-0000');
+            $("#id_cep").mask("00000-000");
         });
     </script>
 

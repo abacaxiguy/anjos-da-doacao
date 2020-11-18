@@ -32,7 +32,7 @@ require 'classes/conexao.php';
     <link rel="stylesheet" href="./css/modal.css" />
 </head>
 
-<body>
+<body class="bg-light">
     <div class="barra-acessibilidade">
         <div class="container">
             <ul>
@@ -264,13 +264,13 @@ require 'classes/conexao.php';
 
                 } else { ?>
 
-                    <a href="./login.php" style="flex-grow: 0.5">
+                    <a href="./login.php">
                         <div class="login ml-5">
                             <div class="icon mr-2">
-                                <i class="fas fa-user"></i>
+                                <i style="font-size:1rem" class="fas fa-user"></i>
                             </div>
-                            <span>
-                                Entre ou<br />
+                            <span style="font-size:1.2rem">
+                                Entre ou
                                 cadastre-se</span>
                         </div>
                     </a>
@@ -282,7 +282,7 @@ require 'classes/conexao.php';
         </div>
     </nav>
 
-    <div class="container mt-5">
+    <div class="container mt-5 bg-white p-5" style="border-radius: 0.5rem;">
         <h2 class="bold mapa">Descubra os pontos mais próximos à você!</h2>
         <div class="map-alerts mt-5"></div>
         <div class="mt-3" id="map"></div>
@@ -291,9 +291,9 @@ require 'classes/conexao.php';
         </div>
     </div>
 
-    <div class="container mt-5">
-        <div class="section mt-5">
-            <h2 class="bold blue-font mb-4">Novos equipamentos</h2>
+    <div class="mt-5">
+        <div class="section container mt-5 bg-white px-5 pb-3 pt-5" style="border-radius: 0.5rem;">
+            <h2 class=" bold blue-font mb-4">Novos equipamentos</h2>
 
             <div class="carousel row mb-5">
                 <?php
@@ -329,7 +329,7 @@ require 'classes/conexao.php';
             </div>
         </div>
 
-        <div class="section mt-5 mb-5">
+        <div class="section container mt-5 bg-white px-5 pt-5 mt-5 mb-5" style="border-radius: 0.5rem;">
             <h2 class="bold blue-font mb-4">Todos os equipamentos</h2>
 
             <div class="search-wrapper my-5 d-flex">

@@ -106,7 +106,7 @@ require 'classes/conexao.php';
                                 <i class="fas fa-user"></i>
                             </div>
                             <span>
-                                Entre ou<br />
+                                Entre ou
                                 cadastre-se</span>
                         </div>
                     </a>
