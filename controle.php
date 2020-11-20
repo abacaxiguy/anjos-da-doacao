@@ -2,7 +2,7 @@
 
 require 'classes/conexao.php';
 
-if (isset($_GET['action']) && $_GET['action'] == 'register') {
+if (isset($_GET['action']) && $_GET['action'] == 'register_user') {
     require 'classes/usuario.php';
     $usuario = new Usuario();
     $conexao = new Conexao();
@@ -17,6 +17,31 @@ if (isset($_GET['action']) && $_GET['action'] == 'register') {
     if ($usuario->cadastrar($conexao)) {
         header('location: ./login.php?register=true');
     }
+
+    //
+} else if (isset($_GET['action']) && $_GET['action'] == 'register_ponto') {
+    require 'classes/pontoDeColeta.php';
+    $ponto = new PontoDeColeta();
+    $conexao = new Conexao();
+    /*     private $nome_pd;
+    private $email_pd;
+    private $telefone_pd;
+    private $cep;
+    private $senha_pd;
+    private $csenha_pd;*/
+    $ponto->__set('nome_pd', $_POST['nome_pd']);
+    $ponto->__set('email_pd', $_POST['email_pd']);
+    $ponto->__set('senha_pd', $_POST['password_pd']);
+    $ponto->__set('csenha_pd', $_POST['cpassword_pd']);
+    $ponto->__set('telefone_pd', $_POST['phone_pd']);
+    $ponto->__set('cep', $_POST['cep']);
+    if ($ponto->cadastrar($conexao)) {
+        header('location: ./login.php?register=true');
+    }
+
+    //
+} else if (isset($_GET['action']) && $_GET['action'] == 'register_parceiro') {
+
 
     //
 } else if (isset($_GET['action']) && $_GET['action'] == 'pwdrecovery') {

@@ -264,3 +264,17 @@ input[type="radio"]:focus {
 .contrast a:not(.ba-link) {
     color: yellow !important;
 }
+
+.custom-select {
+    border-width: 3px;
+    border-color: rgb(61, 226, 157);
+    height: 3rem;
+    transition: all 0.4s ease;
+}
+
+.custom-select:focus,
+.custom-select:active {
+    box-shadow: 0 0 0.7em 0.1rem rgba(61, 226, 157) !important;
+    outline: none;
+    border-color: rgb(61, 226, 157);
+}

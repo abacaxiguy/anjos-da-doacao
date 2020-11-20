@@ -1,32 +1,4 @@
-// function readJSON(json, callback) {
-//     var rawFile = new XMLHttpRequest();
-//     rawFile.overrideMimeType("application/json");
-//     rawFile.open("GET", json, true);
-//     rawFile.onreadystatechange = function () {
-//         if (rawFile.readyState === 4 && rawFile.status == "200") {
-//             callback(rawFile.responseText);
-//         }
-//     };
-//     rawFile.send(null);
-// }
-
-// readJSON("./js/states.json", function (json) {
-//     jsonParse = JSON.parse(json);
-//     jsonParse.states.forEach((stateData) => {
-//         if (stateData.stateInitial == stateStorage) {
-//             const latitude = stateData.coords.lat;
-//             const longitude = stateData.coords.lng;
-//             const hiddenLat = document.createElement("div");
-//             hiddenLat.classList.add("hidden");
-//             hiddenLat.setAttribute("id", "lat");
-//             hiddenLat.innerText = latitude;
-//             document.body.append(hiddenLat);
-//         }
-//     });
-// });
-
 (function () {
-    console.log("checking...");
     setTimeout(function () {
         const mapView = document.querySelector(".gm-style-pbc");
         if (!mapView) {
@@ -34,7 +6,7 @@
                 "O mapa não carregou? <strong>Recarregue a página para carregar o mapa!</strong>"
             );
             console.log("[ERRO] Mapa não carregou!");
-        } else console.log("checked");
+        }
     }, 5000);
 })();
 

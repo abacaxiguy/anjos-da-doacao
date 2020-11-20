@@ -105,6 +105,14 @@ if (isset($_GET['authenticated']) && $_GET['authenticated'] == 'false') {
 </body>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
+    (function() {
+        if (document.querySelector('.alert')) {
+            document.querySelector('.alert').scrollIntoView()
+        }
+
+    })()
+</script>
+<script>
     new window.VLibras.Widget("https://vlibras.gov.br/app");
 </script>
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>

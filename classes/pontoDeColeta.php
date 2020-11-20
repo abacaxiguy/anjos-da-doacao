@@ -2,22 +2,24 @@
 
 class PontoDeColeta
 {
-    private $pnome;
-    private $unome;
-    private $telefone;
-    private $nascimento;
-    private $cpf;
-    private $senha;
-    private $csenha;
-    private $email;
+    private $nome_pd;
+    private $email_pd;
+    private $telefone_pd;
+    private $cep;
+    private $senha_pd;
+    private $csenha_pd;
+    private $lat_pd;
+    private $long_pd;
+    private $endereco_pd;
 
     public function cadastrar($conexao)
     {
         $authentication = $this->validar();
         if ($authentication) {
-            $passwordHashed = password_hash($this->senha, PASSWORD_DEFAULT);
+            $passwordHashed = password_hash($this->senha_pd, PASSWORD_DEFAULT);
             $conexao = $conexao->conectar();
-            $query = "SELECT email_usuario FROM usuario WHERE email_usuario='$this->email'";
+
+            $query = "SELECT email_pd FROM ponto_doacao WHERE email_pd='$this->email_pd'";
             $stmt = $conexao->query($query);
             $emails = $stmt->fetchAll(PDO::FETCH_ASSOC);
             if ($emails) {
@@ -25,22 +27,14 @@ class PontoDeColeta
                 return false;
             }
 
-            $query = "SELECT cpf_usuario FROM usuario WHERE cpf_usuario='$this->cpf'";
-            $stmt = $conexao->query($query);
-            $cpfs = $stmt->fetchAll(PDO::FETCH_ASSOC);
-            if ($cpfs) {
-                header('location: ./register.php?db=cpf');
-                return false;
-            }
-
-            $query = "insert into usuario(nome_usuario, email_usuario, senha_usuario, cpf_usuario, nascimento_usuario, telefone_usuario, moeda_usuario) values (
-                '$this->pnome $this->unome', 
-                '$this->email', 
+            $query = "insert into ponto_doacao(nome_pd, email_pd, senha_pd, telefone_pd, long_pd, lat_pd, endereco_pd) values (
+                '$this->nome_pd', 
+                '$this->email_pd', 
                 '$passwordHashed', 
-                '$this->cpf', 
-                '$this->nascimento', 
-                '$this->telefone', 
-                0);";
+                '$this->telefone_pd', 
+                '$this->long_pd', 
+                '$this->lat_pd',
+                '$this->endereco_pd');";
 
             return $conexao->exec($query);
         } else return false;
@@ -48,82 +42,79 @@ class PontoDeColeta
 
     public function validar()
     {
-        if (empty($this->pnome) || empty($this->unome) || empty($this->telefone) || empty($this->nascimento) || empty($this->cpf) || empty($this->senha) || empty($this->csenha) || empty($this->email)) {
+        if (empty($this->nome_pd) || empty($this->email_pd) || empty($this->telefone_pd) || empty($this->cep) || empty($this->senha_pd) || empty($this->csenha_pd)) {
             header('location: ./register.php?error=field');
             return false;
         }
-        $this->pnome = trim($this->pnome);
-        $this->unome = trim($this->unome);
-        $this->telefone = trim($this->telefone);
-        $this->nascimento = trim($this->nascimento);
-        $this->cpf = trim($this->cpf);
-        $this->senha = trim($this->senha);
-        $this->csenha = trim($this->csenha);
-        $this->email = trim($this->email);
-        if ($this->senha !== $this->csenha) {
+        $this->nome_pd = trim($this->nome_pd);
+        $this->email_pd = trim($this->email_pd);
+        $this->telefone_pd = trim($this->telefone_pd);
+        $this->cep = trim($this->cep);
+        $this->senha_pd = trim($this->senha_pd);
+        $this->csenha_pd = trim($this->csenha_pd);
+
+        if ($this->senha_pd !== $this->csenha_pd) {
             header('location: ./register.php?error=password');
             return false;
         }
 
-        // VALIDADOR DE CPF
-
-        $new_cpf = preg_replace('/[^0-9]/is', '', $this->cpf);
-
-        if (strlen($new_cpf) !== 11) {
-            header('location: ./register.php?error=cpf');
-            return false;
-        }
-
-        // Verifica se foi informada uma sequência de digitos repetidos. Ex: 111.111.111-11
-        if (preg_match('/(\d)\1{10}/', $new_cpf)) {
-            header('location: ./register.php?error=cpf');
-            return false;
-        }
-
-        // Faz o calculo para validar o CPF
-        for ($t = 9; $t < 11; $t++) {
-            for ($d = 0, $c = 0; $c < $t; $c++) {
-                $d += $new_cpf[$c] * (($t + 1) - $c);
-            }
-            $d = ((10 * $d) % 11) % 10;
-            if ($new_cpf[$c] != $d) {
-                header('location: ./register.php?error=cpf');
-                return false;
-            }
-        }
-
-        $this->__set('cpf', $new_cpf);
-        // FIM DO VALIDADOR
-
-        if (strlen($this->senha) < 6) {
+        if (strlen($this->senha_pd) < 6) {
             header('location: ./register.php?error=password_len');
             return false;
         }
 
-        $new_tele = preg_replace('/[^0-9]/is', '', $this->telefone);
+        $new_tele = preg_replace('/[^0-9]/is', '', $this->telefone_pd);
 
         if (strlen($new_tele) !== 11) {
             header('location: ./register.php?error=phone');
             return false;
         }
 
-        $this->__set('telefone', $new_tele);
+        $this->__set('telefone_pd', $new_tele);
 
-        if (!preg_match('/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/', $this->email)) {
+        if (!preg_match('/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/', $this->email_pd)) {
             header('location: ./register.php?error=email');
             return false;
         }
-        if (false === strtotime($this->nascimento)) {
-            header('location: ./register.php?error=date');
+
+        $new_cep = preg_replace('/[^0-9]/is', '', $this->cep);
+
+        if (strlen($new_cep) !== 8) {
+            header('location: ./register.php?error=cep');
             return false;
         }
-        list($year, $month, $day) = explode('-', $this->nascimento);
-        if (!checkdate($month, $day, $year) || $year >= date('Y') || $year < 1900) {
-            header('location: ./register.php?error=date');
+
+        $this->__set('cep', $new_cep);
+
+        $validacao_cep = $this->validar_cep();
+
+        if (!$validacao_cep) {
+            header('location: ./register.php?error=cep');
             return false;
         }
 
         return true;
+    }
+
+    public function validar_cep()
+    {
+
+        $url = "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDUlsao08ZAPQj6msRU8SblQd0bMgqza_s&address=" . urlencode($this->cep) . "&sensor=false";
+        $result_string = file_get_contents($url);
+        $result = json_decode($result_string, true);
+
+        $endereco = $result['results'][0]['formatted_address'];
+        $latitude = $result['results'][0]['geometry']['location']['lat'];
+        $longitude = $result['results'][0]['geometry']['location']['lng'];
+
+        if (empty($endereco) || empty($latitude) || empty($longitude)) {
+            return false;
+        } else {
+            $this->__set('endereco_pd', $endereco);
+            $this->__set('lat_pd', $latitude);
+            $this->__set('long_pd', $longitude);
+            return true;
+        }
     }
 
     public function __set($atr, $val)

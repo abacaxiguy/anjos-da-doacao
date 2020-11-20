@@ -279,8 +279,12 @@ i {
     background-repeat: no-repeat;
 }
 
+.faq-link {
+    text-decoration: underline !important;
+}
+
 .faq-link:hover {
-    color: white !important;
+    color: rgb(61, 226, 157) !important;
 }
 
 /* MEDIAS */
