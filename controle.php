@@ -35,7 +35,18 @@ if (isset($_GET['action']) && $_GET['action'] == 'register_user') {
 
     //
 } else if (isset($_GET['action']) && $_GET['action'] == 'register_parceiro') {
-
+    require 'classes/empresaParceira.php';
+    $parceiro = new EmpresaParceira();
+    $conexao = new Conexao();
+    $parceiro->__set('nome_ep', $_POST['nome_ep']);
+    $parceiro->__set('email_ep', $_POST['email_ep']);
+    $parceiro->__set('senha_ep', $_POST['password_ep']);
+    $parceiro->__set('csenha_ep', $_POST['cpassword_ep']);
+    $parceiro->__set('telefone_ep', $_POST['phone_ep']);
+    $parceiro->__set('site_ep', $_POST['site_ep']);
+    if ($parceiro->cadastrar($conexao)) {
+        header('location: ./login.php?register=true');
+    }
 
     //
 } else if (isset($_GET['action']) && $_GET['action'] == 'pwdrecovery') {

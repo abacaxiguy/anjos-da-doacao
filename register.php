@@ -276,54 +276,54 @@ if (isset($_SESSION['id_conta'])) {
 
             <form class="form-parceiro hide" action="./controle.php?action=register_parceiro" method="POST">
                 <div class="form-row">
-                    <!-- name pd -->
-                    <div id="div_id_nome_pd" class="form-group col-md-6">
-                        <label for="id_nome_pd">
+                    <!-- name ep -->
+                    <div id="div_id_nome_ep" class="form-group col-md-6">
+                        <label for="id_nome_ep">
                             Nome da empresa
                         </label>
 
                         <div>
-                            <input type="text" name="nome_pd" maxlength="30" class="textinput textInput form-control" id="id_nome_pd" required />
+                            <input type="text" name="nome_ep" maxlength="30" class="textinput textInput form-control" id="id_nome_ep" required />
 
-                            <p id="error_id_nome_pd" class="invalid-feedback"></p>
+                            <p id="error_id_nome_ep" class="invalid-feedback"></p>
                         </div>
                     </div>
 
                     <!-- email -->
 
-                    <div id="div_id_email_pd" class="form-group col-md-6">
-                        <label for="id_email_pd">
+                    <div id="div_id_email_ep" class="form-group col-md-6">
+                        <label for="id_email_ep">
                             Endereço de email
                         </label>
                         <div>
-                            <input onfocus="limpa_input(this)" onblur="valida_email(this)" type="email" name="email_pd" maxlength="54" class="emailinput form-control" id="id_email_pd" required />
+                            <input type="email" name="email_ep" maxlength="54" class="emailinput form-control" id="id_email_ep" required />
 
-                            <p id="error_id_email_pd" class="invalid-feedback"></p>
+                            <p id="error_id_email_ep" class="invalid-feedback"></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <!-- telefone -->
-                    <div id="div_id_phone_pd" class="form-group col-md-6">
-                        <label for="id_phone_pd" class="requiredField">
+                    <div id="div_id_phone_ep" class="form-group col-md-6">
+                        <label for="id_phone_ep" class="requiredField">
                             Telefone
                         </label>
 
                         <div>
-                            <input type="text" name="phone_pd" maxlength="14" class="textinput textInput form-control" required id="id_phone_pd" />
+                            <input type="text" name="phone_ep" maxlength="14" class="textinput textInput form-control" required id="id_phone_ep" />
 
-                            <p id="error_id_phone_pd" class="invalid-feedback"></p>
+                            <p id="error_id_phone_ep" class="invalid-feedback"></p>
                         </div>
                     </div>
 
-                    <!-- cep -->
-                    <div id="div_id_cep" class="form-group col-md-6">
-                        <label for="id_cep" class="requiredField"> URL do site </label>
+                    <!-- site -->
+                    <div id="div_id_site" class="form-group col-md-6">
+                        <label for="id_site" class="requiredField"> URL do site </label>
                         <div>
-                            <input type="text" name="id_cep" minlength="11" maxlength="11" class="textinput textInput form-control" required id="id_cep" />
+                            <input type="text" name="site_ep" class="textinput textInput form-control" required id="id_site" />
 
-                            <p id="error_id_cep" class="invalid-feedback"></p>
+                            <p id="error_id_site" class="invalid-feedback"></p>
                         </div>
                     </div>
                 </div>
@@ -331,27 +331,27 @@ if (isset($_SESSION['id_conta'])) {
                 <div class="form-row">
                     <!-- password -->
 
-                    <div id="div_id_password" class="form-group col-md-6">
-                        <label for="id_password">
+                    <div id="div_id_password_ep" class="form-group col-md-6">
+                        <label for="id_password_ep">
                             Senha
                         </label>
                         <div>
-                            <input type="password" name="password" class="textinput textInput form-control" id="id_password" required />
+                            <input type="password" name="password_ep" class="textinput textInput form-control" id="id_password_ep" required />
 
-                            <p id="error_id_password" class="invalid-feedback"></p>
+                            <p id="error_id_password_ep" class="invalid-feedback"></p>
                         </div>
                     </div>
 
                     <!-- confirm password -->
 
-                    <div id="div_id_password2" class="form-group col-md-6">
-                        <label for="id_password2">
+                    <div id="div_id_password_ep2" class="form-group col-md-6">
+                        <label for="id_password_ep2">
                             Confirmar senha
                         </label>
                         <div>
-                            <input type="password" name="cpassword" class="textinput textInput form-control" id="id_password2" required />
+                            <input type="password" name="cpassword_ep" class="textinput textInput form-control" id="id_password_ep2" required />
 
-                            <p id="error_id_password2" class="invalid-feedback"></p>
+                            <p id="error_id_password_ep2" class="invalid-feedback"></p>
                         </div>
                     </div>
                 </div>
@@ -417,7 +417,7 @@ if (isset($_SESSION['id_conta'])) {
             $("#id_cpf").mask("000.000.000-00");
             $('#id_phone').mask('(00) 00000-0000');
             $('#id_phone_pd').mask('(00) 00000-0000');
-            $('#id_phone_ep').mask('(00) 0000-0000');
+            $('#id_phone_ep').mask('(00) 00000-0000');
             $("#id_cep").mask("00000-000");
         });
     </script>

@@ -8,7 +8,7 @@ require '../classes/conexao.php';
 if ($_SESSION['id_tipo'] == 2) {
     $conexao = new Conexao();
     $conexao = $conexao->conectar();
-    $sql = "SELECT * FROM empresa_parceira WHERE id_=" . $_SESSION['id_conta'];
+    $sql = "SELECT * FROM empresa_parceira WHERE id_empresa=" . $_SESSION['id_conta'];
     $stmt = $conexao->query($sql);
     $array = $stmt->fetch(PDO::FETCH_ASSOC);
 

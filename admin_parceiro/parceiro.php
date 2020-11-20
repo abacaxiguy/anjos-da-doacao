@@ -65,7 +65,7 @@ require 'autenticador_e.php';
                             <i class="fas fa-user"></i>
                         </div>
                         <span>
-
+                            <?= $array['nome_empresa'] ?>
                         </span>
                     </div>
                 </a>
@@ -77,7 +77,7 @@ require 'autenticador_e.php';
     <main class="mt-5 mb-5 container">
         <div class="profile-name">
             <div class="name-wrapper">Olá,</div>
-            <span class="name-span bold pr-2"></span>
+            <span class="name-span bold pr-2"><?= $array['nome_empresa'] ?></span>
             <span class="logoff bold">
                 <form style="display:inline" action="../sair.php" method="get">
                     <button type="submit">
@@ -89,7 +89,7 @@ require 'autenticador_e.php';
         <div class="profile-wrapper mt-5 mb-5">
             <nav class="profile-nav">
                 <div class="nav-wrapper">
-                    <a href="./admin_editar.php"><i class="fas fa-id-card"></i> Editar Perfil</a>
+                    <a href="./parceiro_editar_perfil.php"><i class="fas fa-id-card"></i> Editar Perfil</a>
                     <a href="./admin_cadastrar.php"><i class="fas fa-archive"></i> Cadastrar
                         Equipamento</a>
                     <a href="./admin_equipamentos.php"><i class="fas fa-box-open"></i> Seus
