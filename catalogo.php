@@ -208,7 +208,7 @@ require 'classes/conexao.php';
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <?php
-            if (!isset($_SESSION['id_usuario'])) {
+            if (!isset($_SESSION['id_conta'])) {
             ?>
                 <a class="navbar-brand" href="./index.php" style="flex-grow: 0.1">
                     <img class="logo" src="./img/logo2.png" />
@@ -236,7 +236,7 @@ require 'classes/conexao.php';
                 </form>
 
                 <?php
-                if (isset($_SESSION['id_usuario'])) {
+                if (isset($_SESSION['id_conta']) && isset($_SESSION['id_tipo']) && $_SESSION['id_tipo'] == 0) {
 
                     $conexao = new Conexao();
                     $conexao = $conexao->conectar();

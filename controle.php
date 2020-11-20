@@ -23,12 +23,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'register_user') {
     require 'classes/pontoDeColeta.php';
     $ponto = new PontoDeColeta();
     $conexao = new Conexao();
-    /*     private $nome_pd;
-    private $email_pd;
-    private $telefone_pd;
-    private $cep;
-    private $senha_pd;
-    private $csenha_pd;*/
     $ponto->__set('nome_pd', $_POST['nome_pd']);
     $ponto->__set('email_pd', $_POST['email_pd']);
     $ponto->__set('senha_pd', $_POST['password_pd']);
