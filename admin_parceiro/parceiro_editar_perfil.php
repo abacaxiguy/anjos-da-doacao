@@ -9,7 +9,7 @@ require 'autenticador_e.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="HandheldFriendly" content="true" />
-    <title>Anjos da Doação - Administrador do <?= "????????????" ?></title>
+    <title>Anjos da Doação - Administrador do <?= $array['nome_empresa'] ?></title>
     <link rel="icon" type="image/png" href="../img/logoImg2.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
@@ -59,13 +59,13 @@ require 'autenticador_e.php';
                     </button>
                 </form>
 
-                <a href="./admin.php">
+                <a href="./parceiro.php">
                     <div class="login ml-5">
                         <div class="icon mr-2">
                             <i class="fas fa-user"></i>
                         </div>
                         <span>
-
+                            <?= $array['nome_empresa'] ?>
                         </span>
                     </div>
                 </a>
@@ -77,7 +77,7 @@ require 'autenticador_e.php';
     <main class="mt-5 mb-5 container">
         <div class="profile-name">
             <div class="name-wrapper">Olá,</div>
-            <span class="name-span bold pr-2"></span>
+            <span class="name-span bold pr-2"><?= $array['nome_empresa'] ?></span>
             <span class="logoff bold">
                 <form style="display:inline" action="../sair.php" method="get">
                     <button type="submit">
@@ -89,7 +89,7 @@ require 'autenticador_e.php';
         <div class="profile-wrapper mt-5 mb-5">
             <nav class="profile-nav">
                 <div class="nav-wrapper">
-                    <a href="./admin_editar.php"><i class="fas fa-id-card"></i> Editar Perfil</a>
+                    <a class="active" href="./parceiro_editar_perfil.php"><i class="fas fa-id-card"></i> Editar Perfil</a>
                     <a href="./admin_cadastrar.php"><i class="fas fa-archive"></i> Cadastrar
                         Equipamento</a>
                     <a href="./admin_equipamentos.php"><i class="fas fa-box-open"></i> Seus
@@ -98,7 +98,112 @@ require 'autenticador_e.php';
                 </div>
             </nav>
 
-            <div style="min-height: 300px;" class="profile-body"></div>
+            <div class="profile-body">
+                <div class="form-row">
+                    <!-- name ep -->
+                    <div id="div_id_nome_ep" class="form-group col-md-6">
+                        <label for="id_nome_ep">
+                            Nome da empresa
+                        </label>
+
+                        <div>
+                            <input type="text" name="nome_ep" maxlength="30" class="textinput textInput form-control" id="id_nome_ep" required value="<?= $array['nome_empresa'] ?>" />
+
+                            <p id="error_id_nome_ep" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+
+                    <!-- email -->
+
+                    <div id="div_id_email_ep" class="form-group col-md-6">
+                        <label for="id_email_ep">
+                            Endereço de email
+                        </label>
+                        <div>
+                            <input type="email" name="email_ep" maxlength="54" class="emailinput form-control" id="id_email_ep" required value="<?= $array['email_empresa'] ?>" />
+
+                            <p id="error_id_email_ep" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!-- telefone -->
+                    <div id="div_id_phone_ep" class="form-group col-md-6">
+                        <label for="id_phone_ep" class="requiredField">
+                            Telefone
+                        </label>
+
+                        <div>
+                            <input type="text" name="phone_ep" maxlength="14" class="textinput textInput form-control" required id="id_phone_ep" value="<?= $array['telefone_empresa'] ?>" />
+
+                            <p id="error_id_phone_ep" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+
+                    <!-- site -->
+                    <div id="div_id_site" class="form-group col-md-6">
+                        <label for="id_site" class="requiredField"> URL do site </label>
+                        <div>
+                            <input type="text" name="site_ep" class="textinput textInput form-control" required id="id_site" value="<?= $array['site_empresa'] ?>" />
+
+                            <p id="error_id_site" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!-- password -->
+
+                    <div id="div_id_password_ep" class="form-group col-md-6">
+                        <label for="id_password_ep">
+                            Senha
+                        </label>
+                        <div>
+                            <input type="password" name="password_ep" class="textinput textInput form-control" id="id_password_ep" required />
+
+                            <p id="error_id_password_ep" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+
+                    <!-- confirm password -->
+
+                    <div id="div_id_password_ep2" class="form-group col-md-6">
+                        <label for="id_password_ep2">
+                            Confirmar senha
+                        </label>
+                        <div>
+                            <input type="password" name="cpassword_ep" class="textinput textInput form-control" id="id_password_ep2" required />
+
+                            <p id="error_id_password_ep2" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!-- image -->
+
+                    <div id="div_id_image" class="form-group col">
+                        <label for="id_image">
+                            Imagem de perfil
+                        </label>
+                        <div>
+                            <input type="file" name="image_ep" id="id_image" />
+
+                            <p id="error_id_id_image" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-gradient btn-block btn-lg mb-2 mt-4">
+                            Editar Informações
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -134,5 +239,12 @@ require 'autenticador_e.php';
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="../js/barra.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#id_phone_ep').mask('(00) 00000-0000');
+    });
+</script>
 
 </html>
