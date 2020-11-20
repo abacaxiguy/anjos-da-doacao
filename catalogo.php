@@ -236,33 +236,73 @@ require 'classes/conexao.php';
                 </form>
 
                 <?php
-                if (isset($_SESSION['id_conta']) && isset($_SESSION['id_tipo']) && $_SESSION['id_tipo'] == 0) {
+                if (isset($_SESSION['id_conta']) && isset($_SESSION['id_tipo'])) {
+                    if ($_SESSION['id_tipo'] == 0) {
 
-                    $conexao = new Conexao();
-                    $conexao = $conexao->conectar();
-                    $sql = "SELECT nome_usuario FROM usuario WHERE id_usuario=" . $_SESSION['id_usuario'];
-                    $stmt = $conexao->query($sql);
-                    $array = $stmt->fetch(PDO::FETCH_ASSOC);
-                    if (!empty($array)) {
-                        $first_name = explode(' ', $array['nome_usuario'])[0];
-                ?>
-                        <a href="./perfil.php">
-                            <div class="login">
-                                <div class="icon mr-2">
-                                    <i class="fas fa-user"></i>
+                        $conexao = new Conexao();
+                        $conexao = $conexao->conectar();
+                        $sql = "SELECT nome_usuario FROM usuario WHERE id_usuario=" . $_SESSION['id_conta'];
+                        $stmt = $conexao->query($sql);
+                        $array = $stmt->fetch(PDO::FETCH_ASSOC);
+                        if (!empty($array)) {
+                            $first_name = explode(' ', $array['nome_usuario'])[0]; ?>
+                            <a href="./perfil.php">
+                                <div class="login">
+                                    <div class="icon mr-2">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span>
+                                        <?= $first_name  ?>
+                                    </span>
                                 </div>
-                                <span>
-                                    <?= $first_name  ?>
-                                </span>
-                            </div>
-                        </a>
-                    <?php
-                    }
-                    ?>
+                            </a>
+                        <?php } ?>
+                        <?php  } else if ($_SESSION['id_tipo'] == 1) {
+                        $conexao = new Conexao();
+                        $conexao = $conexao->conectar();
+                        $sql = "SELECT nome_pd FROM ponto_doacao WHERE id_pd=" . $_SESSION['id_conta'];
+                        $stmt = $conexao->query($sql);
+                        $array = $stmt->fetch(PDO::FETCH_ASSOC);
+                        if (!empty($array)) {
+                        ?>
+                            <a href="./admin/admin.php">
+                                <div class="login">
+                                    <div class="icon mr-2">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span>
+                                        <?= $array['nome_pd']  ?>
+                                    </span>
+                                </div>
+                            </a>
 
-                <?php
+                        <?php } ?>
 
-                } else { ?>
+                        <?php
+                    } else if ($_SESSION['id_tipo'] == 2) {
+                        $conexao = new Conexao();
+                        $conexao = $conexao->conectar();
+                        $sql = "SELECT nome_empresa FROM empresa_parceira WHERE id_empresa=" . $_SESSION['id_conta'];
+                        $stmt = $conexao->query($sql);
+                        $array = $stmt->fetch(PDO::FETCH_ASSOC);
+                        if (!empty($array)) {
+                        ?>
+                            <a href="./admin_parceiro/parceiro.php">
+                                <div class="login">
+                                    <div class="icon mr-2">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span>
+                                        <?= $array['nome_empresa']  ?>
+                                    </span>
+                                </div>
+                            </a>
+
+                        <?php } ?>
+
+                    <?php } ?>
+
+                <?php } else { ?>
 
                     <a href="./login.php">
                         <div class="login">

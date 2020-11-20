@@ -1,5 +1,5 @@
 <?php
-#require('../autenticador.php');
+require 'autenticador_p.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -65,7 +65,7 @@
                             <i class="fas fa-user"></i>
                         </div>
                         <span>
-                            <?= "ADEFAL" ?>
+                            <?= $array['nome_pd'] ?>
                         </span>
                     </div>
                 </a>
@@ -77,7 +77,7 @@
     <main class="mt-5 mb-5 container">
         <div class="profile-name">
             <div class="name-wrapper">Olá,</div>
-            <span class="name-span bold pr-2">ADEFAL</span>
+            <span class="name-span bold pr-2"><?= $array['nome_pd'] ?></span>
             <span class="logoff bold">
                 <form style="display:inline" action="../sair.php" method="get">
                     <button type="submit">
@@ -100,95 +100,89 @@
 
             <div class="profile-body">
                 <div class="form-row">
-                    <!-- first name -->
-                    <div class="form-group col-md-6">
-                        <label for="">
+                    <!-- name pd -->
+                    <div id="div_id_nome_pd" class="form-group col-md-6">
+                        <label for="id_nome_pd">
                             Nome da instituição
                         </label>
 
                         <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
+                            <input type="text" name="nome_pd" maxlength="30" class="textinput textInput form-control" id="id_nome_pd" required value="<?= $array['nome_pd'] ?>" />
 
-                            <p class="invalid-feedback"></p>
+                            <p id="error_id_nome_pd" class="invalid-feedback"></p>
                         </div>
                     </div>
 
-                    <!-- last name -->
+                    <!-- email -->
 
-                    <div class="form-group col-md-6">
-                        <label for="">
-                            Nome do representante
-                        </label>
-
-                        <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
-
-                            <p class="invalid-feedback"></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <!-- first name -->
-                    <div class="form-group col-md-6">
-                        <label for="">
-                            Estado/Cidade
-                        </label>
-
-                        <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
-
-                            <p class="invalid-feedback"></p>
-                        </div>
-                    </div>
-
-                    <!-- last name -->
-
-                    <div class="form-group col-md-6">
-                        <label for="">
+                    <div id="div_id_email_pd" class="form-group col-md-6">
+                        <label for="id_email_pd">
                             Endereço de email
                         </label>
-
                         <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
+                            <input type="email" name="email_pd" maxlength="54" class="emailinput form-control" id="id_email_pd" required value="<?= $array['email_pd'] ?>" />
 
-                            <p class="invalid-feedback"></p>
+                            <p id="error_id_email_pd" class="invalid-feedback"></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-row">
-                    <!-- first name -->
-                    <div class="form-group col-md-6">
-                        <label for="">
-                            Senha
+                    <!-- telefone -->
+                    <div id="div_id_phone_pd" class="form-group col-md-6">
+                        <label for="id_phone_pd" class="requiredField">
+                            Telefone
                         </label>
 
                         <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
+                            <input type="text" name="phone_pd" class="textinput textInput form-control" required id="id_phone_pd" value="<?= $array['telefone_pd'] ?>" />
 
-                            <p class="invalid-feedback"></p>
+                            <p id="error_id_phone_pd" class="invalid-feedback"></p>
                         </div>
                     </div>
 
-                    <!-- last name -->
-
-                    <div class="form-group col-md-6">
-                        <label for="">
-                            Confirmar Senha
-                        </label>
-
+                    <!-- endereco -->
+                    <div id="div_id_endereco" class="form-group col-md-6">
+                        <label for="id_endereco" class="requiredField"> Endereço </label>
                         <div>
-                            <input type="text" name="" maxlength="" class="textinput textInput form-control" required tabindex="1" />
+                            <input type="text" name="endereco" minlength="9" class="textinput textInput form-control" required id="id_endereco" value="<?= $array['endereco_pd'] ?>" />
 
-                            <p class="invalid-feedback"></p>
+                            <p id="error_id_endereco" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!-- password -->
+
+                    <div id="div_id_password" class="form-group col-md-6">
+                        <label for="id_password">
+                            Senha
+                        </label>
+                        <div>
+                            <input type="password" name="password_pd" class="textinput textInput form-control" id="id_password" required />
+
+                            <p id="error_id_password_pd" class="invalid-feedback"></p>
+                        </div>
+                    </div>
+
+                    <!-- confirm password -->
+
+                    <div id="div_id_password2" class="form-group col-md-6">
+                        <label for="id_password2">
+                            Confirmar senha
+                        </label>
+                        <div>
+                            <input type="password" name="cpassword_pd" class="textinput textInput form-control" id="id_password2" required />
+
+                            <p id="error_id_cpassword_pd" class="invalid-feedback"></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn btn-gradient btn-block btn-lg mb-2 mt-4" tabindex="9">
+                        <button type="submit" class="btn btn-gradient btn-block btn-lg mb-2 mt-4">
                             Editar Informações
                         </button>
                     </div>
@@ -229,5 +223,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="../js/barra.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#id_phone_pd').mask('(00) 00000-0000');
+    });
+</script>
 
 </html>

@@ -1,5 +1,5 @@
 <?php
-#require('../autenticador.php');
+require 'autenticador_p.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -65,7 +65,7 @@
                             <i class="fas fa-user"></i>
                         </div>
                         <span>
-                            <?= "ADEFAL" ?>
+                            <?= $array['nome_pd'] ?>
                         </span>
                     </div>
                 </a>
@@ -76,7 +76,7 @@
     <main class="mt-5 mb-5 container">
         <div class="profile-name">
             <div class="name-wrapper">Olá,</div>
-            <span class="name-span bold pr-2">ADEFAL</span>
+            <span class="name-span bold pr-2"><?= $array['nome_pd'] ?></span>
             <span class="logoff bold">
                 <form style="display:inline" action="../sair.php" method="get">
                     <button type="submit">

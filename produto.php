@@ -120,8 +120,7 @@ require 'classes/conexao.php';
     <main class="mt-5 mb-5">
         <div class="container">
 
-
-            <div class="produto-wrapper">
+            <section class="produto-wrapper">
                 <div class="row">
                     <div class="col-12 col-md-6 col-sm-12 d-flex justify-content-center">
                         <img class="img-thumbnail" style="border: none;" src="./img/cadeira.jpg" />
@@ -134,13 +133,13 @@ require 'classes/conexao.php';
                             nylon e dobrável.
                         </p>
                         <a href="./perfil.php" class="btn btn-gradient btn-lg btn-block">
-                            Entrar na fila
+                            Solicitar Equipamento
                         </a>
                     </div>
-                </div>
-            </div>
+            </section>
 
-            <div class="more-wrapper">
+
+            <section class="more-wrapper pb-1">
                 <h2 class="blue-font mb-4">
                     Mais produtos por <span>ADEFAL</span>
                 </h2>
@@ -197,7 +196,7 @@ require 'classes/conexao.php';
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 

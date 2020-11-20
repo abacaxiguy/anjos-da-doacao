@@ -109,7 +109,7 @@ $first_name = explode(' ', $array['nome_usuario'])[0];
                             </label>
 
                             <div>
-                                <input type="text" name="first_name" maxlength="30" class="textinput textInput form-control" id="id_first_name" required tabindex="1" value="<?= $first_name ?>" />
+                                <input type="text" name="first_name" maxlength="30" class="textinput textInput form-control" id="id_first_name" required value="<?= $first_name ?>" />
 
                                 <p id="error_id_first_name" class="invalid-feedback"></p>
                             </div>
@@ -123,7 +123,7 @@ $first_name = explode(' ', $array['nome_usuario'])[0];
                             </label>
 
                             <div>
-                                <input type="text" name="last_name" maxlength="150" class="textinput textInput form-control" id="id_last_name" required tabindex="2" value="<?= $last_name ?>" />
+                                <input type="text" name="last_name" maxlength="150" class="textinput textInput form-control" id="id_last_name" required value="<?= $last_name ?>" />
 
                                 <p id="error_id_last_name" class="invalid-feedback"></p>
                             </div>
@@ -138,7 +138,7 @@ $first_name = explode(' ', $array['nome_usuario'])[0];
                                 Senha
                             </label>
                             <div>
-                                <input onfocus="limpa_input(this)" onblur="valida_senhas(this)" type="password" name="password" class="textinput textInput form-control" id="id_password" required tabindex="3" />
+                                <input onfocus="limpa_input(this)" onblur="valida_senhas(this)" type="password" name="password" class="textinput textInput form-control" id="id_password" required />
 
                                 <p id="error_id_password" class="invalid-feedback"></p>
                             </div>
@@ -151,7 +151,7 @@ $first_name = explode(' ', $array['nome_usuario'])[0];
                                 Confirmar senha
                             </label>
                             <div>
-                                <input onfocus="limpa_input(this)" onblur="valida_senhas(this)" type="password" name="password2" class="textinput textInput form-control" id="id_password2" required tabindex="4" />
+                                <input onfocus="limpa_input(this)" onblur="valida_senhas(this)" type="password" name="password2" class="textinput textInput form-control" id="id_password2" required />
 
                                 <p id="error_id_password2" class="invalid-feedback"></p>
                             </div>
@@ -166,7 +166,7 @@ $first_name = explode(' ', $array['nome_usuario'])[0];
                             </label>
 
                             <div>
-                                <input type="text" name="phone" maxlength="14" class="textinput textInput form-control" required id="id_phone" tabindex="5" value="<?= $array['telefone_usuario'] ?>" />
+                                <input type="text" name="phone" maxlength="14" class="textinput textInput form-control" required id="id_phone" value="<?= $array['telefone_usuario'] ?>" />
 
                                 <p id="error_id_phone" class="invalid-feedback"></p>
                             </div>
@@ -178,7 +178,7 @@ $first_name = explode(' ', $array['nome_usuario'])[0];
                                 Endereço de email
                             </label>
                             <div>
-                                <input onfocus="limpa_input(this)" onblur="valida_email(this)" type="email" name="email" maxlength="254" class="emailinput form-control" id="id_email" required tabindex="6" value="<?= $array['email_usuario'] ?>" />
+                                <input onfocus="limpa_input(this)" onblur="valida_email(this)" type="email" name="email" maxlength="254" class="emailinput form-control" id="id_email" required value="<?= $array['email_usuario'] ?>" />
 
                                 <p id="error_id_email" class="invalid-feedback"></p>
                             </div>
@@ -192,7 +192,7 @@ $first_name = explode(' ', $array['nome_usuario'])[0];
                                 Data de Nascimento
                             </label>
                             <div>
-                                <input onfocus="limpa_input(this)" onblur="valida_data(this.value)" type="date" name="birth_date" maxlength="10" class="form-control" required id="id_birth_date" tabindex="7" value="<?= $array['nascimento_usuario'] ?>" />
+                                <input onfocus="limpa_input(this)" onblur="valida_data(this.value)" type="date" name="birth_date" maxlength="10" class="form-control" required id="id_birth_date" value="<?= $array['nascimento_usuario'] ?>" />
 
                                 <p id="error_id_birth_date" class="invalid-feedback"></p>
                             </div>
@@ -204,7 +204,7 @@ $first_name = explode(' ', $array['nome_usuario'])[0];
                                 CPF
                             </label>
                             <div>
-                                <input onfocus="limpa_input(this)" onblur="valida_cpf(this.value)" type="text" name="cpf" minlength="11" class="textinput textInput form-control" required id="id_cpf" tabindex="8" value="<?= $array['cpf_usuario'] ?>" />
+                                <input onfocus="limpa_input(this)" onblur="valida_cpf(this.value)" type="text" name="cpf" minlength="11" class="textinput textInput form-control" required id="id_cpf" value="<?= $array['cpf_usuario'] ?>" />
 
                                 <p id="error_id_cpf" class="invalid-feedback"></p>
                             </div>
@@ -213,7 +213,7 @@ $first_name = explode(' ', $array['nome_usuario'])[0];
 
                     <div class="row">
                         <div class="col btn-edit-profile">
-                            <button type="submit" class="btn btn-gradient btn-lg btn-block mb-2 mt-4" tabindex="9">
+                            <button type="submit" class="btn btn-gradient btn-lg btn-block mb-2 mt-4">
                                 Editar informações
                             </button>
                         </div>
