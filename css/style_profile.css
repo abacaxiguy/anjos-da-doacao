@@ -1,9 +1,13 @@
+body {
+    background: white !important;
+}
+
 .hidden {
     display: none;
 }
 
 .contrast .form-control {
-	color: white !important;
+    color: white !important;
 }
 
 .form-control:not(.is-invalid):not(.is-valid) {

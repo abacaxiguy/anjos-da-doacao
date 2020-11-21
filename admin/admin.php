@@ -81,7 +81,7 @@ require 'autenticador_p.php';
             <span class="logoff bold">
                 <form style="display:inline" action="../sair.php" method="get">
                     <button type="submit">
-                        <i class="fas fa-power-off"></i>
+                        <i class="fas fa-power-off" title="Sair"></i>
                     </button>
                 </form>
             </span>
