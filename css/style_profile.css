@@ -356,3 +356,37 @@ body {
 .checkbox-out label {
     font-size: 1.4rem;
 }
+
+.buttons-container {
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+}
+
+.left-button,
+.right-button {
+    flex-grow: 0.5;
+    padding: 5rem;
+}
+
+.left-button,
+.right-button {
+    text-decoration: none !important;
+    color: rgb(78, 78, 78);
+}
+
+.left-button i,
+.right-button i {
+    font-size: 5rem;
+}
+
+.left-button p,
+.right-button p {
+    font-size: 2rem;
+}
+
+.left-button:hover,
+.right-button:hover {
+    background: rgb(226, 226, 226);
+    color: rgb(1, 112, 164);
+}
