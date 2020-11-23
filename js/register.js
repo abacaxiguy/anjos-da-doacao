@@ -1,18 +1,5 @@
 let erro = 0;
 
-function criardiv() {
-    let div = document.createElement("DIV");
-    div.classList.add("alert");
-    div.classList.add("alert-success");
-
-    let texto = document.createTextNode("Você se cadastrou com sucesso!");
-    div.appendChild(texto);
-    container = document.getElementById("container");
-    h2 = document.getElementById("h2");
-    container.insertBefore(div, h2);
-    document.getElementsByTagName("html")[0].scrollIntoView();
-}
-
 function throw_error(id, error) {
     input = document.getElementById(id);
     input.classList.add("is-invalid");

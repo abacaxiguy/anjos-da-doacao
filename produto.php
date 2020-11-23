@@ -120,7 +120,7 @@ require 'classes/conexao.php';
     <main class="mt-5 mb-5">
         <div class="container">
 
-            <section class="produto-wrapper">
+            <section class="produto-wrapper pb-5">
                 <div class="row">
                     <div class="col-12 col-md-6 col-sm-12 d-flex justify-content-center">
                         <img class="img-thumbnail" style="border: none;" src="./img/cadeira.jpg" />

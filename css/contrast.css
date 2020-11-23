@@ -3,8 +3,7 @@
 .contrast nav,
 .contrast header,
 .contrast footer,
-.contrast section,
-.contrast main {
+.contrast section {
     background: black !important;
     color: white !important;
 }

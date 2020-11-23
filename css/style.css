@@ -248,7 +248,7 @@ section {
 }
 
 .navbar-toggler i {
-    font-size: 7.5vmin;
+    font-size: 2rem;
     color: rgb(61, 226, 157);
 }
 
@@ -317,6 +317,33 @@ strong {
     border-bottom-left-radius: 0.5rem;
 }
 
+.contrast .login {
+    background-color: yellow;
+}
+
+.contrast i,
+.contrast span {
+    color: black !important;
+}
+
+.contrast .search-input {
+    border-color: yellow !important;
+}
+
+.contrast select {
+    border-color: yellow !important;
+}
+
+.contrast select,
+.contrast .search-wrapper input {
+    background: none !important;
+    color: white !important;
+}
+.contrast option {
+    background: black;
+    color: white;
+}
+
 @media (max-width: 500px) {
     .faq-fab button {
         font-size: 0.8rem;
@@ -325,5 +352,20 @@ strong {
 
     .logo {
         height: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-wrapper {
+        display: inline !important;
+    }
+
+    .search-wrapper select {
+        margin-top: 1rem;
+    }
+
+    .search-wrapper select,
+    .search-wrapper form {
+        width: 100% !important;
     }
 }

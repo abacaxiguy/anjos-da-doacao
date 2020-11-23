@@ -460,79 +460,6 @@ require 'classes/conexao.php';
 <script>
     new window.VLibras.Widget("https://vlibras.gov.br/app");
 </script>
-<script>
-    var customLabel = {
-        restaurant: {
-            label: 'R'
-        },
-        bar: {
-            label: 'B'
-        }
-    };
-
-    function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: new google.maps.LatLng(-9.564057399999999, -35.7492186),
-            zoom: 20
-        });
-        var infoWindow = new google.maps.InfoWindow;
-
-        // Change this depending on the name of your PHP or XML file
-        downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
-            var xml = data.responseXML;
-            var markers = xml.documentElement.getElementsByTagName('marker');
-            Array.prototype.forEach.call(markers, function(markerElem) {
-                var id = markerElem.getAttribute('id');
-                var name = markerElem.getAttribute('name');
-                var address = markerElem.getAttribute('address');
-                var type = markerElem.getAttribute('type');
-                var point = new google.maps.LatLng(
-                    parseFloat(markerElem.getAttribute('lat')),
-                    parseFloat(markerElem.getAttribute('lng')));
-
-                var infowincontent = document.createElement('div');
-                var strong = document.createElement('strong');
-                strong.textContent = name
-                infowincontent.appendChild(strong);
-                infowincontent.appendChild(document.createElement('br'));
-
-                var text = document.createElement('text');
-                text.textContent = address
-                infowincontent.appendChild(text);
-                var icon = customLabel[type] || {};
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: point,
-                    label: icon.label
-                });
-                marker.addListener('mouseover', function() {
-                    infoWindow.setContent(infowincontent);
-                    infoWindow.open(map, marker);
-                });
-            });
-        });
-    }
-
-
-
-    function downloadUrl(url, callback) {
-        var request = window.ActiveXObject ?
-            new ActiveXObject('Microsoft.XMLHTTP') :
-            new XMLHttpRequest;
-
-        request.onreadystatechange = function() {
-            if (request.readyState == 4) {
-                request.onreadystatechange = doNothing;
-                callback(request, request.status);
-            }
-        };
-
-        request.open('GET', url, true);
-        request.send(null);
-    }
-
-    function doNothing() {}
-</script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUlsao08ZAPQj6msRU8SblQd0bMgqza_s&callback=initMap"></script>
 <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
 <script src="https://kit.fontawesome.com/e7ebc2fc39.js" crossorigin="anonymous"></script>
@@ -540,7 +467,8 @@ require 'classes/conexao.php';
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="./js/catalogo.js"></script>
 <script src="./js/barra.js"></script>
-
+<script src="./js/modal.js"></script>
 
 </html>

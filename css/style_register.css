@@ -278,3 +278,13 @@ input[type="radio"]:focus {
     outline: none;
     border-color: rgb(61, 226, 157);
 }
+
+.contrast select {
+    background: none !important;
+    color: white !important;
+}
+
+.contrast option {
+    background: black !important;
+    color: white !important;
+}
