@@ -43,8 +43,7 @@ require 'classes/conexao.php';
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <?php
-            session_start();
-            if (!isset($_SESSION['id_usuario'])) {
+            if (!isset($_SESSION['id_conta'])) {
             ?>
                 <a class="navbar-brand" href="./index.php" style="flex-grow: 0.1">
                     <img class="logo" src="./img/logo2.png" />
@@ -63,7 +62,7 @@ require 'classes/conexao.php';
             </button>
 
             <div class="navbar-collapse collapse div-nav" id="navbar">
-                <form class="my-2 ml-2 my-lg-0 d-flex" style="flex-grow: 3">
+                <form class="my-2 ml-2 mr-5 my-lg-0 d-flex" style="flex-grow: 3">
                     <input class="search-input" type="search" placeholder="O que procura?" aria-label="Pesquisar" results="5" name="s" id="search" />
 
                     <button class="btn-search" type="submit">
@@ -72,38 +71,78 @@ require 'classes/conexao.php';
                 </form>
 
                 <?php
-                if (isset($_SESSION['id_usuario'])) {
+                if (isset($_SESSION['id_conta']) && isset($_SESSION['id_tipo'])) {
+                    if ($_SESSION['id_tipo'] == 0) {
 
-                    $conexao = new Conexao();
-                    $conexao = $conexao->conectar();
-                    $sql = "SELECT nome_usuario FROM usuario WHERE id_usuario=" . $_SESSION['id_usuario'];
-                    $stmt = $conexao->query($sql);
-                    $array = $stmt->fetch(PDO::FETCH_ASSOC);
-                    if (!empty($array)) {
-                        $first_name = explode(' ', $array['nome_usuario'])[0];
-                ?>
-                        <a href="./perfil.php">
-                            <div class="login ml-5">
-                                <div class="icon mr-2">
-                                    <i class="fas fa-user"></i>
+                        $conexao = new Conexao();
+                        $conexao = $conexao->conectar();
+                        $sql = "SELECT nome_usuario FROM usuario WHERE id_usuario=" . $_SESSION['id_conta'];
+                        $stmt = $conexao->query($sql);
+                        $array = $stmt->fetch(PDO::FETCH_ASSOC);
+                        if (!empty($array)) {
+                            $first_name = explode(' ', $array['nome_usuario'])[0]; ?>
+                            <a href="./perfil.php">
+                                <div class="login">
+                                    <div class="icon mr-2">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span>
+                                        <?= $first_name  ?>
+                                    </span>
                                 </div>
-                                <span>
-                                    <?= $first_name  ?>
-                                </span>
-                            </div>
-                        </a>
-                    <?php
-                    }
-                    ?>
+                            </a>
+                        <?php } ?>
+                        <?php  } else if ($_SESSION['id_tipo'] == 1) {
+                        $conexao = new Conexao();
+                        $conexao = $conexao->conectar();
+                        $sql = "SELECT nome_pd FROM ponto_doacao WHERE id_pd=" . $_SESSION['id_conta'];
+                        $stmt = $conexao->query($sql);
+                        $array = $stmt->fetch(PDO::FETCH_ASSOC);
+                        if (!empty($array)) {
+                        ?>
+                            <a href="./admin/admin.php">
+                                <div class="login">
+                                    <div class="icon mr-2">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span>
+                                        <?= $array['nome_pd']  ?>
+                                    </span>
+                                </div>
+                            </a>
 
-                <?php
+                        <?php } ?>
 
-                } else { ?>
+                        <?php
+                    } else if ($_SESSION['id_tipo'] == 2) {
+                        $conexao = new Conexao();
+                        $conexao = $conexao->conectar();
+                        $sql = "SELECT nome_empresa FROM empresa_parceira WHERE id_empresa=" . $_SESSION['id_conta'];
+                        $stmt = $conexao->query($sql);
+                        $array = $stmt->fetch(PDO::FETCH_ASSOC);
+                        if (!empty($array)) {
+                        ?>
+                            <a href="./admin_parceiro/parceiro.php">
+                                <div class="login">
+                                    <div class="icon mr-2">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span>
+                                        <?= $array['nome_empresa']  ?>
+                                    </span>
+                                </div>
+                            </a>
 
-                    <a href="./login.php" style="flex-grow: 0.5">
-                        <div class="login ml-5">
+                        <?php } ?>
+
+                    <?php } ?>
+
+                <?php } else { ?>
+
+                    <a href="./login.php">
+                        <div class="login">
                             <div class="icon mr-2">
-                                <i class="fas fa-user"></i>
+                                <i style="font-size:1rem" class="fas fa-user"></i>
                             </div>
                             <span>
                                 Entre ou
@@ -112,6 +151,8 @@ require 'classes/conexao.php';
                     </a>
 
                 <?php } ?>
+
+
             </div>
         </div>
     </nav>
