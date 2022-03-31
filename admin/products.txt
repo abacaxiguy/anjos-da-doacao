@@ -1,17 +1,17 @@
 
 ADEFAL|Cadeira de Rodas|IHJREHAEOIRHNEORNERN|2
-ADEFAL|Não é uma Cadeira de rodas|htahaertjasrtjratsjsartjrstj|3
-ADEFAL|Bota Ortopédica?|1gwshedtjszrykstrylostyksetykstylkstdylsd|1
-ADEFAL|Cadeira pequena|tphmnwpthnmaepithjearhp|3
-ADEFAL|Mais um q n vai aparecer|ngireoiqerhnaieophjaeoih|5
-ADEFAL|esse agora vai aparecer embaix|ehawteha knerhtaenihaenhp|10
-ADEFAL|daleee funcionouuu|eajraetjarjartjtrjrt|55
-ADEFAL|mais um|egdswrherjhar|34
-ADEFAL|vai pra prox linha|eraetkjartkasrkasrkrst|4
-ADEFAL|testando, isso é uma cadeira|qeorhgoveqrhnboeben oh|1
-ADEFAL|testando maisssss|rhaeerhejejuaeruj|2e10
-ADEFAL|esse é o ultimo da fila|rjtrjawrtjtjstrj|1
-ADEFAL|esse é o primeiro da fila?|jrastjsartjsartjrtjrt|3
-ADEFAL|MORE|rhrenoierahnearohnaerhnearh|555
-ADEFAL|hmmm|teste|99
-ADEFAL|será?|rhnwrihntkwtkihn|54
+ADEFAL|Cadeira de Rodas|htahaertjasrtjratsjsartjrstj|3
+ADEFAL|Cadeira de Rodas|1gwshedtjszrykstrylostyksetykstylkstdylsd|1
+ADEFAL|Cadeira de Rodas|tphmnwpthnmaepithjearhp|3
+ADEFAL|Cadeira de Rodas|ngireoiqerhnaieophjaeoih|5
+ADEFAL|Cadeira de Rodas|ehawteha knerhtaenihaenhp|10
+ADEFAL|Cadeira de Rodas|eajraetjarjartjtrjrt|55
+ADEFAL|Cadeira de Rodas|egdswrherjhar|34
+ADEFAL|Cadeira de Rodas|eraetkjartkasrkasrkrst|4
+ADEFAL|Cadeira de Rodas|qeorhgoveqrhnboeben oh|1
+ADEFAL|Cadeira de Rodas|rhaeerhejejuaeruj|2e10
+ADEFAL|Cadeira de Rodas|rjtrjawrtjtjstrj|1
+ADEFAL|Cadeira de Rodas|jrastjsartjsartjrtjrt|3
+ADEFAL|Cadeira de Rodas|rhrenoierahnearohnaerhnearh|555
+ADEFAL|Cadeira de Rodas|teste|99
+ADEFAL|Cadeira de Rodas|rhnwrihntkwtkihn|54
